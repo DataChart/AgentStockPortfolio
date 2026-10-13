@@ -10,6 +10,7 @@ Usage:
   portfolio.py sell TICKER (--shares N | --all)        --price P --source URL --timestamp ISO --rationale TEXT [--date D]
   portfolio.py mark --prices prices.json [--date D]    # end-of-day mark-to-market snapshot
   portfolio.py rebuild                                 # regenerate data/portfolio.json
+  portfolio.py reset-history                           # drop placeholder snapshots (before the first trade only)
   portfolio.py status
 """
 from __future__ import annotations
@@ -124,6 +125,14 @@ def tx_hash(tx: dict) -> str:
 
 # ---------------------------------------------------------------- replay
 
+def buy_cap(date: str, cfg: dict) -> int:
+    """Buys allowed on `date`: the daily limit, or the one-time opening allocation."""
+    opening = cfg["limits"].get("opening_allocation") or {}
+    if opening.get("date") == date:
+        return opening["max_buys"]
+    return cfg["limits"]["max_buys_per_day"]
+
+
 def replay(transactions: list[dict], cfg: dict, upto_date: str | None = None) -> dict:
     """Rebuild cash and positions from the ledger. Raises TradeError on any
     rule violation so the same code guards new trades and audits old ones."""
@@ -138,7 +147,7 @@ def replay(transactions: list[dict], cfg: dict, upto_date: str | None = None) ->
             break
         key = (tx["date"], tx["action"])
         per_day[key] = per_day.get(key, 0) + 1
-        cap = limits["max_buys_per_day"] if tx["action"] == "BUY" else limits["max_sells_per_day"]
+        cap = buy_cap(tx["date"], cfg) if tx["action"] == "BUY" else limits["max_sells_per_day"]
         if per_day[key] > cap:
             raise TradeError(f"{tx['id']}: more than {cap} {tx['action']} on {tx['date']}")
         f = fill(tx["action"], tx["quote_price"], tx["shares"], cfg, tx["date"])
@@ -284,6 +293,15 @@ def mark(prices: dict, date: str, cfg: dict) -> dict:
     return snap
 
 
+def reset_history(cfg: dict) -> None:
+    """Drop placeholder snapshots. Only allowed before the first trade, so no
+    valuation that a trade depends on can ever be removed this way."""
+    if load_ledger()["transactions"]:
+        raise TradeError("history can only be reset before the first trade")
+    save_json(HISTORY_PATH, {"snapshots": []})
+    rebuild(cfg)
+
+
 # ---------------------------------------------------------------- derived state
 
 def build_portfolio(cfg: dict, txs: list[dict], snaps: list[dict]) -> dict:
@@ -350,6 +368,7 @@ def main(argv=None) -> int:
     m.add_argument("--prices", required=True, help="JSON file: {TICKER: {price, source, timestamp}}")
     m.add_argument("--date")
     sub.add_parser("rebuild")
+    sub.add_parser("reset-history", help="drop placeholder snapshots (only before the first trade)")
     sub.add_parser("status")
     args = ap.parse_args(argv)
     cfg = load_config()
@@ -363,6 +382,9 @@ def main(argv=None) -> int:
         elif args.cmd == "mark":
             snap = mark(load_json(Path(args.prices), {}), parse_date(args.date), cfg)
             print(json.dumps(snap, indent=2))
+        elif args.cmd == "reset-history":
+            reset_history(cfg)
+            print("history cleared")
         elif args.cmd == "rebuild":
             print(json.dumps(rebuild(cfg), indent=2))
         else:

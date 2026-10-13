@@ -10,7 +10,12 @@
       "Wed",
       "Thu",
       "Fri"
-    ]
+    ],
+    "opening_allocation": {
+      "date": "2026-10-12",
+      "max_buys": 8,
+      "notes": "One-time exemption: on this date only, the research agent may make up to max_buys buys to build the starting portfolio. The normal daily limits apply on every other date."
+    }
   },
   "fees": {
     "schedule": [

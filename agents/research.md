@@ -5,6 +5,7 @@ Read `data/strategy.md` (the analyst's guidance) and `data/portfolio.json` first
 
 ## Rules
 - At most **one BUY and one SELL per trading day**. No trade is fine when nothing is compelling.
+  (The only exception is the one-time opening allocation date in `config/settings.json`, which allowed several buys to build the starting portfolio.)
 - US-listed common stocks and ETFs only. No options, shorts, margin or leverage beyond leveraged ETFs.
 - Fills are simulated at today's **closing price**; the engine adds the fee model
   (`config/settings.json`). You cannot spend more cash than you have.

@@ -14,7 +14,7 @@ The daily routine follows [`agents/RUNBOOK.md`](agents/RUNBOOK.md).
 
 ## Rules
 - Starting cash **$10,000**, US stocks and ETFs, no margin or shorts.
-- At most one buy and one sell per trading day.
+- At most one buy and one sell per trading day. The one exception was the opening allocation on 2026-10-12, when the research agent could make up to 8 buys to build the starting portfolio.
 - Fills at the day's closing price with simulated costs: **$1.00 commission per trade plus 0.10% slippage** (buys fill above the quote, sells below). Change them in [`config/settings.json`](config/settings.json) by adding a new fee schedule entry with a future `effective_from` date.
 
 ## Data
@@ -40,7 +40,6 @@ python3 -m unittest discover -s tests
 bash scripts/build_site.sh && python3 -m http.server -d _site 8000   # preview the dashboard
 ```
 
-## Setup
-GitHub Pages must be set to deploy from **GitHub Actions** (Settings → Pages → Source).
+Live dashboard: https://datachart.github.io/AgentStockPortfolio/
 
 Paper trading only; nothing here is investment advice.

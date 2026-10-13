@@ -82,6 +82,26 @@ class TradingTests(Base):
         with self.assertRaises(pf.TradeError):
             self.sell(ticker="AAA", shares=1, date="2026-10-13")
 
+    def test_opening_allocation_allows_several_buys_once(self):
+        day = self.cfg["limits"]["opening_allocation"]["date"]
+        cap = self.cfg["limits"]["opening_allocation"]["max_buys"]
+        for i in range(cap):
+            self.buy(ticker=f"T{i}", shares=1, price=10.0, date=day)
+        with self.assertRaises(pf.TradeError):
+            self.buy(ticker="EXTRA", shares=1, price=10.0, date=day)
+        self.buy(ticker="NEXT", shares=1, price=10.0, date="2026-10-13")
+        with self.assertRaises(pf.TradeError):
+            self.buy(ticker="NEXT2", shares=1, price=10.0, date="2026-10-13")
+        self.assertEqual(self.audit()[0], [])
+
+    def test_reset_history_only_before_first_trade(self):
+        pf.mark({}, "2026-10-13", self.cfg)
+        pf.reset_history(self.cfg)
+        self.assertEqual(pf.load_history()["snapshots"], [])
+        self.buy(shares=1)
+        with self.assertRaises(pf.TradeError):
+            pf.reset_history(self.cfg)
+
     def test_weekend_rejected(self):
         with self.assertRaises(pf.TradeError):
             self.buy(date="2026-10-17")
