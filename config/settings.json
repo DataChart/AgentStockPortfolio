@@ -1,0 +1,34 @@
+{
+  "starting_cash": 10000.0,
+  "currency": "USD",
+  "limits": {
+    "max_buys_per_day": 1,
+    "max_sells_per_day": 1,
+    "trading_days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ]
+  },
+  "fees": {
+    "schedule": [
+      {
+        "effective_from": "2026-01-01",
+        "commission_per_trade": 1.0,
+        "slippage_pct": 0.1
+      }
+    ],
+    "notes": "Every trade pays a flat commission. Slippage is modelled as a price penalty: buys fill slippage_pct above the quoted price, sells fill slippage_pct below it. To change fees, append a new schedule entry with a future effective_from date; never edit an entry that trades already used, or the fact checker will fail the replay."
+  },
+  "shares": {
+    "allow_fractional": true,
+    "decimals": 4
+  },
+  "fact_check": {
+    "price_tolerance_pct": 1.0,
+    "notes": "A quoted price is accepted when an independent source agrees within price_tolerance_pct."
+  },
+  "repo_url": "https://github.com/DataChart/AgentStockPortfolio"
+}
