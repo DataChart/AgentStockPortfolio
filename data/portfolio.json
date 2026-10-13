@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "starting_cash": 10000.0,
   "cash": 200.11,
-  "holdings_value": 9785.11,
-  "total_value": 9985.22,
-  "return_pct": -0.15,
+  "holdings_value": 10024.21,
+  "total_value": 10224.32,
+  "return_pct": 2.24,
   "realized_pl": 0.0,
   "fees_paid": 14.8,
   "trade_count": 5,
@@ -14,50 +14,50 @@
       "shares": 6.4017,
       "cost_basis": 1499.98,
       "avg_cost": 234.3096,
-      "last_price": 233.92,
-      "market_value": 1497.49,
-      "unrealized_pl": -2.49,
-      "unrealized_pl_pct": -0.17
+      "last_price": 238.01,
+      "market_value": 1523.67,
+      "unrealized_pl": 23.69,
+      "unrealized_pl_pct": 1.58
     },
     {
       "ticker": "META",
       "shares": 4.0325,
       "cost_basis": 2999.98,
       "avg_cost": 743.9504,
-      "last_price": 742.96,
-      "market_value": 2995.99,
-      "unrealized_pl": -3.99,
-      "unrealized_pl_pct": -0.13
+      "last_price": 762.5,
+      "market_value": 3074.78,
+      "unrealized_pl": 74.8,
+      "unrealized_pl_pct": 2.49
     },
     {
       "ticker": "MSFT",
       "shares": 3.321,
       "cost_basis": 1799.96,
       "avg_cost": 541.9934,
-      "last_price": 541.15,
-      "market_value": 1797.16,
-      "unrealized_pl": -2.8,
-      "unrealized_pl_pct": -0.16
+      "last_price": 543.45,
+      "market_value": 1804.8,
+      "unrealized_pl": 4.84,
+      "unrealized_pl_pct": 0.27
     },
     {
       "ticker": "VLO",
       "shares": 5.0385,
       "cost_basis": 2199.98,
       "avg_cost": 436.6339,
-      "last_price": 436.0,
-      "market_value": 2196.79,
-      "unrealized_pl": -3.19,
-      "unrealized_pl_pct": -0.15
+      "last_price": 456.46,
+      "market_value": 2299.87,
+      "unrealized_pl": 99.89,
+      "unrealized_pl_pct": 4.54
     },
     {
       "ticker": "XLE",
       "shares": 19.6591,
       "cost_basis": 1299.99,
       "avg_cost": 66.1266,
-      "last_price": 66.01,
-      "market_value": 1297.7,
-      "unrealized_pl": -2.29,
-      "unrealized_pl_pct": -0.18
+      "last_price": 67.2,
+      "market_value": 1321.09,
+      "unrealized_pl": 21.1,
+      "unrealized_pl_pct": 1.62
     }
   ]
 }

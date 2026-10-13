@@ -70,6 +70,77 @@
         },
         "notes": "All 5 closes match Yahoo Finance historical data exactly. Return -0.15% equals fees+slippage on same-day buys at close; plausible."
       }
+    },
+    {
+      "date": "2026-10-13",
+      "cash": 200.11,
+      "holdings_value": 10024.21,
+      "total_value": 10224.32,
+      "return_pct": 2.24,
+      "prices": {
+        "META": {
+          "price": 762.5,
+          "source": "https://stockanalysis.com/stocks/meta/history/",
+          "timestamp": "2026-10-13T20:00:00Z",
+          "shares": 4.0325
+        },
+        "VLO": {
+          "price": 456.46,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-13T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 543.45,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-13T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 238.01,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-13T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 67.2,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-13T20:00:00Z",
+          "shares": 19.6591
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T21:30:52+00:00",
+        "verified_prices": {
+          "META": {
+            "price": 762.5,
+            "source": "https://finance.yahoo.com/quote/META/history/",
+            "diff_pct": 0.0
+          },
+          "VLO": {
+            "price": 456.46,
+            "source": "https://finance.yahoo.com/quote/VLO/history/?period1=1791763200&period2=1791936000",
+            "diff_pct": 0.0
+          },
+          "MSFT": {
+            "price": 543.45,
+            "source": "https://www.marketbeat.com/stocks/NASDAQ/MSFT/chart/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 238.01,
+            "source": "https://finance.yahoo.com/quote/CRM/history/?period1=1791763200&period2=1791936000",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 67.2,
+            "source": "https://finance.yahoo.com/quote/XLE/history/?period1=1791763200&period2=1791936000",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "META/VLO/CRM/XLE match Yahoo Finance history exactly. MSFT 543.45 matches MarketBeat 'Closing price 04:00 PM Eastern' (Tue Oct 13, +2.30). Investing.com 547.80 row was a partial intraday print (8.85M vol, live 11:34 timestamp). Return +2.24% recomputes and fits holdings' moves."
+      }
     }
   ]
 }
