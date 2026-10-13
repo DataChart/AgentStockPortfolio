@@ -1,1 +1,179 @@
-{"transactions": []}
+{
+  "transactions": [
+    {
+      "id": "T0001",
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "META",
+      "shares": 4.0325,
+      "quote_price": 742.96,
+      "price_source": "https://stockanalysis.com/stocks/meta/history/",
+      "price_timestamp": "2026-10-12T20:00:00Z",
+      "exec_price": 743.703,
+      "gross": 2998.98,
+      "commission": 1.0,
+      "slippage_cost": 3.0,
+      "cash_delta": -2999.98,
+      "cash_after": 7000.02,
+      "rationale": "Meta runs Facebook, Instagram and WhatsApp and is turning its AI spending into products: its Muse assistant topped the App Store, now has paid tiers, and the new Muse Wonder models launched on Oct 12, sending the stock up 3.4% to just under its 2026 high. We are buying the breakout as Muse starts to monetize ahead of Q3 earnings. We would sell on a close back below the ~$690 breakout zone, a 12% loss from cost, or weak Muse usage or capex guidance on the earnings call.",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "fc265ffc545222f5c0ae9d5b9283968e0bd17bd50a9c7be5558320c509bce369",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:34:25+00:00",
+        "verified_price": 742.96,
+        "verified_source": "https://finance.yahoo.com/quote/META/history/?period1=1791763200&period2=1792022400",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance Oct 12 2026 close 742.96 (prev 718.67, +3.38%); matches. Muse Wonder launch confirmed (CNBC/TechCrunch Oct 12)."
+      }
+    },
+    {
+      "id": "T0002",
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "VLO",
+      "shares": 5.0385,
+      "quote_price": 436.0,
+      "price_source": "https://stockanalysis.com/stocks/vlo/history/",
+      "price_timestamp": "2026-10-12T20:00:00Z",
+      "exec_price": 436.436,
+      "gross": 2198.98,
+      "commission": 1.0,
+      "slippage_cost": 2.2,
+      "cash_delta": -2199.98,
+      "cash_after": 4800.04,
+      "rationale": "Valero is the largest independent US oil refiner. With crude above $93 and energy the market's leading sector, Valero crushed Q2 estimates (adjusted EPS $12.54 vs $10.13) and this year's earnings estimates have risen about 26% in 60 days; the stock climbed from $377 to $436 in three weeks heading into late-October Q3 results. We would sell on a 12% drop from cost, a sharp fall in refining margins, or a disappointing Q3 report.",
+      "prev_hash": "fc265ffc545222f5c0ae9d5b9283968e0bd17bd50a9c7be5558320c509bce369",
+      "hash": "9bb5b6581340ba575872f33e6b1a7be6064878040c331fe597c279fba3dc2cfc",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:34:25+00:00",
+        "verified_price": 436.0,
+        "verified_source": "https://finance.yahoo.com/quote/VLO/history/?period1=1791763200&period2=1792022400",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance Oct 12 2026 close 436.00; matches. Q2 adj EPS 12.54 confirmed (Valero release)."
+      }
+    },
+    {
+      "id": "T0003",
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 3.321,
+      "quote_price": 541.15,
+      "price_source": "https://stockanalysis.com/stocks/msft/history/",
+      "price_timestamp": "2026-10-12T20:00:00Z",
+      "exec_price": 541.6911,
+      "gross": 1798.96,
+      "commission": 1.0,
+      "slippage_cost": 1.8,
+      "cash_delta": -1799.96,
+      "cash_after": 3000.08,
+      "rationale": "Microsoft sells cloud computing (Azure), Office software and AI tools. It unveiled its Maia 300 custom AI chip on Oct 12 and closed up 1.1% at $541, extending a steady climb from $498 in late September while other tech stocks sold off. We expect Azure AI demand to carry the stock into its late-October earnings. We would sell on a 12% drop from cost or a slowdown in Azure growth.",
+      "prev_hash": "9bb5b6581340ba575872f33e6b1a7be6064878040c331fe597c279fba3dc2cfc",
+      "hash": "f921b09205d8405f037bce00827a5cebb2e9598edecfed02b8d1d7f15819ff57",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:34:25+00:00",
+        "verified_price": 541.15,
+        "verified_source": "https://finance.yahoo.com/quote/MSFT/history/?period1=1791763200&period2=1792022400",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance Oct 12 2026 close 541.15; matches. Maia 300 announcement Oct 12 confirmed (HPCwire, multiple outlets)."
+      }
+    },
+    {
+      "id": "T0004",
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "CRM",
+      "shares": 6.4017,
+      "quote_price": 233.92,
+      "price_source": "https://stockanalysis.com/stocks/crm/history/",
+      "price_timestamp": "2026-10-12T20:00:00Z",
+      "exec_price": 234.1539,
+      "gross": 1498.98,
+      "commission": 1.0,
+      "slippage_cost": 1.5,
+      "cash_delta": -1499.98,
+      "cash_after": 1500.1,
+      "rationale": "Salesforce makes customer-relationship (CRM) software and is selling AI agents to businesses. On Oct 12, Bank of America upgraded it two notches, from Underperform to Buy, and raised its target to $285 from $160, saying AI will help enterprise software rather than hurt it; the stock rose 2.1% to $233.92. We see room for a sentiment-driven rerating toward that target. We would sell on a 12% drop from cost or evidence that AI is eroding its seat-based revenue.",
+      "prev_hash": "f921b09205d8405f037bce00827a5cebb2e9598edecfed02b8d1d7f15819ff57",
+      "hash": "5cf886fdcfc20b9bc7c942a0d8df1182e0c1d0be82bfcab6267dd3ace61bed38",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:34:25+00:00",
+        "verified_price": 233.92,
+        "verified_source": "https://finance.yahoo.com/quote/CRM/history/?period1=1791763200&period2=1792022400",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance Oct 12 2026 close 233.92 (+2.09%); matches. BofA Underperform->Buy, PT 160->285 confirmed (Investrade, Vistap)."
+      }
+    },
+    {
+      "id": "T0005",
+      "date": "2026-10-12",
+      "action": "BUY",
+      "ticker": "XLE",
+      "shares": 19.6591,
+      "quote_price": 66.01,
+      "price_source": "https://stockanalysis.com/etf/xle/history/",
+      "price_timestamp": "2026-10-12T20:00:00Z",
+      "exec_price": 66.076,
+      "gross": 1298.99,
+      "commission": 1.0,
+      "slippage_cost": 1.3,
+      "cash_delta": -1299.99,
+      "cash_after": 200.11,
+      "rationale": "The Energy Select Sector SPDR ETF holds the large US oil and gas producers, such as Exxon and Chevron. Energy led the market again on Oct 12, with the ETF up 1.4% as WTI crude rose to about $93.7 on Saudi and Russia supply risks; the sector is up about 43% this year. This position gives us broad exposure to high oil prices alongside our refiner stake. We would sell if crude breaks down, for example on a durable Middle East de-escalation, or on a 12% drop from cost.",
+      "prev_hash": "5cf886fdcfc20b9bc7c942a0d8df1182e0c1d0be82bfcab6267dd3ace61bed38",
+      "hash": "58384c9dcfeba6d086204ecaad2086e6e062b8053c2f14f5083cdb2e7bcd244f",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:34:25+00:00",
+        "verified_price": 66.01,
+        "verified_source": "https://finance.yahoo.com/quote/XLE/history/?period1=1791763200&period2=1792022400",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance Oct 12 2026 close 66.01; matches (post 2:1 split of 2025-12-05). Sector +1.43% confirmed. YTD from 44.71 is ~+47.6% price, rationale's ~43% slightly understated."
+      }
+    }
+  ]
+}

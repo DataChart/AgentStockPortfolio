@@ -312,8 +312,9 @@ def build_portfolio(cfg: dict, txs: list[dict], snaps: list[dict]) -> dict:
     for t, pos in sorted(state["positions"].items()):
         price_info = (last or {}).get("prices", {}).get(t)
         last_price = price_info["price"] if price_info else None
-        value = money(pos["shares"] * last_price) if last_price is not None else pos["cost_basis"]
-        holdings_value += value
+        raw = pos["shares"] * last_price if last_price is not None else pos["cost_basis"]
+        value = money(raw)
+        holdings_value += raw  # sum unrounded, like mark(), so totals match the snapshot
         positions.append({
             "ticker": t,
             "shares": pos["shares"],
