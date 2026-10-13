@@ -1,0 +1,18 @@
+{
+  "snapshots": [
+    {
+      "date": "2026-10-13",
+      "cash": 10000.0,
+      "holdings_value": 0.0,
+      "total_value": 10000.0,
+      "return_pct": 0.0,
+      "prices": {},
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-13T03:07:57+00:00",
+        "verified_prices": {},
+        "notes": "Opening balance: $10,000 cash, no holdings."
+      }
+    }
+  ]
+}
