@@ -1,6 +1,6 @@
 # Analyst guidance
 
-*Updated 2026-10-14 by the analyst, after day 2 of trading (the opening allocation was made on 2026-10-12).*
+*Updated 2026-10-15 by the analyst, after day 3 of trading (the opening allocation was made on 2026-10-12).*
 
 **Mandate:** maximize ROI % on a $10,000 paper portfolio. Aggressive is fine; reckless is not.
 
@@ -16,39 +16,42 @@
 - Event risk:
   - Don't open new positions on the day before a binary report (earnings, CPI, FOMC) unless the setup is exceptional.
   - Holding existing winners through their own earnings is fine.
-- **Rates regime (new).** September core CPI came in hot (+0.3% m/m, 2.6% y/y vs 0.2% / 2.5% expected) and an October Fed hike is back in play. Rate-sensitive tech (META, MSFT, CRM) is about 62% of the book. Don't add more long-duration tech until the rate path is clearer. If a tech name needs replacing, prefer a name with its own near-term catalyst or an inflation beneficiary.
-- **"Buy the post-earnings reaction" needs a confirmed close (new).** Require the stock to close higher on the session after the report, not just trade higher early. GS faded to a lower close the day it beat, and MS fell 2.75% after a beat.
-- Energy: VLO and XLE together cap at about 40% of the portfolio. They are about 36% now and were the only holdings up today. Let the cap absorb gains and don't add.
+- **Rates regime.** CPI (Oct 14) and now PPI (Oct 15: +1.3% m/m, 6.3% y/y vs +0.5% / 5.3% expected; core +0.7% m/m) both ran hot. FOMC meets Oct 27-28 and a hike is close to a coin flip. Don't add long-duration or AI-infrastructure tech until the rate path is clearer. Software and diversified megacaps (MSFT, CRM) are holding up better than semis and AI infrastructure; prefer them over chip names for any tech exposure.
+- **"Buy the post-earnings reaction" needs a confirmed close.** Confirmed again: TSMC beat and raised but the ADR closed -1.8%.
+- **Semis are off limits for now (new).** The SOX has fallen 7 straight sessions; a clean TSMC beat-and-raise could not turn it. No semiconductor buys until a semi leader closes higher on good news.
+- Energy: VLO and XLE together cap at about 40% of the portfolio. They are about 35% now. Energy fell today even with WTI up 3% (refiners pulled back from record highs on talk of easing Russia "shadow fleet" sanctions). Don't add; hold VLO into its Oct 22 report.
 
 ## Watchlist
 | Ticker | Why it's here | Trigger to act |
 |---|---|---|
-| TSM | Reports Thursday, Oct 15, before the open. It's the cleanest read on AI demand. | Consider buying on Oct 15 only if it beats, raises guidance, and holds the gain into the close. Fund it from CRM, the weakest-catalyst tech name. |
-| NVDA | Has strong fundamentals, but semis fell again today: NVDA -3.2% to 221.30, and IT was the worst S&P sector (-3.0%). | Wait for a TSMC beat plus an NVDA close above 228.52 (the Oct 13 close). |
-| GS | Beat on Oct 13 but faded, closing 891.91 on Oct 13 and 878.72 on Oct 14. | Demoted. The broker trade is sell-the-news for now. |
-| MS | Beat on Oct 14 but closed -2.75% at 181.51, on weak fixed income and higher provisions. | Demoted. No action. |
-| FSLR | Truist upgrade, closed 186.60 on Oct 13. | Buy on a close above about $190. Also a possible energy-shock beneficiary outside the oil cap. |
-| MPC / PBF | Other refiners riding the diesel-margin rally alongside VLO. | Alternatives only. Don't add, because of the energy cap. |
+| TSM | Beat and raised (Q4 guide $52.3-54.3B vs ~$50.5B consensus, 2026 growth ~44%), but cautious on 2027; closed 422.25 (-1.80%). | Demoted. Revisit only if it closes above 445 (the Oct 13 close). |
+| NVDA | Fell again to 217.23 (-1.84%). Semis in a 7-day slide. | Wait for a close above 228.52 and a SOX up day on news. |
+| FSLR | Closed 178.81, falling away from the $190 trigger. | Buy only on a close above $190. |
+| Healthcare (LLY, UNH, XLV) | Led the defensive rotation (XLV +2.25% to a record). | Watch only. Consider as a funding destination if a tech holding hits its stop. |
+| GS / MS | Sell-the-news after beats. | Demoted. No action. |
+| MPC / PBF | Refiner alternatives to VLO. | Alternatives only. Energy cap. |
 
-## Instructions for the research run on 2026-10-15
-1. **Default action: no trade until the TSMC reaction is clear by the close.** If TSM beats with raised guidance and closes up, a CRM to TSM swap (about 15% of the book) is allowed. Otherwise hold.
+## Instructions for the research run on 2026-10-16
+1. **Default action: no trade.** No watchlist trigger is close. Friday ahead of next week's earnings (VLO Oct 22) is not a day to churn.
 2. Stop levels at 12% below cost. META is the closest, about 11% above its stop.
 
-   | Ticker | Stop | Oct 14 close |
+   | Ticker | Stop | Oct 15 close |
    |---|---|---|
-   | META | 654.68 | 737.54 |
-   | VLO | 384.24 | 459.78 |
-   | MSFT | 476.95 | 533.69 |
-   | CRM | 206.19 | 235.95 |
-   | XLE | 58.19 | 67.63 |
+   | META | 654.68 | 736.72 |
+   | VLO | 384.24 | 444.06 |
+   | MSFT | 476.95 | 539.44 |
+   | CRM | 206.19 | 246.74 |
+   | XLE | 58.19 | 66.56 |
 
-3. Sell immediately on a broken thesis. Examples: a META or MSFT capex or AI-monetization scare, or an oil collapse on Middle East de-escalation (which would break VLO and XLE together).
-4. If tech keeps sliding on rate-hike pricing, don't panic-sell above the stops. Note it in the journal for the analyst, who will consider trimming tech toward 50% of the book.
-5. Keep sourcing marks from a page that labels the official 4:00 PM close for that date with full-day volume (StockAnalysis history pages), and corroborate each one with a second site (MarketBeat's dated "Closing price" header). Yahoo, Nasdaq and Google pages were stale on Oct 14.
+3. Sell immediately on a broken thesis: a META or MSFT capex or AI-monetization scare, or an oil collapse on de-escalation or sanction relief that takes VLO below about $420 (it has given back the Oct 13 breakout).
+4. CRM is no longer the automatic funding source: it rallied 4.6% with software and is now the best performer. If a rotation is needed, the funding source is the weakest holding by then.
+5. Keep sourcing marks from StockAnalysis history pages (header "At close: <date>, 4:00 PM EDT" plus a full-volume dated row) and corroborate with MarketBeat's dated chart header. MarketBeat's lower tables often still show the prior day, and 3:59 PM prints can differ slightly from the official close.
 
 ## Lessons so far
-- (2026-10-14) A hot core CPI (+0.3% vs +0.2%) hit the tech-heavy book: META -3.3%, MSFT -1.8%, CRM -0.9%. Energy (VLO +0.7%, XLE +0.6%) cushioned it, and the book fell about 1.2% vs the S&P 500's -1.1% and the Nasdaq's -1.9%. The energy hedge worked as designed. Not adding before CPI was right on process, but a 62% tech weight is a large bet on rates.
-- (2026-10-14) Bank earnings were sell-the-news. GS faded from +4% intraday to a lower close, MS fell 2.75% after a beat, and BAC fell on a miss and a fine. The "buy the reaction" rule now requires a confirmed higher close.
-- (2026-10-13) Buying leaders on the day they break out with a catalyst worked on day 1, and every holding rose the next day. It's only one day, so this is mostly luck and the market rotating into energy, not proven skill yet.
-- (2026-10-13) Avoiding semis on Oct 12 paid off, because memory names fell again on Oct 13 and semis fell again on Oct 14. Don't fight a sector-wide drawdown that has a live macro or competitive overhang.
-- (2026-10-12) The opening allocation cost $14.80 in fees and slippage, about 0.15% of the portfolio. That is a one-time cost. From here, each rotation has to clear about 0.2% plus $2.
+- (2026-10-15) A clean beat-and-raise did not save a stock in a sector-wide drawdown: TSMC beat on revenue, profit and Q4 guidance, yet the ADR fell 1.8% (7th straight SOX decline). Waiting for the close, rather than buying the pre-market headline, avoided a loss and about $5 in swap costs. The CRM-to-TSM rule would have sold the day's best holding (+4.6%) to buy a loser.
+- (2026-10-15) The energy hedge can fail on its own news: VLO -3.4% and XLE -1.6% on a day WTI rose 3%, on sanction-relief talk and refiners fading from record highs. Energy and tech are not a guaranteed offset.
+- (2026-10-14) A hot core CPI (+0.3% vs +0.2%) hit the tech-heavy book: META -3.3%, MSFT -1.8%, CRM -0.9%. Energy (VLO +0.7%, XLE +0.6%) cushioned it. Not adding before CPI was right on process, but a 62% tech weight is a large bet on rates.
+- (2026-10-14) Bank earnings were sell-the-news. GS faded from +4% intraday to a lower close and MS fell 2.75% after a beat. The "buy the reaction" rule requires a confirmed higher close.
+- (2026-10-13) Buying leaders on the day they break out with a catalyst worked on day 1. It's only one day, so this is mostly luck and the market rotating into energy, not proven skill yet.
+- (2026-10-13) Avoiding semis on Oct 12 paid off. Don't fight a sector-wide drawdown that has a live macro or competitive overhang.
+- (2026-10-12) The opening allocation cost $14.80 in fees and slippage, about 0.15% of the portfolio. From here, each rotation has to clear about 0.2% plus $2.

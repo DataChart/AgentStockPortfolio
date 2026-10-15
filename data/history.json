@@ -212,6 +212,77 @@
         },
         "notes": "META/MSFT/XLE match MarketBeat dated Oct 14 chart headers exactly (META/MSFT 'Closing price 04:00 PM Eastern'). CRM 235.95 matches MarketBeat close (-2.06 from 238.01). VLO MarketBeat dated Oct 14 shows 459.65 (03:59 PM last trade, 0.03% off); equibles shows Close 459.78 with Oct 14 vol 2.11M. Day change -121.07 (-1.18%) recomputes from per-ticker moves; cumulative +1.03% fits."
       }
+    },
+    {
+      "date": "2026-10-15",
+      "cash": 200.11,
+      "holdings_value": 9887.77,
+      "total_value": 10087.88,
+      "return_pct": 0.88,
+      "prices": {
+        "META": {
+          "price": 736.72,
+          "source": "https://stockanalysis.com/stocks/meta/history/",
+          "timestamp": "2026-10-15T20:00:00Z",
+          "shares": 4.0325
+        },
+        "VLO": {
+          "price": 444.06,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-15T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 539.44,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-15T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 246.74,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-15T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 66.56,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-15T20:00:00Z",
+          "shares": 19.6591
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-15T21:30:18+00:00",
+        "verified_prices": {
+          "META": {
+            "price": 736.72,
+            "source": "https://www.marketbeat.com/stocks/NASDAQ/META/chart/",
+            "diff_pct": 0.0
+          },
+          "VLO": {
+            "price": 444.44,
+            "source": "https://www.marketbeat.com/stocks/NYSE/VLO/chart/?d=2026-10-15",
+            "diff_pct": 0.086
+          },
+          "MSFT": {
+            "price": 539.44,
+            "source": "https://www.marketbeat.com/stocks/NASDAQ/MSFT/chart/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 246.74,
+            "source": "https://www.tradingview.com/symbols/crm",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 66.56,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/XLE/chart/",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "META/MSFT match MarketBeat Oct 15 chart headers exactly ('Closing price 04:00 PM Eastern'). XLE matches MarketBeat 66.56 (-1.07, 04:10 PM). CRM 246.74 matches TradingView (+4.57%, market closed, no trades). VLO: no independent page showed the 4:00 PM official close; MarketBeat Oct 15 header 444.44 is the 03:59 PM last trade (0.09% off) and MarketBeat's Oct 15 alert shows 2,512,636 shares, matching the 2.51M full-day volume. Day change -15.38 (-0.15%) recomputes from per-ticker moves; cumulative +0.88% fits."
+      }
     }
   ]
 }
