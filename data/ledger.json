@@ -174,6 +174,77 @@
         ],
         "notes": "Yahoo Finance Oct 12 2026 close 66.01; matches (post 2:1 split of 2025-12-05). Sector +1.43% confirmed. YTD from 44.71 is ~+47.6% price, rationale's ~43% slightly understated."
       }
+    },
+    {
+      "id": "T0006",
+      "date": "2026-10-16",
+      "action": "SELL",
+      "ticker": "META",
+      "shares": 2.0,
+      "quote_price": 709.33,
+      "price_source": "https://stockanalysis.com/stocks/meta/history/",
+      "price_timestamp": "2026-10-16T20:00:00Z",
+      "exec_price": 708.6207,
+      "gross": 1417.24,
+      "commission": 1.0,
+      "slippage_cost": 1.42,
+      "cash_delta": 1416.24,
+      "cash_after": 1616.35,
+      "rationale": "Meta (Facebook, Instagram, WhatsApp) is trimmed to about half ahead of its Oct 21 report. The market is selling debt-funded AI capex, and Meta's 2027 capex guide (one analyst now models $225B) is the key risk of that report; the stock fell 3.7% today and 7% since Oct 13. The remaining half keeps upside if AI-driven ad growth beats; we sell the rest on a close below 680 before the report.",
+      "prev_hash": "58384c9dcfeba6d086204ecaad2086e6e062b8053c2f14f5083cdb2e7bcd244f",
+      "realized_pl": -71.66,
+      "hash": "d1c1f445fc693dcfb9fa6d0aaa1ecfab2c244359d86040c279db462a7027d0e0",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-16T21:31:10+00:00",
+        "verified_price": 709.33,
+        "verified_source": "https://www.marketbeat.com/stocks/NASDAQ/META/chart/?d=2026-10-16",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "MarketBeat Oct 16 chart header: 709.33 -27.39 (-3.72%), 'Closing price 04:00 PM Eastern'. Yahoo ticker bar also -3.72%. Q3 report Oct 21 after close confirmed by Meta IR press release; AI-debt (CoreWeave) selloff and Nasdaq -2.14% confirmed by TheStreet/Yahoo market wraps."
+      }
+    },
+    {
+      "id": "T0007",
+      "date": "2026-10-16",
+      "action": "BUY",
+      "ticker": "LLY",
+      "shares": 1.2787,
+      "quote_price": 1257.03,
+      "price_source": "https://stockanalysis.com/stocks/lly/history/",
+      "price_timestamp": "2026-10-16T20:00:00Z",
+      "exec_price": 1258.287,
+      "gross": 1608.97,
+      "commission": 1.0,
+      "slippage_cost": 1.61,
+      "cash_delta": -1609.97,
+      "cash_after": 6.38,
+      "rationale": "Eli Lilly makes the leading GLP-1 obesity and diabetes drugs (Mounjaro, Zepbound). On Oct 16 the EU's CHMP recommended approval of its oral GLP-1 pill orforglipron (Foundayo), and the stock rose on a day the Nasdaq fell 2.1%; it is up 6% this week, near its 1,292 record, ahead of its Oct 29 report. It replaces part of our AI-exposed tech weight with a name showing relative strength; we sell on a close 12% below cost or if the Q3 report breaks the growth story.",
+      "prev_hash": "d1c1f445fc693dcfb9fa6d0aaa1ecfab2c244359d86040c279db462a7027d0e0",
+      "hash": "c534519338c9f8d9479d2d409ae14df5d1153e818430a724dcdc7e171d60af0b",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-16T21:31:10+00:00",
+        "verified_price": 1257.03,
+        "verified_source": "https://finance.yahoo.com/quote/LLY/",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Yahoo Finance: 1,257.03 +5.42 (+0.43%), 'At close: 4:00:03 PM EDT', vol 2,380,859 (MarketBeat header 1,258.04 was a 3:59 PM print, not used). CHMP positive opinion for Foundayo (orforglipron) on Oct 16 confirmed (EMA highlights, GuruFocus, Bloomberg). Q3 report Oct 29 confirmed by MarketScreener calendar."
+      }
     }
   ]
 }

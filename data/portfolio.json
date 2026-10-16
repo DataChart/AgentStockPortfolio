@@ -1,63 +1,73 @@
 {
-  "as_of": "2026-10-15",
+  "as_of": "2026-10-16",
   "starting_cash": 10000.0,
-  "cash": 200.11,
-  "holdings_value": 9887.77,
-  "total_value": 10087.88,
-  "return_pct": 0.88,
-  "realized_pl": 0.0,
-  "fees_paid": 14.8,
-  "trade_count": 5,
+  "cash": 6.38,
+  "holdings_value": 9929.35,
+  "total_value": 9935.73,
+  "return_pct": -0.64,
+  "realized_pl": -71.66,
+  "fees_paid": 19.83,
+  "trade_count": 7,
   "positions": [
     {
       "ticker": "CRM",
       "shares": 6.4017,
       "cost_basis": 1499.98,
       "avg_cost": 234.3096,
-      "last_price": 246.74,
-      "market_value": 1579.56,
-      "unrealized_pl": 79.58,
-      "unrealized_pl_pct": 5.31
+      "last_price": 240.7,
+      "market_value": 1540.89,
+      "unrealized_pl": 40.91,
+      "unrealized_pl_pct": 2.73
+    },
+    {
+      "ticker": "LLY",
+      "shares": 1.2787,
+      "cost_basis": 1609.97,
+      "avg_cost": 1259.0678,
+      "last_price": 1257.03,
+      "market_value": 1607.36,
+      "unrealized_pl": -2.61,
+      "unrealized_pl_pct": -0.16
     },
     {
       "ticker": "META",
-      "shares": 4.0325,
-      "cost_basis": 2999.98,
-      "avg_cost": 743.9504,
-      "last_price": 736.72,
-      "market_value": 2970.82,
-      "unrealized_pl": -29.16,
-      "unrealized_pl_pct": -0.97
+      "shares": 2.0325,
+      "cost_basis": 1512.08,
+      "avg_cost": 743.9508,
+      "last_price": 709.33,
+      "market_value": 1441.71,
+      "unrealized_pl": -70.37,
+      "unrealized_pl_pct": -4.65
     },
     {
       "ticker": "MSFT",
       "shares": 3.321,
       "cost_basis": 1799.96,
       "avg_cost": 541.9934,
-      "last_price": 539.44,
-      "market_value": 1791.48,
-      "unrealized_pl": -8.48,
-      "unrealized_pl_pct": -0.47
+      "last_price": 529.05,
+      "market_value": 1756.98,
+      "unrealized_pl": -42.98,
+      "unrealized_pl_pct": -2.39
     },
     {
       "ticker": "VLO",
       "shares": 5.0385,
       "cost_basis": 2199.98,
       "avg_cost": 436.6339,
-      "last_price": 444.06,
-      "market_value": 2237.4,
-      "unrealized_pl": 37.42,
-      "unrealized_pl_pct": 1.7
+      "last_price": 444.75,
+      "market_value": 2240.87,
+      "unrealized_pl": 40.89,
+      "unrealized_pl_pct": 1.86
     },
     {
       "ticker": "XLE",
       "shares": 19.6591,
       "cost_basis": 1299.99,
       "avg_cost": 66.1266,
-      "last_price": 66.56,
-      "market_value": 1308.51,
-      "unrealized_pl": 8.52,
-      "unrealized_pl_pct": 0.66
+      "last_price": 68.24,
+      "market_value": 1341.54,
+      "unrealized_pl": 41.55,
+      "unrealized_pl_pct": 3.2
     }
   ]
 }
