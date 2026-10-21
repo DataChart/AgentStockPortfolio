@@ -365,6 +365,252 @@
         },
         "notes": "META/XLE from MarketBeat dated Oct 16 chart headers (04:00 PM / 04:10 PM); MSFT MarketBeat 529.05 -10.39, 04:00 PM, prior close 539.44 matches Yahoo Oct 15 close. CRM, VLO, LLY from Yahoo quote pages at 'At close: 4:00:02/03 PM EDT' (MarketBeat showed only 3:59 PM prints). VLO official close is 444.71 (Yahoo, vol 1.90M; Bullfincher 444.71 also), recorded 444.75 is 0.01% high, immaterial (~$0.20). Day -1.51% recomputes: -1.46% from price moves plus $5.03 fees and slippage on the swap."
       }
+    },
+    {
+      "date": "2026-10-19",
+      "cash": 6.38,
+      "holdings_value": 9859.86,
+      "total_value": 9866.24,
+      "return_pct": -1.34,
+      "prices": {
+        "META": {
+          "price": 705.44,
+          "source": "https://stockanalysis.com/stocks/meta/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 2.0325
+        },
+        "VLO": {
+          "price": 433.31,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 533.52,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 242.45,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 67.8,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 19.6591
+        },
+        "LLY": {
+          "price": 1240.34,
+          "source": "https://stockanalysis.com/stocks/lly/history/",
+          "timestamp": "2026-10-19T20:00:00Z",
+          "shares": 1.2787
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-21T21:13:11+00:00",
+        "verified_prices": {
+          "META": {
+            "price": 705.44,
+            "source": "https://finance.yahoo.com/quote/META/history/",
+            "diff_pct": 0.0
+          },
+          "VLO": {
+            "price": 433.31,
+            "source": "https://uk.finance.yahoo.com/quote/VLO/history/",
+            "diff_pct": 0.0
+          },
+          "MSFT": {
+            "price": 533.52,
+            "source": "https://finance.yahoo.com/quote/MSFT/history/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 242.45,
+            "source": "https://finance.yahoo.com/quote/CRM/history/",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 67.8,
+            "source": "https://www.google.com/finance/quote/XLE:NYSEARCA",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1240.34,
+            "source": "https://au.marketscreener.com/quote/stock/ELI-LILLY-AND-COMPANY-13401/quotes/",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "All 6 closes match exactly. META/MSFT/CRM Yahoo history (CRM quote 'At close: October 19 4:00:02 PM'), VLO Yahoo UK history + Yahoo quote 'At close October 19 4:00:02 PM', XLE Google Finance 'Closed Oct 19 4:10 PM', LLY MarketScreener 5-day table 1,240.34 (consistent with 1,283.66 being +3.5% on Oct 20). Backfill, no trades; ledger unchanged."
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "cash": 6.38,
+      "holdings_value": 9890.8,
+      "total_value": 9897.18,
+      "return_pct": -1.03,
+      "prices": {
+        "META": {
+          "price": 694.25,
+          "source": "https://stockanalysis.com/stocks/meta/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 2.0325
+        },
+        "VLO": {
+          "price": 433.42,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 531.87,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 242.43,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 67.97,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 19.6591
+        },
+        "LLY": {
+          "price": 1283.66,
+          "source": "https://stockanalysis.com/stocks/lly/history/",
+          "timestamp": "2026-10-20T20:00:00Z",
+          "shares": 1.2787
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-21T21:13:12+00:00",
+        "verified_prices": {
+          "META": {
+            "price": 694.25,
+            "source": "https://finance.yahoo.com/quote/META/history/",
+            "diff_pct": 0.0
+          },
+          "VLO": {
+            "price": 433.42,
+            "source": "https://www.google.com/finance/quote/VLO:NYSE",
+            "diff_pct": 0.0
+          },
+          "MSFT": {
+            "price": 531.87,
+            "source": "https://finance.yahoo.com/quote/MSFT/history/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 242.43,
+            "source": "https://www.google.com/finance/quote/CRM:NYSE",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 67.97,
+            "source": "https://finance.yahoo.com/quote/XLE/history/",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1283.66,
+            "source": "https://marketchameleon.com/Overview/LLY/Summary/",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "All 6 closes match exactly. META/MSFT/XLE Yahoo history (MSFT 'At close October 20 4:00:01 PM'), VLO Google Finance 'Closed Oct 20 4:00:03 PM', CRM Google Finance 'Closed Oct 20 4:00:08 PM', LLY MarketChameleon 'closed at 1283.66 on October 20' and Yahoo previous close 1,283.66. Backfill, no trades; ledger unchanged."
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "cash": 6.38,
+      "holdings_value": 9900.88,
+      "total_value": 9907.26,
+      "return_pct": -0.93,
+      "prices": {
+        "META": {
+          "price": 697.52,
+          "source": "https://stockanalysis.com/stocks/meta/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 2.0325
+        },
+        "VLO": {
+          "price": 436.75,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 532.95,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 241.78,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 68.16,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 19.6591
+        },
+        "LLY": {
+          "price": 1270.75,
+          "source": "https://stockanalysis.com/stocks/lly/history/",
+          "timestamp": "2026-10-21T20:00:00Z",
+          "shares": 1.2787
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-21T21:13:12+00:00",
+        "verified_prices": {
+          "META": {
+            "price": 697.52,
+            "source": "https://finance.yahoo.com/quote/META/",
+            "diff_pct": 0.0
+          },
+          "VLO": {
+            "price": 436.75,
+            "source": "https://uk.finance.yahoo.com/quote/VLO/history/",
+            "diff_pct": 0.0
+          },
+          "MSFT": {
+            "price": 532.95,
+            "source": "https://finance.yahoo.com/quote/MSFT/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 241.78,
+            "source": "https://marketchameleon.com/Overview/CRM/Summary/",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 68.16,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/XLE/chart/",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1270.75,
+            "source": "https://www.google.com/finance/quote/LLY:NYSE",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "All 6 closes match exactly. META Yahoo 'At close 4:00:01 PM' (prev 694.25), MSFT Yahoo 'At close 4:00:01 PM' (prev 531.87), VLO Yahoo UK history row 21 Oct 436.75 vol 2.61M, LLY Google Finance 'Closed Oct 21 4:00:09 PM', CRM MarketChameleon 'closed at 241.78 on October 21' (no time stated), XLE MarketBeat 'Closing price 04:10 PM' Oct 21 (ETF closing print). No trades."
+      }
     }
   ]
 }
