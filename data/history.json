@@ -611,6 +611,77 @@
         },
         "notes": "All 6 closes match exactly. META Yahoo 'At close 4:00:01 PM' (prev 694.25), MSFT Yahoo 'At close 4:00:01 PM' (prev 531.87), VLO Yahoo UK history row 21 Oct 436.75 vol 2.61M, LLY Google Finance 'Closed Oct 21 4:00:09 PM', CRM MarketChameleon 'closed at 241.78 on October 21' (no time stated), XLE MarketBeat 'Closing price 04:10 PM' Oct 21 (ETF closing print). No trades."
       }
+    },
+    {
+      "date": "2026-10-22",
+      "cash": 6.92,
+      "holdings_value": 9793.45,
+      "total_value": 9800.37,
+      "return_pct": -2.0,
+      "prices": {
+        "VLO": {
+          "price": 426.28,
+          "source": "https://stockanalysis.com/stocks/vlo/history/",
+          "timestamp": "2026-10-22T20:00:00Z",
+          "shares": 5.0385
+        },
+        "MSFT": {
+          "price": 521.08,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-22T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 250.29,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-22T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 67.57,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-22T20:00:00Z",
+          "shares": 19.6591
+        },
+        "LLY": {
+          "price": 1306.69,
+          "source": "https://stockanalysis.com/stocks/lly/history/",
+          "timestamp": "2026-10-22T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-22T21:35:12+00:00",
+        "verified_prices": {
+          "VLO": {
+            "price": 426.28,
+            "source": "https://bullfincher.io/companies/valero-energy-corporation/stock-price-history",
+            "diff_pct": 0.0
+          },
+          "MSFT": {
+            "price": 521.08,
+            "source": "https://www.marketbeat.com/stocks/NASDAQ/MSFT/chart/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 250.29,
+            "source": "https://bullfincher.io/companies/salesforce/stock-price-history",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 67.57,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/XLE/chart/",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1306.74,
+            "source": "https://www.macroaxis.com/eli-lilly-and-stock-price-history",
+            "diff_pct": 0.004
+          }
+        },
+        "notes": "All 5 marks within 0.01%. VLO bullfincher 426.28 -2.40% as of 4:36 PM ET Oct 22 (range 416.41-439.55); MSFT MarketBeat 'Closing price 04:00 PM Eastern' 521.08; CRM bullfincher 250.29 at 4:00 PM ET (range 242.70-252.42); XLE MarketBeat 'Closing price 04:10 PM' 67.57 (ETF closing print); LLY Macroaxis Oct 22 close 1,306.74."
+      }
     }
   ]
 }

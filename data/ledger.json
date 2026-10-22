@@ -245,6 +245,77 @@
         ],
         "notes": "Yahoo Finance: 1,257.03 +5.42 (+0.43%), 'At close: 4:00:03 PM EDT', vol 2,380,859 (MarketBeat header 1,258.04 was a 3:59 PM print, not used). CHMP positive opinion for Foundayo (orforglipron) on Oct 16 confirmed (EMA highlights, GuruFocus, Bloomberg). Q3 report Oct 29 confirmed by MarketScreener calendar."
       }
+    },
+    {
+      "id": "T0008",
+      "date": "2026-10-22",
+      "action": "SELL",
+      "ticker": "META",
+      "shares": 2.0325,
+      "quote_price": 648.85,
+      "price_source": "https://stockanalysis.com/stocks/meta/history/",
+      "price_timestamp": "2026-10-22T20:00:00Z",
+      "exec_price": 648.2011,
+      "gross": 1317.47,
+      "commission": 1.0,
+      "slippage_cost": 1.32,
+      "cash_delta": 1316.47,
+      "cash_after": 1322.85,
+      "rationale": "Selling the remaining Meta position, as the written plan required. After its Q3 report, Meta closed at 648.85 (-7.0%), below the 680 sell line and the 12% stop. Revenue grew 26%, but Meta's first cash outflow in over a decade and a plan to issue non-voting shares to fund AI spending revived the capex-financing worry that is weighing on the whole AI trade. We'd revisit only if the stock reclaims 700 and that worry fades.",
+      "prev_hash": "c534519338c9f8d9479d2d409ae14df5d1153e818430a724dcdc7e171d60af0b",
+      "realized_pl": -195.61,
+      "hash": "5680c4630a065a59a14f25c9ecff72eb58da4dfa3beda9f1232ca50c20cbf64e",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-22T21:35:12+00:00",
+        "verified_price": 648.85,
+        "verified_source": "https://www.marketbeat.com/stocks/NASDAQ/META/chart/",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "MarketBeat 'Closing price 04:00 PM Eastern' 648.85 -48.67 (-6.98%), chart dated Thu Oct 22 2026; Yahoo Oct 22 market wrap also gives close 648.85. Q3 release (Oct 21) confirmed: revenue $64.6B +26%, FCF -$2.12B (first negative since 2012 on OCF-minus-capex basis per StockTitan), non-voting Class C shares via one-time stock dividend (2-for-1 effect) framed as a future financing tool, not an immediate issuance."
+      }
+    },
+    {
+      "id": "T0009",
+      "date": "2026-10-22",
+      "action": "BUY",
+      "ticker": "LLY",
+      "shares": 1.0053,
+      "quote_price": 1306.69,
+      "price_source": "https://stockanalysis.com/stocks/lly/history/",
+      "price_timestamp": "2026-10-22T20:00:00Z",
+      "exec_price": 1307.9967,
+      "gross": 1314.93,
+      "commission": 1.0,
+      "slippage_cost": 1.31,
+      "cash_delta": -1315.93,
+      "cash_after": 6.92,
+      "rationale": "Adding to Eli Lilly, maker of the GLP-1 obesity drugs Zepbound and Mounjaro. It closed at a record 1,306.69 (+2.8%) on a day the Nasdaq fell 2.6%, the second time in a week it rose while tech sold off. This makes it the book's healthcare core, about 30% of the portfolio, going into its Oct 29 Q3 report. We'd trim on a weak report or obesity-drug guidance, or sell on a close 12% below the average cost.",
+      "prev_hash": "5680c4630a065a59a14f25c9ecff72eb58da4dfa3beda9f1232ca50c20cbf64e",
+      "hash": "03757cc843c334140bc5604c7a43d261ebc2933ef12bc32f65676e888130811f",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-22T21:35:12+00:00",
+        "verified_price": 1306.74,
+        "verified_source": "https://www.macroaxis.com/eli-lilly-and-stock-price-history",
+        "price_diff_pct": 0.004,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Macroaxis Oct 22 row close 1,306.74 (+2.83%), H 1321 L 1275; within 0.004% of recorded 1,306.69. Rejected MarketBeat 1,308.21 (03:59 PM print) and Robinhood 1,308.17 (no time). Record close confirmed (prior record 1,283.66 Oct 20); Nasdaq -2.60% per Yahoo wrap."
+      }
     }
   ]
 }
