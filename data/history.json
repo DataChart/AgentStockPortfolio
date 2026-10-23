@@ -682,6 +682,66 @@
         },
         "notes": "All 5 marks within 0.01%. VLO bullfincher 426.28 -2.40% as of 4:36 PM ET Oct 22 (range 416.41-439.55); MSFT MarketBeat 'Closing price 04:00 PM Eastern' 521.08; CRM bullfincher 250.29 at 4:00 PM ET (range 242.70-252.42); XLE MarketBeat 'Closing price 04:10 PM' 67.57 (ETF closing print); LLY Macroaxis Oct 22 close 1,306.74."
       }
+    },
+    {
+      "date": "2026-10-23",
+      "cash": 616.35,
+      "holdings_value": 9104.75,
+      "total_value": 9721.1,
+      "return_pct": -2.79,
+      "prices": {
+        "MSFT": {
+          "price": 524.51,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-23T20:00:00Z",
+          "shares": 3.321
+        },
+        "CRM": {
+          "price": 248.57,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-23T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 69.33,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-23T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1274.57,
+          "source": "https://stockanalysis.com/stocks/lly/",
+          "timestamp": "2026-10-23T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-23T21:33:06+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 524.51,
+            "source": "https://www.marketbeat.com/stocks/NASDAQ/MSFT/",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 248.57,
+            "source": "https://bullfincher.io/companies/salesforce/stock-price-history",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 69.33,
+            "source": "https://wallstreetnumbers.com/etfs/xle/price",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1273.46,
+            "source": "https://wallstreetnumbers.com/stocks/lly/price",
+            "diff_pct": 0.087
+          }
+        },
+        "notes": "MSFT MarketBeat 'Closing price 04:00 PM Eastern' 524.51 (+0.66%); CRM Bullfincher 248.57 'Last Updated Oct 23, 4:00 PM ET' (-0.69%); XLE WallStreetNumbers close 69.33 (+2.60%); LLY WallStreetNumbers regular-session close 1,273.46 (-2.54%), 0.09% below recorded 1,274.57 (StockAnalysis quote page) - within tolerance, recorded mark may include a post-close print. Rejected MarketBeat LLY/CRM '03:59 PM' headers. Day -0.81% (-0.75% mark-to-market plus $5.61 fees/slippage) is consistent with holdings' moves."
+      }
     }
   ]
 }

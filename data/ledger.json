@@ -316,6 +316,77 @@
         ],
         "notes": "Macroaxis Oct 22 row close 1,306.74 (+2.83%), H 1321 L 1275; within 0.004% of recorded 1,306.69. Rejected MarketBeat 1,308.21 (03:59 PM print) and Robinhood 1,308.17 (no time). Record close confirmed (prior record 1,283.66 Oct 20); Nasdaq -2.60% per Yahoo wrap."
       }
+    },
+    {
+      "id": "T0010",
+      "date": "2026-10-23",
+      "action": "SELL",
+      "ticker": "VLO",
+      "shares": 5.0385,
+      "quote_price": 419.28,
+      "price_source": "https://stockanalysis.com/stocks/vlo/history/",
+      "price_timestamp": "2026-10-23T20:00:00Z",
+      "exec_price": 418.8607,
+      "gross": 2110.43,
+      "commission": 1.0,
+      "slippage_cost": 2.11,
+      "cash_delta": 2109.43,
+      "cash_after": 2116.35,
+      "rationale": "Valero is a US oil refiner we bought on Oct 12 as a refining-margin play. The strategy's exit line was a close below 420, and it closed at 419.28 (-1.6%) on a day when the energy sector hit a record high and Brent rose to about $117. Two straight down days after a record quarter show the good news is priced in and the stock is lagging its own sector, so the thesis is broken. Sold all; the energy exposure moves into the broader XLE fund.",
+      "prev_hash": "03757cc843c334140bc5604c7a43d261ebc2933ef12bc32f65676e888130811f",
+      "realized_pl": -90.55,
+      "hash": "eeaaf0e06dd6ff8c2769b9d8284bc488994259db418ec3471db873ebae96176d",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-23T21:33:06+00:00",
+        "verified_price": 419.28,
+        "verified_source": "https://stocktwits.com/symbol/VLO",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Stocktwits VLO 'Close $419.28' (-7.00, -1.64% vs Oct 22 426.28), after-hours 420.00, updated 5:15 PM EDT. Corroborated by MarketBeat Oct 23 alert (traded down 6.81 to 419.47 intraday). Rejected Robinhood 418.26 (no time; stale header), Bullfincher/Financialcontent/Investing (stale). Close below the 420 line confirmed; XLE +2.60% record, Brent 116.72."
+      }
+    },
+    {
+      "id": "T0011",
+      "date": "2026-10-23",
+      "action": "BUY",
+      "ticker": "XLE",
+      "shares": 21.5996,
+      "quote_price": 69.33,
+      "price_source": "https://stockanalysis.com/etf/xle/history/",
+      "price_timestamp": "2026-10-23T20:00:00Z",
+      "exec_price": 69.3993,
+      "gross": 1499.0,
+      "commission": 1.0,
+      "slippage_cost": 1.5,
+      "cash_delta": -1500.0,
+      "cash_after": 616.35,
+      "rationale": "XLE is the S&P energy-sector fund (Exxon, Chevron and other producers). It rose 2.6% to 69.33 on a day when the S&P 500 fell 0.5% and the energy sector hit a record high, as Brent reached a six-month high of about $117 on Middle East supply fears. It replaces part of the Valero position: broad producer exposure has held up better than a single refiner whose record quarter was already priced in. Energy stays below 30% of the book. Sell on a close below the 12% stop or if oil breaks sharply lower on a ceasefire.",
+      "prev_hash": "eeaaf0e06dd6ff8c2769b9d8284bc488994259db418ec3471db873ebae96176d",
+      "hash": "52861a0a6da0465076284684919c59a164207cc819520551f84951eb692711c8",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-23T21:33:06+00:00",
+        "verified_price": 69.33,
+        "verified_source": "https://wallstreetnumbers.com/etfs/xle/price",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "WallStreetNumbers XLE latest close 69.33 on Oct 23, 2026, +1.76 (+2.60%), session closed (after-hours 69.43 shown separately). GuruFocus article also states 'closing at $69.33'. Rejected MarketBeat 'As of 03:00 PM' 69.34, Robinhood 69.35 (no time), StockScan 68.04 (partial row)."
+      }
     }
   ]
 }
