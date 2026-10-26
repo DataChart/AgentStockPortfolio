@@ -742,6 +742,66 @@
         },
         "notes": "MSFT MarketBeat 'Closing price 04:00 PM Eastern' 524.51 (+0.66%); CRM Bullfincher 248.57 'Last Updated Oct 23, 4:00 PM ET' (-0.69%); XLE WallStreetNumbers close 69.33 (+2.60%); LLY WallStreetNumbers regular-session close 1,273.46 (-2.54%), 0.09% below recorded 1,274.57 (StockAnalysis quote page) - within tolerance, recorded mark may include a post-close print. Rejected MarketBeat LLY/CRM '03:59 PM' headers. Day -0.81% (-0.75% mark-to-market plus $5.61 fees/slippage) is consistent with holdings' moves."
       }
+    },
+    {
+      "date": "2026-10-26",
+      "cash": 1498.85,
+      "holdings_value": 8264.32,
+      "total_value": 9763.17,
+      "return_pct": -2.37,
+      "prices": {
+        "MSFT": {
+          "price": 532.6,
+          "source": "https://stockanalysis.com/stocks/msft/history/",
+          "timestamp": "2026-10-26T20:00:00Z",
+          "shares": 1.6605
+        },
+        "CRM": {
+          "price": 247.61,
+          "source": "https://stockanalysis.com/stocks/crm/history/",
+          "timestamp": "2026-10-26T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 69.64,
+          "source": "https://stockanalysis.com/etf/xle/history/",
+          "timestamp": "2026-10-26T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1279.14,
+          "source": "https://stockanalysis.com/stocks/lly/",
+          "timestamp": "2026-10-26T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-26T21:31:03+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 532.6,
+            "source": "https://equibles.com/stocks/msft/price",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 247.61,
+            "source": "https://bullfincher.io/companies/salesforce/stock-price-history",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 69.64,
+            "source": "https://wallstreetnumbers.com/etfs/xle/price",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1279.14,
+            "source": "https://equibles.com/stocks/lly/price",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "MSFT Equibles Close 532.60 (volume dated Oct 26; Stocktwits 'Closed' and MarketBeat 04:00 PM agree); LLY Equibles Close 1,279.14 (volume dated Oct 26; Digrin 1,279.14 agrees); XLE WallStreetNumbers 69.64 'October 26, 2026 session closed' (+0.45%; Stocktwits 'Closed $69.64' agrees); CRM Bullfincher 247.61 'Last Updated Oct 26, 2026, 4:00 PM ET'. Rejected MarketBeat LLY 1,279.29 ('03:59 PM'), Trade-Ideas LLY 1,274.11 (3:48 PM) and MSFT (9:40 AM), Stocktwits LLY/CRM (10 AM intraday), Robinhood LLY 1,282.15 (no time), stale WallStreetNumbers LLY/MSFT, Bullfincher LLY, Eulerpool, Google Finance, MarketScreener, Yahoo history. Day +0.43% equals the holdings' moves (+$43.95) less $1.88 fees/slippage."
+      }
     }
   ]
 }

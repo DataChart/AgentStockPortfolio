@@ -387,6 +387,42 @@
         ],
         "notes": "WallStreetNumbers XLE latest close 69.33 on Oct 23, 2026, +1.76 (+2.60%), session closed (after-hours 69.43 shown separately). GuruFocus article also states 'closing at $69.33'. Rejected MarketBeat 'As of 03:00 PM' 69.34, Robinhood 69.35 (no time), StockScan 68.04 (partial row)."
       }
+    },
+    {
+      "id": "T0012",
+      "date": "2026-10-26",
+      "action": "SELL",
+      "ticker": "MSFT",
+      "shares": 1.6605,
+      "quote_price": 532.6,
+      "price_source": "https://stockanalysis.com/stocks/msft/history/",
+      "price_timestamp": "2026-10-26T20:00:00Z",
+      "exec_price": 532.0674,
+      "gross": 883.5,
+      "commission": 1.0,
+      "slippage_cost": 0.88,
+      "cash_delta": 882.5,
+      "cash_after": 1498.85,
+      "rationale": "Microsoft is a cloud and software giant whose results now hinge on AI data-center spending, which is the market's top worry right now. It reports on Oct 28, the same day the Fed decides on rates, so we cut the position in half before that binary event rather than risk the whole stake. Monday's 1.5% rebound to 532.60 on the Anthropic IPO filing gave a better exit than last week's lows. We keep the other half through the report and would sell it on a close below 476.95.",
+      "prev_hash": "52861a0a6da0465076284684919c59a164207cc819520551f84951eb692711c8",
+      "realized_pl": -17.48,
+      "hash": "ac0674240679ee48085002af5482ddf71e4428eb59b84bca7cfa7a90e6597bf0",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-26T21:31:03+00:00",
+        "verified_price": 532.6,
+        "verified_source": "https://equibles.com/stocks/msft/price",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Equibles MSFT 'Close $532.60', O 527.40, range 521.69-533.25, volume dated Oct 26 (18.16M). Corroborated by Stocktwits 'Closed $532.60' (updated 4:31 PM EDT, after-hours shown separately) and MarketBeat 'Closing price 04:00 PM Eastern' $532.60. Rejected Trade-Ideas (9:40 AM intraday), Yahoo/WallStreetNumbers (stale, Oct 22/23)."
+      }
     }
   ]
 }
