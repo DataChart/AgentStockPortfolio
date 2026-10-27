@@ -802,6 +802,66 @@
         },
         "notes": "MSFT Equibles Close 532.60 (volume dated Oct 26; Stocktwits 'Closed' and MarketBeat 04:00 PM agree); LLY Equibles Close 1,279.14 (volume dated Oct 26; Digrin 1,279.14 agrees); XLE WallStreetNumbers 69.64 'October 26, 2026 session closed' (+0.45%; Stocktwits 'Closed $69.64' agrees); CRM Bullfincher 247.61 'Last Updated Oct 26, 2026, 4:00 PM ET'. Rejected MarketBeat LLY 1,279.29 ('03:59 PM'), Trade-Ideas LLY 1,274.11 (3:48 PM) and MSFT (9:40 AM), Stocktwits LLY/CRM (10 AM intraday), Robinhood LLY 1,282.15 (no time), stale WallStreetNumbers LLY/MSFT, Bullfincher LLY, Eulerpool, Google Finance, MarketScreener, Yahoo history. Day +0.43% equals the holdings' moves (+$43.95) less $1.88 fees/slippage."
       }
+    },
+    {
+      "date": "2026-10-27",
+      "cash": 1498.85,
+      "holdings_value": 8166.52,
+      "total_value": 9665.37,
+      "return_pct": -3.35,
+      "prices": {
+        "MSFT": {
+          "price": 531.33,
+          "source": "https://wallstreetnumbers.com/stocks/msft/price",
+          "timestamp": "2026-10-27T20:00:00Z",
+          "shares": 1.6605
+        },
+        "CRM": {
+          "price": 240.89,
+          "source": "https://wallstreetnumbers.com/stocks/crm/price",
+          "timestamp": "2026-10-27T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 68.21,
+          "source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+          "timestamp": "2026-10-27T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1281.91,
+          "source": "https://wallstreetnumbers.com/stocks/lly/price",
+          "timestamp": "2026-10-27T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-27T21:36:13+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 531.33,
+            "source": "https://stocktwits.com/symbol/MSFT",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 240.89,
+            "source": "https://ae.marketscreener.com/quote/stock/SALESFORCE-INC-12180/",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 68.21,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1281.91,
+            "source": "https://equibles.com/stocks/lly/price",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "MSFT Stocktwits 'Closed $531.33' (updated 4:50 PM EDT, -1.27 from Oct 26 532.60, after-hours 531.91 separate); LLY Equibles Close 1,281.91 (O 1,273.50, range 1,272.07-1,297.92, volume dated Oct 27; Stocktwits 'Closed $1,281.91' agrees); XLE MarketBeat chart page 'Closing price 04:10 PM Eastern' 68.21 -1.43 (-2.05%) vs table's Oct 26 close 69.64, extended 68.16 'As of 05:29 PM' separate (Trade-Ideas post-market 'previous close of $68.21' agrees); CRM MarketScreener 'Market Closed - NYSE 00:00:02 28/10/2026 +04' (= 4:00:02 PM EDT Oct 27) 240.89 -2.71%, vol 7.55M, after-hours 240.56 separate (INDmoney 240.89 -6.72 vs prev 247.61 agrees). Rejected: StockAnalysis all four (10:02-10:37 AM 'Market open' / Oct 26), Equibles XLE ('Intraday'), Stocktwits XLE (Oct 26 data) and CRM (10:06 AM), WallStreetNumbers XLE/heygotrade/Google/MarketBeat main/SSGA XLE (Oct 26), INDmoney XLE 68.25 (12:36 PM EDT), Robinhood XLE 68.46 and Yahoo XLE history 68.54 (intraday), ChartExchange CRM (3:59:56 PM print), MarketBeat MSFT/LLY/CRM ('As of' AM), Equibles MSFT/CRM (Oct 26 Close). Day -1.00% equals holdings moves (-$97.80: XLE -59.00, CRM -43.02, MSFT -2.11, LLY +6.33), no trades."
+      }
     }
   ]
 }
