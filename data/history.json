@@ -862,6 +862,66 @@
         },
         "notes": "MSFT Stocktwits 'Closed $531.33' (updated 4:50 PM EDT, -1.27 from Oct 26 532.60, after-hours 531.91 separate); LLY Equibles Close 1,281.91 (O 1,273.50, range 1,272.07-1,297.92, volume dated Oct 27; Stocktwits 'Closed $1,281.91' agrees); XLE MarketBeat chart page 'Closing price 04:10 PM Eastern' 68.21 -1.43 (-2.05%) vs table's Oct 26 close 69.64, extended 68.16 'As of 05:29 PM' separate (Trade-Ideas post-market 'previous close of $68.21' agrees); CRM MarketScreener 'Market Closed - NYSE 00:00:02 28/10/2026 +04' (= 4:00:02 PM EDT Oct 27) 240.89 -2.71%, vol 7.55M, after-hours 240.56 separate (INDmoney 240.89 -6.72 vs prev 247.61 agrees). Rejected: StockAnalysis all four (10:02-10:37 AM 'Market open' / Oct 26), Equibles XLE ('Intraday'), Stocktwits XLE (Oct 26 data) and CRM (10:06 AM), WallStreetNumbers XLE/heygotrade/Google/MarketBeat main/SSGA XLE (Oct 26), INDmoney XLE 68.25 (12:36 PM EDT), Robinhood XLE 68.46 and Yahoo XLE history 68.54 (intraday), ChartExchange CRM (3:59:56 PM print), MarketBeat MSFT/LLY/CRM ('As of' AM), Equibles MSFT/CRM (Oct 26 Close). Day -1.00% equals holdings moves (-$97.80: XLE -59.00, CRM -43.02, MSFT -2.11, LLY +6.33), no trades."
       }
+    },
+    {
+      "date": "2026-10-28",
+      "cash": 1498.85,
+      "holdings_value": 8198.29,
+      "total_value": 9697.14,
+      "return_pct": -3.03,
+      "prices": {
+        "MSFT": {
+          "price": 531.01,
+          "source": "https://stocktwits.com/symbol/MSFT",
+          "timestamp": "2026-10-28T20:00:00Z",
+          "shares": 1.6605
+        },
+        "CRM": {
+          "price": 242.11,
+          "source": "https://ae.marketscreener.com/quote/stock/SALESFORCE-INC-12180/",
+          "timestamp": "2026-10-28T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 68.45,
+          "source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+          "timestamp": "2026-10-28T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1288.3,
+          "source": "https://stocktwits.com/symbol/LLY",
+          "timestamp": "2026-10-28T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-28T21:34:45+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 531.01,
+            "source": "https://equibles.com/stocks/msft/price",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 242.11,
+            "source": "https://blockchain.news/stocks/crm",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 68.45,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1288.3,
+            "source": "https://equibles.com/stocks/lly/price",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "MSFT Equibles 'Close $531.01' (O 531.82, range 526.14-535.00, 'Volume \u00b7 Oct 28' 24.67M; header 551.89 is after-hours; Yahoo wrap 'from a $531.01 close' agrees); LLY Equibles 'Close $1,288.30' (O 1,268.55, range 1,260.34-1,299.43, 'Volume \u00b7 Oct 28' 2.04M, all different from Oct 27 values); XLE MarketBeat chart 'Closing price 04:10 PM Eastern' 68.45 +0.24 (+0.35%) from table's Oct 27 close 68.21, extended 68.67 'As of 05:23 PM' separate; CRM blockchain.news 'Close of October 28, 2026 \u00b7 NYSE' 242.11 +1.22 (+0.51%) from 240.89, snapshot retrieved 21:27 UTC (ChartExchange 242.40 at 3:59:59 PM EDT, prev 240.89, corroborator only; after-hours 228.00 separate). Rejected: MarketBeat MSFT/LLY/CRM ('As of' AM, tables end Oct 26), Equibles XLE ('Intraday \u00b7 Oct 28' 68.66) and CRM (Close 240.89 = Oct 27), Stocktwits CRM (pre-market 08:02 AM) and XLE (11:26 AM), Trade-Ideas XLE 68.51 (4:16 PM post-market last trade), StockAnalysis CRM (Oct 27 10:37 AM), INDmoney/Robinhood/Kraken/Investing.com/Yahoo AU/CNN/Morningstar CRM (stale or undated), blockchain.news MSFT (Oct 27), nemo.money XLE (undated). Day +0.33% (+$31.77) equals holdings moves, no trades."
+      }
     }
   ]
 }

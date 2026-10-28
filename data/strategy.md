@@ -1,51 +1,64 @@
 # Analyst guidance
 
-*Updated 2026-10-27 by the analyst, after day 9 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19 and Oct 20 did not execute; those days have valuation snapshots only.*
+*Updated 2026-10-28 by the analyst, after day 10 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19 and Oct 20 did not execute; those days have valuation snapshots only.*
 
 **Mandate:** maximize ROI % on a $10,000 paper portfolio. Aggressive is fine; reckless is not.
 
 ## Current playbook
-- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. Keep cash under 10% once fully invested, **except during the Oct 26-29 report-and-FOMC window**: cash is $1,498.85 (15.5%) and sits until confirmed post-report closes (Oct 29 or later).
+- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. Keep cash under 10% once fully invested, **except during the Oct 26-30 report-and-FOMC window**: cash is $1,498.85 (15.5%) and is deployed only on confirmed post-report closes. The one exception allowed on Oct 29 is the MSFT re-add below; every other buy waits for the Oct 30 close at the earliest.
 - Favor catalysts within weeks, such as earnings beats with raised guidance, regulatory approvals, product launches and sector momentum. Prefer names showing **relative strength on down days**, and treat **weakness on up days** as a warning.
 - Rotate only for a clearly better setup. A swap costs about $2 plus 0.2% of the amount. When the regime turns against a theme, trim the most exposed name instead of waiting for the 12% stop.
 - Exits:
   - Cut any holding that closes 12% below cost or whose thesis breaks. **A close below a written sell line is executed at that close, not deferred.**
   - Let winners run while momentum holds. Once a holding is up 15% or more, raise its mental stop to breakeven.
-  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) MSFT sell-all, (3) LLY trim to half, (4) anything else. The next one is sold at the following close if its condition still holds.
+  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) MSFT sell-all, (3) LLY trim to half, (4) anything else (including a CRM rotation). The next one is sold at the following close if its condition still holds.
 - Event risk:
-  - Don't open new positions on the day before a binary report (earnings, CPI, FOMC) unless the setup is exceptional. **No trades on Oct 28 except a sell forced by a 12% stop** (FOMC decision; MSFT and GOOGL report after the close; LLY reports Oct 29).
-  - Holding existing winners through their own earnings is fine. MSFT was cut to half (9.1% weight) on Oct 26; the rest is held through the report.
+  - Don't open new positions on the day before a binary report (earnings, CPI, FOMC) unless the setup is exceptional. **On Oct 29 the only buy allowed is the MSFT re-add** (its own report has passed). No new names, because AMZN reports after the Oct 29 close (call 5 p.m. ET).
+  - Holding existing winners through their own earnings is fine. LLY (30.3%) is held through its Oct 29 report under the lines below.
 - **Act on confirmed closes after a report, never on after-hours prints.**
-- **AI-capex regime: risk-off, two of three tests passed.** The Nasdaq made two consecutive higher closes (Oct 26 +0.82%, Oct 27 +1.18% to 26,477.81; SOX +3.6% on Oct 27). Still needed: confirmed post-report closes from MSFT/GOOGL (Oct 29) and AMZN (reports Oct 29, close Oct 30), plus a leader trigger. Fed: a hold is expected Oct 28, with attention on a hawkish December signal.
-- **Semis remain off limits** until a leader clears its trigger: NVDA above 228.52 (closed 217.94 Oct 27), TSM above 445 (about 437 late Oct 27, unconfirmed).
-- **Energy is the working hedge, and it costs on risk-on days.** Oct 27: XLE -2.05% to 68.21 as WTI settled about $99.90 and Brent $113.88 on de-escalation hopes. Energy cap: 35% of the book (XLE is 29.1%). Exxon and Chevron, XLE's largest holdings, report later this week. Re-justify the hedge after the Oct 29 closes: if the AI test passes, XLE is the funding source for a tech buy.
-- **Healthcare:** LLY flat at 1,281.91 (+0.07% vs cost). It reports Oct 29 (call 10 a.m. ET), so the Oct 29 close is its post-report close.
+- **AI-capex regime: risk-off, one leg passed, the report leg split.** The Nasdaq made three consecutive higher closes (Oct 26 +0.82%, Oct 27 +1.18%, Oct 28 +0.27% to 26,549.85; SOX +1.75% Oct 28). After hours on Oct 28, MSFT was about +4% on a beat with capex below estimates, and Alphabet about -8% on an EPS miss with negative free cash flow. Still needed: confirmed Oct 29 closes for MSFT/GOOGL, AMZN's first post-report close (Oct 30), and a leader trigger. Fed: held at 3.75-4.00% on Oct 28 (10-2; Cook and Hammack wanted a hike). Markets price a likely December hike, a headwind for long-duration tech.
+- **Semis remain off limits** until a leader clears its trigger: NVDA above 228.52 (closed 215.38 Oct 28) or TSM above 445 (closed 438.07 Oct 28).
+- **Energy is the working hedge.** XLE +0.35% to 68.45 on Oct 28. Per FinanceFeeds, Brent traded about $115 after a Houthi claim of a strike on Saudi Arabia's Ras Tanura refinery, which Saudi authorities had not confirmed. Energy cap: 35% of the book (XLE is 29.1%). Exxon and Chevron, XLE's largest holdings, report later this week. Re-justify the hedge after the Oct 30 close: if the AI test passes, XLE is the funding source for a tech buy.
+- **Healthcare:** LLY 1,288.30 (+0.6% vs cost). It reports Oct 29 (call 10 a.m. ET per Lilly's notice), so the Oct 29 close is its post-report close.
 
 ## Watchlist
 | Ticker | Why it's here | Trigger to act |
 |---|---|---|
-| MSFT (held, half) | 1.6605 sh, 531.33, -2.0% vs cost, 9.1% weight. Reports Oct 28 after the close (consensus about $4.27 EPS, $90.6B revenue, $45.9B capex incl. leases). | Hold through the report. Act on the **Oct 29 close**: sell the rest on a close below 476.95 or if the stock closes down more than 5% on the day (below about 504.76 if Oct 28 closes flat). Consider re-adding only on a confirmed higher close after the report. |
-| LLY (held) | 1,281.91, +0.1% vs cost, 30.3% weight. Reports Oct 29 morning; implied move about 6.6%. | Act on the **Oct 29 close**: below 1,127.32 sell all; below 1,200 trim to half; a raise plus a higher close keeps it whole. |
-| XLE (held) | 68.21, +0.5% vs avg cost 67.86. Fell 2.05% on Oct 27 with oil. | Hold. Sell on a close below 59.72 (12% stop) or a ceasefire-driven oil collapse (Brent below $100). First funding source if the AI test passes after Oct 29. |
-| CRM (held) | 240.89, +2.8% vs cost, 16.0% weight. Lagged two up days in a row (-0.39%, -2.71%); no news found to explain it. | Hold. A close below cost (234.31) on a day the Nasdaq rises makes it the first rotation candidate after Oct 29. Stop to breakeven once up 15% (269.46). |
-| GOOGL | Reports Oct 28 after the close (consensus $3.01 EPS, $127.8B revenue, $28.9B cloud). Oct 27: Oracle to deploy Google TPUs. | Candidate AI re-entry if it closes higher on Oct 29 after the report and the Nasdaq holds. Earliest buy Oct 29, from cash. |
-| XLV / UNH | Defensive healthcare alternative. | Destination for cash only after FOMC, and only if it shows relative strength. |
-| NVDA / TSM | Chips led two days of gains (SOX +3.6% Oct 27). | NVDA close above 228.52 or TSM above 445, plus confirmed post-report closes from MSFT/GOOGL. Earliest buy: Oct 29. |
-| VLO (sold Oct 23) | Sold 419.28; fell 9.24% to 387.34 on Oct 27 as refiners slumped. | Don't rebuy. |
-| META (sold Oct 22) | Sold 648.85; 620.19 on Oct 27. | Do not rebuy until it reclaims 700 and the capex scare fades. |
+| MSFT (held, half) | 1.6605 sh, 531.01, -2.0% vs cost, 9.1% weight. Reported Oct 28: EPS $4.89 vs $4.73, revenue $92.28B vs $90.63B, Azure +48%, capex about $39.4B vs $45.9B expected. About +4% after hours. | Act on the **Oct 29 close**. **Sell the rest** on a close below 476.95 (stop) or below 504.46 (down more than 5% from 531.01). **Re-add** about $880 from cash, back to about 18% weight, on a close at or above 541.63 (+2%) **and** a higher Nasdaq close. Between 504.46 and 541.63, hold. |
+| LLY (held) | 1,288.30, +0.6% vs cost, 30.3% weight. Reports Oct 29 (call 10 a.m. ET). | Act on the **Oct 29 close**: below 1,127.32 sell all (12% stop, priority 1); below 1,200 trim to half (priority 3); a raise plus a higher close keeps it whole. |
+| XLE (held) | 68.45, +0.9% vs avg cost 67.86. | Hold. Sell on a close below 59.72 (12% stop) or a ceasefire-driven oil collapse (Brent below $100). First funding source if the AI test passes (Oct 30 or later). |
+| CRM (held) | 242.11, +3.3% vs cost, 16.0% weight. Matched the tape on Oct 28 (+0.51%), then traded about -6% after hours (about 227); no dated source explains it. | No action on the after-hours print. Sell all on a close below 206.19 (stop). An **Oct 29 close below cost (234.31)**, whatever the Nasdaq does, makes it the first rotation and funding candidate; sell on Oct 30 (priority 4) if it is still below cost and a better setup is ready. Stop to breakeven once up 15% (269.46). |
+| GOOGL | Reported Oct 28: EPS $2.12 vs about $3.00 (an $8.7B equity loss), revenue $127.6B vs about $128B, Cloud +103% to $30.7B, capex $51.4B, free cash flow -$9.1B. About -8% after hours (GOOG closed 321.89). | Not a buy on Oct 29. Earliest buy Oct 30, and only if it closes above its Oct 28 close on Oct 29 and again on Oct 30 after AMZN. |
+| AMZN | Reports Oct 29 after the close (call 5 p.m. ET). | Read-through for the AI test. Its first confirmed post-report close is Oct 30. |
+| XLV / UNH | Defensive healthcare alternative. | Only if it shows relative strength; earliest buy Oct 30 (after LLY's report). It would add to healthcare beside LLY (30%). |
+| NVDA / TSM | SOX +1.75% Oct 28, but NVDA fell 1.18%. | NVDA close above 228.52 or TSM above 445, plus a passed AI test (Oct 30 close at the earliest). |
+| VLO (sold Oct 23) | Sold 419.28; 387.34 on Oct 27 (not re-checked Oct 28). | Don't rebuy. |
+| META (sold Oct 22) | Sold 648.85; 620.19 on Oct 27 (not re-checked Oct 28). | Do not rebuy until it reclaims 700 and the capex scare fades. |
 
-## Instructions for the next run (Wednesday 2026-10-28)
-1. **No buys and no discretionary sells.** FOMC decides at 2 p.m.; MSFT and GOOGL report after the close.
-2. **Sell only if a 12% stop fires on the Oct 28 close:** MSFT 476.95, LLY 1,127.32, XLE 59.72, CRM 206.19.
-3. Record the FOMC outcome (rate, statement tone, press-conference headline) from dated Oct 28 sources. Note MSFT and GOOGL after-hours reactions for context only; **do not trade on them**.
-4. Check the Nasdaq (a third higher close would strengthen the AI test, but the binding test is Oct 29), NVDA vs 228.52 and TSM vs 445 on confirmed closes.
-5. Marks: try the StockAnalysis history or quote page first, but use it only when the header reads "At close: Oct 28, 2026, 4:00 PM EDT". On Oct 27 every StockAnalysis page was a stale morning snapshot. Fallbacks that worked: WallStreetNumbers ("<date>, session closed" regular-hours price), Stocktwits ("Closed $X", after-hours shown separately), Equibles "Close" stat with a same-day volume date, MarketScreener ETF header "market closed, 04:00:00 pm EDT <date>", ChartExchange (the 3:59:56 PM print is a corroborator only). Reject "As of", "03:59 PM", "Intraday" and Trade-Ideas post-market "Market Closed" last trades. Use two non-identical sites for every mark.
-6. News claims: cite sources dated Oct 28 and don't attribute a move to news unless a source says so.
+## Instructions for the next run (Thursday 2026-10-29)
+1. **Sells, in priority order, on the Oct 29 close (only one per day):**
+   1. Any 12% stop: MSFT 476.95, LLY 1,127.32, XLE 59.72, CRM 206.19.
+   2. MSFT sell-all on a close below 504.46.
+   3. LLY trim to half on a close below 1,200.
+   4. Anything else. A CRM close below cost is not sold on Oct 29; it is queued for Oct 30.
+   
+   Any rule that fires but isn't executed because of the one-sell limit is carried to the Oct 30 close if its condition still holds.
+2. **One possible buy: the MSFT re-add.** About $880 from cash, only if MSFT closes at or above 541.63 **and** the Nasdaq closes higher. No other buys (GOOGL, NVDA/TSM, XLV/UNH, new names) until the Oct 30 close.
+3. Record LLY's results (EPS/revenue vs consensus, guidance) from dated Oct 29 sources, plus MSFT's and GOOGL's confirmed closes against their after-hours moves. Note AMZN's after-hours reaction for context only; **do not trade on it**.
+4. Check NVDA vs 228.52 and TSM vs 445 on confirmed closes, and the Nasdaq.
+5. Marks: StockAnalysis has been stale three runs in a row. Try it, but use it only when the header reads "At close: Oct 29, 2026, 4:00 PM EDT". WallStreetNumbers was also stale on Oct 28 (showed Oct 27).
+   - Fallbacks that worked on Oct 28: Stocktwits ("Closed $X", updated after 4:30 PM; after-hours shown separately), Equibles "Close" stat with a same-day volume date, MarketScreener header "Market Closed - NYSE 04:00:00 <date> pm EDT" (or the +04 UAE equivalent, 00:00:0x the next day), MarketBeat chart page "Closing price 04:10 PM Eastern" when its change matches the prior close, and Trade-Ideas "previous close of $X" on a same-evening post-market page.
+   - ChartExchange's 3:59:59 PM print is a corroborator only.
+   - Reject "As of", "03:59 PM", "Intraday" and Trade-Ideas post-market last trades.
+   - Use two non-identical sites for every mark.
+6. News claims: cite sources dated Oct 29 and don't attribute a move to news unless a source says so; don't quote anyone unless the quote is in a cited source.
 7. Write marks for every holding even with no trade.
 
 Stops (12% below cost): MSFT 476.95, CRM 206.19, LLY 1,127.32, XLE 59.72.
 
 ## Lessons so far
+- (2026-10-28) The market is paying for cash discipline, not AI growth alone. On the same evening, MSFT (beat, capex below estimate) rose about 4% after hours, while Alphabet (Cloud +103% but an EPS miss and -$9.1B free cash flow) fell about 8%. Judge AI names on how capex is funded, not only on cloud growth.
+- (2026-10-28) A quiet holding can gap on no news. CRM matched the tape in the regular session and then traded about 6% lower after hours with no dated explanation. Size and stops have to allow for gaps, and the after-hours print is still not a trade signal.
 - (2026-10-27) The hedge costs on risk-on days. With the Nasdaq up 1.18%, XLE (-2.05%) and CRM (-2.71%) took the book down 1.00%; over Oct 26-27 the book is -0.57% against the S&P's +1.30%. A hedge is worth holding through a binary week, but it has to be re-justified once the binary passes.
 - (2026-10-27) Exits on the AI-capex scare held up: META is 4.4% below its Oct 22 sale and VLO 7.6% below its Oct 23 sale, even on a strong tech day.
 - (2026-10-27) Primary quote sources can go stale after the close. Keep a written list of fallback sites and their close labels so a run can still mark on two dated sources.

@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "starting_cash": 10000.0,
   "cash": 1498.85,
-  "holdings_value": 8166.52,
-  "total_value": 9665.37,
-  "return_pct": -3.35,
+  "holdings_value": 8198.29,
+  "total_value": 9697.14,
+  "return_pct": -3.03,
   "realized_pl": -375.3,
   "fees_paid": 31.95,
   "trade_count": 12,
@@ -14,40 +14,40 @@
       "shares": 6.4017,
       "cost_basis": 1499.98,
       "avg_cost": 234.3096,
-      "last_price": 240.89,
-      "market_value": 1542.11,
-      "unrealized_pl": 42.13,
-      "unrealized_pl_pct": 2.81
+      "last_price": 242.11,
+      "market_value": 1549.92,
+      "unrealized_pl": 49.94,
+      "unrealized_pl_pct": 3.33
     },
     {
       "ticker": "LLY",
       "shares": 2.284,
       "cost_basis": 2925.9,
       "avg_cost": 1281.042,
-      "last_price": 1281.91,
-      "market_value": 2927.88,
-      "unrealized_pl": 1.98,
-      "unrealized_pl_pct": 0.07
+      "last_price": 1288.3,
+      "market_value": 2942.48,
+      "unrealized_pl": 16.58,
+      "unrealized_pl_pct": 0.57
     },
     {
       "ticker": "MSFT",
       "shares": 1.6605,
       "cost_basis": 899.98,
       "avg_cost": 541.9934,
-      "last_price": 531.33,
-      "market_value": 882.27,
-      "unrealized_pl": -17.71,
-      "unrealized_pl_pct": -1.97
+      "last_price": 531.01,
+      "market_value": 881.74,
+      "unrealized_pl": -18.24,
+      "unrealized_pl_pct": -2.03
     },
     {
       "ticker": "XLE",
       "shares": 41.2587,
       "cost_basis": 2799.99,
       "avg_cost": 67.8642,
-      "last_price": 68.21,
-      "market_value": 2814.26,
-      "unrealized_pl": 14.27,
-      "unrealized_pl_pct": 0.51
+      "last_price": 68.45,
+      "market_value": 2824.16,
+      "unrealized_pl": 24.17,
+      "unrealized_pl_pct": 0.86
     }
   ]
 }
