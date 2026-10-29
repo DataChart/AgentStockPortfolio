@@ -922,6 +922,66 @@
         },
         "notes": "MSFT Equibles 'Close $531.01' (O 531.82, range 526.14-535.00, 'Volume \u00b7 Oct 28' 24.67M; header 551.89 is after-hours; Yahoo wrap 'from a $531.01 close' agrees); LLY Equibles 'Close $1,288.30' (O 1,268.55, range 1,260.34-1,299.43, 'Volume \u00b7 Oct 28' 2.04M, all different from Oct 27 values); XLE MarketBeat chart 'Closing price 04:10 PM Eastern' 68.45 +0.24 (+0.35%) from table's Oct 27 close 68.21, extended 68.67 'As of 05:23 PM' separate; CRM blockchain.news 'Close of October 28, 2026 \u00b7 NYSE' 242.11 +1.22 (+0.51%) from 240.89, snapshot retrieved 21:27 UTC (ChartExchange 242.40 at 3:59:59 PM EDT, prev 240.89, corroborator only; after-hours 228.00 separate). Rejected: MarketBeat MSFT/LLY/CRM ('As of' AM, tables end Oct 26), Equibles XLE ('Intraday \u00b7 Oct 28' 68.66) and CRM (Close 240.89 = Oct 27), Stocktwits CRM (pre-market 08:02 AM) and XLE (11:26 AM), Trade-Ideas XLE 68.51 (4:16 PM post-market last trade), StockAnalysis CRM (Oct 27 10:37 AM), INDmoney/Robinhood/Kraken/Investing.com/Yahoo AU/CNN/Morningstar CRM (stale or undated), blockchain.news MSFT (Oct 27), nemo.money XLE (undated). Day +0.33% (+$31.77) equals holdings moves, no trades."
       }
+    },
+    {
+      "date": "2026-10-29",
+      "cash": 1498.85,
+      "holdings_value": 8330.87,
+      "total_value": 9829.72,
+      "return_pct": -1.7,
+      "prices": {
+        "MSFT": {
+          "price": 530.14,
+          "source": "https://blockchain.news/stocks/msft",
+          "timestamp": "2026-10-29T20:00:00Z",
+          "shares": 1.6605
+        },
+        "CRM": {
+          "price": 230.9,
+          "source": "https://ae.marketscreener.com/quote/stock/SALESFORCE-INC-12180/",
+          "timestamp": "2026-10-29T20:00:00Z",
+          "shares": 6.4017
+        },
+        "XLE": {
+          "price": 68.71,
+          "source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+          "timestamp": "2026-10-29T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1373.7,
+          "source": "https://equibles.com/stocks/lly/price",
+          "timestamp": "2026-10-29T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-29T21:36:16+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 530.14,
+            "source": "https://equibles.com/stocks/msft/price",
+            "diff_pct": 0.0
+          },
+          "CRM": {
+            "price": 230.9,
+            "source": "https://stockevents.app/cn/stock/CRM",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 68.71,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1373.7,
+            "source": "https://stockevents.app/cn/stock/LLY",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "MSFT Equibles 'Close $530.14' (O 540.22, range 519.56-541.29, 'Volume \u00b7 Oct 29' 39.23M; header 526.79 is after hours). LLY Stock Events $1,373.70 +$85.40 (+6.63%) 'today 20:03', the change from the 1,288.30 Oct 28 close; after hours +0.15% at 21:13 separate; StockTitan last trade 1,373.48 at the 4 PM bell (0.02%). XLE MarketBeat chart 'Closing price 04:10 PM Eastern' 68.71 +0.26 (+0.38%) from the table's Oct 28 close 68.45; extended 69.03 'As of 05:25 PM' separate. CRM Stock Events $230.90 -$11.21 (-4.63%) '20:00 today', the change from the 242.11 Oct 28 close; after hours -0.81% at 21:12 separate; TradingKey (Oct 29 4:15 PM) -4.46% (~231.31, 0.18%). Rejected: Blockchain.News CRM (still Oct 28 close 242.11), Blockchain.News LLY/XLE (unreadable), StockAnalysis LLY (stale 821.19) and CRM (Oct 26), TipRanks LLY history (ends Oct 27), 24/7 Wall St AMZN 3:00 PM intraday. Day +1.37% (+$132.58: LLY +195.05, XLE +10.73, MSFT -1.44, CRM -71.76) equals holdings moves, no trades."
+      }
     }
   ]
 }
