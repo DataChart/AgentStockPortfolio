@@ -982,6 +982,55 @@
         },
         "notes": "MSFT Equibles 'Close $530.14' (O 540.22, range 519.56-541.29, 'Volume \u00b7 Oct 29' 39.23M; header 526.79 is after hours). LLY Stock Events $1,373.70 +$85.40 (+6.63%) 'today 20:03', the change from the 1,288.30 Oct 28 close; after hours +0.15% at 21:13 separate; StockTitan last trade 1,373.48 at the 4 PM bell (0.02%). XLE MarketBeat chart 'Closing price 04:10 PM Eastern' 68.71 +0.26 (+0.38%) from the table's Oct 28 close 68.45; extended 69.03 'As of 05:25 PM' separate. CRM Stock Events $230.90 -$11.21 (-4.63%) '20:00 today', the change from the 242.11 Oct 28 close; after hours -0.81% at 21:12 separate; TradingKey (Oct 29 4:15 PM) -4.46% (~231.31, 0.18%). Rejected: Blockchain.News CRM (still Oct 28 close 242.11), Blockchain.News LLY/XLE (unreadable), StockAnalysis LLY (stale 821.19) and CRM (Oct 26), TipRanks LLY history (ends Oct 27), 24/7 Wall St AMZN 3:00 PM intraday. Day +1.37% (+$132.58: LLY +195.05, XLE +10.73, MSFT -1.44, CRM -71.76) equals holdings moves, no trades."
       }
+    },
+    {
+      "date": "2026-10-30",
+      "cash": 2963.46,
+      "holdings_value": 6993.23,
+      "total_value": 9956.69,
+      "return_pct": -0.43,
+      "prices": {
+        "MSFT": {
+          "price": 521.91,
+          "source": "https://equibles.com/stocks/msft/price",
+          "timestamp": "2026-10-30T20:00:00Z",
+          "shares": 1.6605
+        },
+        "XLE": {
+          "price": 70.02,
+          "source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+          "timestamp": "2026-10-30T20:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1417.54,
+          "source": "https://equibles.com/stocks/lly/price",
+          "timestamp": "2026-10-30T20:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-30T21:40:37+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 521.91,
+            "source": "https://247wallst.com/investing/2026/10/30/microsoft-showed-me-what-i-needed-to-know-to-do-what-i-was-going-to-do-anyway/",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 70.02,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1417.54,
+            "source": "https://stocktwits.com/symbol/LLY",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "MSFT 521.91: 24/7 Wall St (Oct 30) Companies Mentioned widget $521.91 -1.55% (= change from 530.14), same widget AMZN $240.35 -1.41% matching AMZN's confirmed close; MarketBeat alert (modified 21:00 UTC) 521.91 with low 514.35 and prior close 530.14; MarketAlleys sidebar 521.91 -1.55%; INDmoney 522.06 at 3:59 PM (corroborator, 0.03%). No independent site with an explicit 4:00 PM label was found (Yahoo, StockAnalysis, MarketBeat chart, Stocktwits, Stockscan, Investing, Nasdaq, MarketScreener www stale; TwelveData 3:56 PM 520.58, Stock Events 3:08 PM 519.66, TradingView 523.46 undated, Robinhood 522.34 undated rejected). XLE 70.02: MarketBeat chart 'Closing price 04:10 PM Eastern' +1.31 (+1.91%) from 68.71 Oct 29 table row. LLY 1417.54: Stocktwits 'Closed $1,417.54', 'Updated 05:15 PM EDT', after hours 1,414.79 separate; +43.84 (+3.19%) from 1,373.70 (Stock Events LLY stale). Day +$126.97 (+1.29%) reconciles to holdings moves and the CRM sale fees."
+      }
     }
   ]
 }

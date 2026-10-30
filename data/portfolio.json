@@ -1,53 +1,43 @@
 {
-  "as_of": "2026-10-29",
+  "as_of": "2026-10-30",
   "starting_cash": 10000.0,
-  "cash": 1498.85,
-  "holdings_value": 8330.87,
-  "total_value": 9829.72,
-  "return_pct": -1.7,
-  "realized_pl": -375.3,
-  "fees_paid": 31.95,
-  "trade_count": 12,
+  "cash": 2963.46,
+  "holdings_value": 6993.23,
+  "total_value": 9956.69,
+  "return_pct": -0.43,
+  "realized_pl": -410.67,
+  "fees_paid": 34.42,
+  "trade_count": 13,
   "positions": [
-    {
-      "ticker": "CRM",
-      "shares": 6.4017,
-      "cost_basis": 1499.98,
-      "avg_cost": 234.3096,
-      "last_price": 230.9,
-      "market_value": 1478.15,
-      "unrealized_pl": -21.83,
-      "unrealized_pl_pct": -1.46
-    },
     {
       "ticker": "LLY",
       "shares": 2.284,
       "cost_basis": 2925.9,
       "avg_cost": 1281.042,
-      "last_price": 1373.7,
-      "market_value": 3137.53,
-      "unrealized_pl": 211.63,
-      "unrealized_pl_pct": 7.23
+      "last_price": 1417.54,
+      "market_value": 3237.66,
+      "unrealized_pl": 311.76,
+      "unrealized_pl_pct": 10.66
     },
     {
       "ticker": "MSFT",
       "shares": 1.6605,
       "cost_basis": 899.98,
       "avg_cost": 541.9934,
-      "last_price": 530.14,
-      "market_value": 880.3,
-      "unrealized_pl": -19.68,
-      "unrealized_pl_pct": -2.19
+      "last_price": 521.91,
+      "market_value": 866.63,
+      "unrealized_pl": -33.35,
+      "unrealized_pl_pct": -3.71
     },
     {
       "ticker": "XLE",
       "shares": 41.2587,
       "cost_basis": 2799.99,
       "avg_cost": 67.8642,
-      "last_price": 68.71,
-      "market_value": 2834.89,
-      "unrealized_pl": 34.9,
-      "unrealized_pl_pct": 1.25
+      "last_price": 70.02,
+      "market_value": 2888.93,
+      "unrealized_pl": 88.94,
+      "unrealized_pl_pct": 3.18
     }
   ]
 }

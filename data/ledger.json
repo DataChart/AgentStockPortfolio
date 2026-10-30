@@ -423,6 +423,42 @@
         ],
         "notes": "Equibles MSFT 'Close $532.60', O 527.40, range 521.69-533.25, volume dated Oct 26 (18.16M). Corroborated by Stocktwits 'Closed $532.60' (updated 4:31 PM EDT, after-hours shown separately) and MarketBeat 'Closing price 04:00 PM Eastern' $532.60. Rejected Trade-Ideas (9:40 AM intraday), Yahoo/WallStreetNumbers (stale, Oct 22/23)."
       }
+    },
+    {
+      "id": "T0013",
+      "date": "2026-10-30",
+      "action": "SELL",
+      "ticker": "CRM",
+      "shares": 6.4017,
+      "quote_price": 229.17,
+      "price_source": "https://ae.marketscreener.com/quote/stock/SALESFORCE-INC-12180/",
+      "price_timestamp": "2026-10-30T20:00:00Z",
+      "exec_price": 228.9408,
+      "gross": 1465.61,
+      "commission": 1.0,
+      "slippage_cost": 1.47,
+      "cash_delta": 1464.61,
+      "cash_after": 2963.46,
+      "rationale": "Salesforce makes cloud software for sales and customer service teams. We said we would sell the whole position if it closed below our 234.31 cost on Oct 30, after a broad enterprise-software selloff on Oct 29 took away its relative strength. It closed at 229.17, so we sold at the close as written. The cash waits for a qualifying setup, and we would revisit Salesforce only if it regains its strength.",
+      "prev_hash": "ac0674240679ee48085002af5482ddf71e4428eb59b84bca7cfa7a90e6597bf0",
+      "realized_pl": -35.37,
+      "hash": "f1a752245f9b3fd2ff8bd45bfca739b57f9ea2d148d097c34967892ef07a0319",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-10-30T21:40:37+00:00",
+        "verified_price": 229.17,
+        "verified_source": "https://stocktwits.com/symbol/CRM",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Stocktwits CRM 'Closed $229.17', change $1.73 (0.75%) = 230.90 Oct 29 close minus 229.17, 'Updated 04:05 PM EDT'; after-hours $228.12 shown separately. Equibles 'Volume \u00b7 Oct 30' range 225.04-233.97 contains it (header 228.89 after hours; Close stat 230.90 not rolled). Rejected: Stock Events CRM (still Oct 29, 230.90), MarketBeat CRM chart (10:52 AM, table ends Oct 26), MarketBeat CRM alert (mid-day 228.56), massive.com (11:34 AM), Robinhood (no time), Digrin/Investing/Yahoo AU/Fool/Google (stale). Sell rule check: 229.17 < 234.31 cost, priority 3, no higher rule fired; fill/fees/cash/realized -35.37 recomputed."
+      }
     }
   ]
 }
