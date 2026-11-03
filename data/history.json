@@ -1031,6 +1031,55 @@
         },
         "notes": "MSFT 521.91: 24/7 Wall St (Oct 30) Companies Mentioned widget $521.91 -1.55% (= change from 530.14), same widget AMZN $240.35 -1.41% matching AMZN's confirmed close; MarketBeat alert (modified 21:00 UTC) 521.91 with low 514.35 and prior close 530.14; MarketAlleys sidebar 521.91 -1.55%; INDmoney 522.06 at 3:59 PM (corroborator, 0.03%). No independent site with an explicit 4:00 PM label was found (Yahoo, StockAnalysis, MarketBeat chart, Stocktwits, Stockscan, Investing, Nasdaq, MarketScreener www stale; TwelveData 3:56 PM 520.58, Stock Events 3:08 PM 519.66, TradingView 523.46 undated, Robinhood 522.34 undated rejected). XLE 70.02: MarketBeat chart 'Closing price 04:10 PM Eastern' +1.31 (+1.91%) from 68.71 Oct 29 table row. LLY 1417.54: Stocktwits 'Closed $1,417.54', 'Updated 05:15 PM EDT', after hours 1,414.79 separate; +43.84 (+3.19%) from 1,373.70 (Stock Events LLY stale). Day +$126.97 (+1.29%) reconciles to holdings moves and the CRM sale fees."
       }
+    },
+    {
+      "date": "2026-11-02",
+      "cash": 2963.46,
+      "holdings_value": 6839.42,
+      "total_value": 9802.88,
+      "return_pct": -1.97,
+      "prices": {
+        "MSFT": {
+          "price": 507.12,
+          "source": "https://equibles.com/stocks/msft/price",
+          "timestamp": "2026-11-02T21:00:00Z",
+          "shares": 1.6605
+        },
+        "XLE": {
+          "price": 67.25,
+          "source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+          "timestamp": "2026-11-02T21:00:00Z",
+          "shares": 41.2587
+        },
+        "LLY": {
+          "price": 1410.99,
+          "source": "https://equibles.com/stocks/lly",
+          "timestamp": "2026-11-02T21:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-03T00:17:24+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 507.12,
+            "source": "https://247wallst.com/investing/2026/11/02/microsoft-beat-again-its-stock-is-still-lower-than-a-year-ago/",
+            "diff_pct": 0.0
+          },
+          "XLE": {
+            "price": 67.25,
+            "source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1410.99,
+            "source": "https://chartrow.com/quote/lly",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY 1410.99: ChartRow '$1,410.99 -0.46%, as of close, Nov 2, 2026' (= -6.55 from the 1,417.54 Oct 30 close); Stock Events $1,410.99 -$6.55 (-0.46%) '21:03 today' agrees; ChartExchange 'At Close' 1,411.75 at 3:59:58 PM EST is a last-print corroborator only (0.05%); Equibles Close stat 1,410.99 with 'Volume \u00b7 Nov 2' and rolled open/range. MSFT 507.12: 24/7 Wall St. Nov 2 'Companies Mentioned' widget $507.12 -2.83% (= -14.79 from 521.91), same widget AMZN $245.63 +2.20% matching StockTitan's CNBC close summary; no time label. XLE 67.25: MarketBeat chart 'Closing price 04:10 PM Eastern' $67.25 -2.77 (-3.96%), table row 11/02/2026 67.25 after 10/30 70.02; extended 67.48 at 7:16 PM separate. Day -$153.81 (-1.54%) reconciles to holdings moves; no trades."
+      }
     }
   ]
 }
