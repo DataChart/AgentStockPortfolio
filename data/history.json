@@ -1129,6 +1129,44 @@
         },
         "notes": "LLY 1409.38: Equibles Close stat $1,409.38 with 'Volume \u00b7 Nov 3', open 1,399.63 and range 1,393.47-1,437.00 rolled over from Nov 2 (1,393.15; 1,382.02-1,421.99), seen ~6:45 PM ET after it was stale at 5:40 and 6:10 PM; header $1,407.16 is after hours. ChartExchange 'At Close' 1,409.39 at 3:59:58 PM (pre-auction corroborator); Fool key data Prev Close 1,409.38 with the same open/range (corroborator). MSFT 520.99: Stock Events en $520.99 +13.87 (+2.74%) '21:00 Today', change ties to 507.12; after hours shown separately; ChartExchange 520.81 at 3:59:58 PM corroborates. XLE 66.68: MarketBeat chart 'Closing price 04:10 PM Eastern' $66.68 -0.57 (-0.85%), change ties to its 11/02 row 67.25; extended 66.61 at 5:25 PM separate. Day -$4.16 reconciles to holdings moves; no trades."
       }
+    },
+    {
+      "date": "2026-11-04",
+      "cash": 4700.6,
+      "holdings_value": 5039.7,
+      "total_value": 9740.3,
+      "return_pct": -2.6,
+      "prices": {
+        "MSFT": {
+          "price": 555.8,
+          "source": "https://equibles.com/stocks/msft/price",
+          "timestamp": "2026-11-04T21:00:00Z",
+          "shares": 3.2404
+        },
+        "LLY": {
+          "price": 1417.99,
+          "source": "https://stockevents.app/cn/stock/LLY",
+          "timestamp": "2026-11-04T21:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T01:54:06+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 555.8,
+            "source": "https://stockevents.app/en/stock/MSFT",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1417.99,
+            "source": "https://equibles.com/stocks/lly/price",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY 1,417.99 on Equibles: 'At close \u00b7 Nov 4' header, Close stat rolled over (open 1,440.00, range 1,401.59-1,445.96, Volume Nov 4 3.66M), rechecked ~8:55 PM ET. MSFT 555.80 on Stock Events en: +34.81 (+6.68%) '21:00 Today', ties to 520.99 Nov 3 close. Both 0.00% diff."
+      }
     }
   ]
 }

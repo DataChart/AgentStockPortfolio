@@ -459,6 +459,77 @@
         ],
         "notes": "Stocktwits CRM 'Closed $229.17', change $1.73 (0.75%) = 230.90 Oct 29 close minus 229.17, 'Updated 04:05 PM EDT'; after-hours $228.12 shown separately. Equibles 'Volume \u00b7 Oct 30' range 225.04-233.97 contains it (header 228.89 after hours; Close stat 230.90 not rolled). Rejected: Stock Events CRM (still Oct 29, 230.90), MarketBeat CRM chart (10:52 AM, table ends Oct 26), MarketBeat CRM alert (mid-day 228.56), massive.com (11:34 AM), Robinhood (no time), Digrin/Investing/Yahoo AU/Fool/Google (stale). Sell rule check: 229.17 < 234.31 cost, priority 3, no higher rule fired; fill/fees/cash/realized -35.37 recomputed."
       }
+    },
+    {
+      "id": "T0014",
+      "date": "2026-11-04",
+      "action": "SELL",
+      "ticker": "XLE",
+      "shares": 41.2587,
+      "quote_price": 63.52,
+      "price_source": "https://www.marketscreener.com/quote/etf/ENERGY-SELECT-SECTOR-SPDR-29424453/quotes/",
+      "price_timestamp": "2026-11-04T21:00:00Z",
+      "exec_price": 63.4565,
+      "gross": 2618.13,
+      "commission": 1.0,
+      "slippage_cost": 2.62,
+      "cash_delta": 2617.13,
+      "cash_after": 5580.59,
+      "rationale": "We held the Energy Select Sector SPDR fund as a hedge against a Middle East oil shock. After Democrats won Congress in the midterms, Brent crude settled at $94.62 (down 8.7%) on bets of an earlier end to the US-Israeli war with Iran, and the fund fell 4.74% to 63.52. Both of our written exits fired (a close below 65.50 and a Brent settlement below $100), so we sold the whole position at the close. We would revisit energy only on a new supply shock with the fund regaining strength.",
+      "prev_hash": "f1a752245f9b3fd2ff8bd45bfca739b57f9ea2d148d097c34967892ef07a0319",
+      "realized_pl": -182.86,
+      "hash": "f25ce9e688c3cb3e8daea379b2e53eb7ef99cdbb93c515e72c23c7679f8246e2",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-04T22:36:38+00:00",
+        "verified_price": 63.52,
+        "verified_source": "https://www.marketbeat.com/stocks/NYSEARCA/xle/chart",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "MarketBeat XLE chart 'Closing price 04:10 PM Eastern' $63.52, -3.16 (-4.74%); change ties to its 11/03 row 66.68; extended $63.45 'As of 05:23 PM' shown separately. Diff 0.00% vs MarketScreener. Sell rule check: 63.52 < 65.50 and Brent settled $94.62 (-8.98, -8.7%) per Reuters via AsiaOne Nov 4; priority 4, no higher rule fired (stops 476.95/1,127.32/59.72; MSFT > 504.46; LLY > 1,288.30). Fill 63.4565, gross 2,618.13, slippage 2.62, fee 1.00, proceeds 2,617.13, realized -182.86 vs cost 2,799.99 recomputed."
+      }
+    },
+    {
+      "id": "T0015",
+      "date": "2026-11-04",
+      "action": "BUY",
+      "ticker": "MSFT",
+      "shares": 1.5799,
+      "quote_price": 555.8,
+      "price_source": "https://equibles.com/stocks/msft/price",
+      "price_timestamp": "2026-11-04T21:00:00Z",
+      "exec_price": 556.3558,
+      "gross": 878.99,
+      "commission": 1.0,
+      "slippage_cost": 0.88,
+      "cash_delta": -879.99,
+      "cash_after": 4700.6,
+      "rationale": "Microsoft, the cloud and software company, is our existing half position, which we planned to rebuild only once AI stocks recovered. That test passed on Nov 4: the Nasdaq closed higher for a second day (25,736.51) and Amazon closed at 266.03, well above our 243.79 line, while Microsoft rose 6.68% to 555.80, above the 541.63 re-add line. We are adding about $880 at the close. We would sell the whole position on a close below 504.46.",
+      "prev_hash": "f25ce9e688c3cb3e8daea379b2e53eb7ef99cdbb93c515e72c23c7679f8246e2",
+      "hash": "b1dd4aa44f65405525f92550bfe5529c642f6bbb584ef3471cef20c1cc26d36b",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-04T22:36:38+00:00",
+        "verified_price": 555.8,
+        "verified_source": "https://stockevents.app/en/stock/MSFT",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Stock Events MSFT (en) $555.80, +$34.81 (+6.68%), '21:00 Today'; +34.81 ties to the 520.99 Nov 3 close; after hours (-$0.26 at 21:31) shown separately. Diff 0.00% vs Equibles. Re-add conditions on confirmed closes: Nasdaq 25,736.51 (+364.50 from 25,372.01; TheStreet 4:02 PM wrap and AP via ad-hoc-news); AMZN 266.03 > 243.79 (Motley Fool 'As of 4:00 PM ET 11/04/26', +15.34); MSFT 555.80 >= 541.63. Size $880 incl. fee as written: 879/556.3558 = 1.5799 sh, gross 878.99, slippage 0.88; new avg 549.31, 18.5% of value, under 35%."
+      }
     }
   ]
 }
