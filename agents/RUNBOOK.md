@@ -22,17 +22,18 @@ and writes the "Analyst review" section of `data/journal/TODAY.md`.
 Reads `data/strategy.md`, searches the web, and decides on **at most one buy and at most
 one sell** for `TODAY`, recorded with `scripts/portfolio.py buy|sell`. Doing nothing is
 allowed. Then it records today's closing prices for every holding with
-`scripts/portfolio.py mark`, and writes the "Research" section of the journal.
+`scripts/portfolio.py mark`, records the S&P 500 close for the dashboard's comparison line
+with `scripts/portfolio.py benchmark`, and writes the "Research" section of the journal.
 
 ## 3. Fact-check agent (`agents/fact_checker.md`)
 Launch as a separate subagent. It runs the audit, independently re-verifies every
 price recorded today from a **different** source, and clears each item with
-`scripts/factcheck.py clear-trade` / `clear-snapshot`. It writes the "Fact check"
+`scripts/factcheck.py clear-trade` / `clear-snapshot` / `clear-benchmark`. It writes the "Fact check"
 section of the journal.
 
 If any price can't be verified within tolerance, the trade is not published: run
 `git checkout -- data/` to discard today's uncommitted changes, then redo step 2 with
-corrected prices (or no trade). Never edit `data/ledger.json` or `data/history.json` by
+corrected prices (or no trade). Never edit `data/ledger.json`, `data/history.json` or `data/benchmark.json` by
 hand, and never rewrite history that is already on `main`. If a mistake is found in an
 already-published entry, use `scripts/factcheck.py flag` so it shows as failed on the
 dashboard, and explain it in the journal.

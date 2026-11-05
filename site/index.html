@@ -33,10 +33,11 @@
           <button data-range="all" class="on">All</button>
         </div>
       </div>
-      <div id="chart" class="chart" role="img" aria-label="Line chart of total portfolio value over time"></div>
-      <p class="legend-note"><span class="key key-line"></span> Total value (cash + holdings at close)
-        <span class="key key-base"></span> Starting balance
-        <span class="key key-buy">▲</span> Buy <span class="key key-sell">▼</span> Sell</p>
+      <div id="chart" class="chart" role="img" aria-label="Line chart of total portfolio value over time, compared with the S&amp;P 500"></div>
+      <p class="legend-note"><span class="lg"><span class="key key-line"></span> Total value (cash + holdings at close)</span>
+        <span class="lg"><span class="key key-bench"></span> S&amp;P 500, scaled to the same $10,000 start</span>
+        <span class="lg"><span class="key key-base"></span> Starting balance</span>
+        <span class="lg"><span class="key key-buy">▲</span> Buy</span> <span class="lg"><span class="key key-sell">▼</span> Sell</span></p>
       <details class="table-view">
         <summary>Show daily values as a table</summary>
         <div class="scroll"><table id="history-table"></table></div>
@@ -50,7 +51,7 @@
       </section>
       <section class="card">
         <h2>Analyst guidance</h2>
-        <div id="strategy" class="prose"></div>
+        <div id="strategy" class="prose scrollbox" tabindex="0" aria-label="Analyst guidance (scrolls)"></div>
       </section>
     </div>
 

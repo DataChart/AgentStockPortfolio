@@ -10,6 +10,7 @@
   --series: #2a78d6;
   --series-fill: rgba(42, 120, 214, 0.10);
   --base: #9a9890;
+  --bench: #7c5cc4;
   --good: #0e7a3a;
   --good-bg: #e3f4e8;
   --bad: #c0362c;
@@ -31,6 +32,7 @@
     --series: #3987e5;
     --series-fill: rgba(57, 135, 229, 0.14);
     --base: #6f6e68;
+    --bench: #a68bf0;
     --good: #5cc98a;
     --good-bg: #183324;
     --bad: #f08a80;
@@ -44,7 +46,7 @@
   color-scheme: dark;
   --bg: #121211; --surface: #1a1a19; --border: #2d2d2b; --grid: #262624;
   --text: #f0efec; --text-2: #c3c2b7; --muted: #8f8e86;
-  --series: #3987e5; --series-fill: rgba(57, 135, 229, 0.14); --base: #6f6e68;
+  --series: #3987e5; --series-fill: rgba(57, 135, 229, 0.14); --base: #6f6e68; --bench: #a68bf0;
   --good: #5cc98a; --good-bg: #183324; --bad: #f08a80; --bad-bg: #3a1d1a;
   --warn: #e9b65a; --warn-bg: #352a12; --shadow: none;
 }
@@ -112,6 +114,9 @@ main { padding-top: 20px; padding-bottom: 20px; display: grid; gap: 16px; }
 .chart .area { fill: var(--series-fill); stroke: none; }
 .chart .base { stroke: var(--base); stroke-width: 1.5; stroke-dasharray: 4 4; }
 .chart .dot { fill: var(--series); stroke: var(--surface); stroke-width: 2; }
+.chart .bench { fill: none; stroke: var(--bench); stroke-width: 1.75; stroke-linejoin: round; stroke-linecap: round; }
+.chart .bench-dot { fill: var(--bench); stroke: var(--surface); stroke-width: 2; }
+.chart .bench-label { fill: var(--bench); }
 .chart .mk-buy { fill: var(--good); }
 .chart .mk-sell { fill: var(--bad); }
 .chart .cross { stroke: var(--text-2); stroke-width: 1; stroke-dasharray: 2 3; }
@@ -119,9 +124,12 @@ main { padding-top: 20px; padding-bottom: 20px; display: grid; gap: 16px; }
 .empty { display: grid; place-items: center; height: 100%; color: var(--muted); text-align: center; padding: 0 24px; }
 
 .legend-note { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 12.5px; color: var(--text-2); margin: 10px 0 0; }
-.key { display: inline-block; vertical-align: middle; margin-right: -8px; }
+.lg { display: inline-flex; align-items: center; gap: 6px; }
+.key { display: inline-block; vertical-align: middle; }
 .key-line { width: 18px; height: 2px; background: var(--series); border-radius: 2px; }
 .key-base { width: 18px; border-top: 1.5px dashed var(--base); }
+.key-bench { width: 18px; height: 2px; background: var(--bench); border-radius: 2px; }
+.tip .key-bench { margin-right: 2px; width: 12px; }
 .key-buy { color: var(--good); font-size: 11px; }
 .key-sell { color: var(--bad); font-size: 11px; }
 
@@ -168,6 +176,7 @@ tr:last-child td { border-bottom: 0; }
 }
 
 .prose { font-size: 14px; color: var(--text-2); }
+.prose.scrollbox { max-height: 440px; overflow-y: auto; padding-right: 8px; overscroll-behavior: contain; scrollbar-width: thin; }
 .prose h1, .prose h2, .prose h3 { color: var(--text); font-size: 14px; margin: 14px 0 6px; }
 .prose h1:first-child, .prose h2:first-child, .prose h3:first-child { margin-top: 0; }
 .prose ul { padding-left: 18px; margin: 6px 0; }

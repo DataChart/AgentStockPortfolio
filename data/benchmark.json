@@ -1,0 +1,257 @@
+{
+  "index": "S&P 500",
+  "closes": [
+    {
+      "date": "2026-10-12",
+      "close": 7807.24,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-12T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7807.24,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-10122026-nid12102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -4.30 to 7807.24. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "close": 7805.45,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-13T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7805.45,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-10132026-nid13102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -1.79 to 7805.45. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "close": 7718.94,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-14T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7718.94,
+        "verified_source": "https://insurancenewsnet.com/oarticle/how-major-us-stock-indexes-fared-wednesday-10-14-2026",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -86.51 to 7718.94. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-15",
+      "close": 7744.06,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-15T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7744.06,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-thursday-10152026-nid15102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +25.12 to 7744.06. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-16",
+      "close": 7659.44,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-16T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7659.44,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10162026-nid16102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -84.62 to 7659.44. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "close": 7690.73,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-19T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:28+00:00",
+        "verified_close": 7690.73,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-10192026-nid19102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +31.29 to 7690.73. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "close": 7712.57,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-20T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7712.57,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-10202026-nid20102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +21.84 to 7712.57. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "close": 7757.17,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-21T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7757.17,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-wednesday-10212026-nid21102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +44.60 to 7757.17. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "close": 7663.43,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-22T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7663.43,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-thursday-10222026-nid22102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -93.74 to 7663.43. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "close": 7623.68,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-23T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7623.68,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10232026-nid23102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -39.75 to 7623.68. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "close": 7676.77,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-26T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7676.77,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-10262026-nid26102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +53.09 to 7676.77. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "close": 7722.6,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-27T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7722.6,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-10272026-nid27102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +45.83 to 7722.60. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "close": 7743.98,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-28T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7743.98,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-wednesday-10282026-nid28102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +21.38 to 7743.98. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "close": 7720.39,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-29T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7720.39,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-thursday-10292026-nid29102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -23.59 to 7720.39. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "close": 7580.07,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-10-30T20:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7580.07,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-friday-10302026-nid30102026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -140.32 to 7580.07. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "close": 7541.4,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-11-02T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7541.4,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-1122026-nid02112026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 -38.67 to 7541.40. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "close": 7568.92,
+      "source": "https://ycharts.com/indices/^SPX/level",
+      "timestamp": "2026-11-03T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7568.92,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-1132026-nid03112026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +27.52 to 7568.92. Point change reconciles with prior recorded close."
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "close": 7688.62,
+      "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026",
+      "timestamp": "2026-11-04T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T03:29:29+00:00",
+        "verified_close": 7688.62,
+        "verified_source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-wednesday-1142026-nid04112026/",
+        "diff_pct": 0.0,
+        "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +119.70 to 7688.62. Point change reconciles with prior recorded close."
+      }
+    }
+  ]
+}

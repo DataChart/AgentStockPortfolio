@@ -13,7 +13,10 @@
   factcheck.py clear-snapshot DATE --verified-prices FILE [--notes TEXT]
       FILE maps ticker -> {price, source}; marks the day's valuation cleared.
 
-  factcheck.py flag (ID | --snapshot DATE) --reason TEXT
+  factcheck.py clear-benchmark DATE --verified-close C --verified-source URL [--notes TEXT]
+      Marks the day's S&P 500 comparison close cleared.
+
+  factcheck.py flag (ID | --snapshot DATE | --benchmark DATE) --reason TEXT
       Marks an already-published item as failing fact check.
 
 Clearing only succeeds when `verify` passes, the verified price is within the
@@ -176,11 +179,48 @@ def audit(cfg: dict, ledger: dict, history: dict, portfolio: dict | None) -> tup
     return errors, warnings
 
 
-def pending_items(ledger: dict, history: dict) -> list[str]:
+def audit_benchmark(cfg: dict, bench: dict, history: dict) -> tuple[list[str], list[str]]:
+    """Checks the S&P 500 comparison series, so the benchmark can't be shaded to flatter the portfolio."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    prev = ""
+    for c in bench.get("closes", []):
+        d = c.get("date", "")
+        if d <= prev:
+            errors.append(f"benchmark {d}: dates must be unique and ascending")
+        prev = d
+        try:
+            pf.check_trading_day(d, cfg)
+        except (pf.TradeError, ValueError) as e:
+            errors.append(f"benchmark {d}: {e}")
+        if not (isinstance(c.get("close"), (int, float)) and c["close"] > 0):
+            errors.append(f"benchmark {d}: close must be a positive number")
+            continue
+        if not str(c.get("source", "")).startswith(("http://", "https://")) or not c.get("timestamp"):
+            errors.append(f"benchmark {d}: needs an http(s) source and a timestamp")
+        fc = c.get("fact_check", {})
+        if fc.get("status") == "cleared":
+            v = fc.get("verified_close")
+            if v is None or str(fc.get("verified_source", "")).strip() == str(c.get("source", "")).strip():
+                errors.append(f"benchmark {d}: cleared without an independent close")
+            elif not price_ok(float(c["close"]), float(v), cfg)[0]:
+                errors.append(f"benchmark {d}: cleared but verified at {v} vs {c['close']}")
+    if bench.get("closes"):
+        have = {c["date"] for c in bench["closes"]}
+        first = bench["closes"][0]["date"]
+        missing = [s["date"] for s in history.get("snapshots", []) if s["date"] >= first and s["date"] not in have]
+        if missing:
+            warnings.append(f"benchmark: no S&P 500 close for {', '.join(missing)}")
+    return errors, warnings
+
+
+def pending_items(ledger: dict, history: dict, bench: dict | None = None) -> list[str]:
     out = [tx["id"] for tx in ledger.get("transactions", [])
            if tx.get("fact_check", {}).get("status") not in ("cleared", "flagged")]
     out += [f"snapshot {s['date']}" for s in history.get("snapshots", [])
             if s.get("fact_check", {}).get("status") not in ("cleared", "flagged")]
+    out += [f"benchmark {c['date']}" for c in (bench or {}).get("closes", [])
+            if c.get("fact_check", {}).get("status") not in ("cleared", "flagged")]
     return out
 
 
@@ -191,14 +231,19 @@ def load_all():
 
 def must_verify(cfg, ledger, history, portfolio) -> None:
     errors, _ = audit(cfg, ledger, history, portfolio)
+    errors += audit_benchmark(cfg, pf.load_benchmark(), history)[0]
     if errors:
         raise pf.TradeError("verify failed, fix these first:\n  " + "\n  ".join(errors))
 
 
 def cmd_verify(require_reviewed: bool) -> int:
     cfg, ledger, history, portfolio = load_all()
+    bench = pf.load_benchmark()
     errors, warnings = audit(cfg, ledger, history, portfolio)
-    pending = pending_items(ledger, history)
+    b_errors, b_warnings = audit_benchmark(cfg, bench, history)
+    errors += b_errors
+    warnings += b_warnings
+    pending = pending_items(ledger, history, bench)
     for w in warnings:
         print(f"WARN  {w}")
     for e in errors:
@@ -208,8 +253,9 @@ def cmd_verify(require_reviewed: bool) -> int:
             print(f"FAIL  {p} has not been fact checked")
     n = len(ledger.get("transactions", []))
     m = len(history.get("snapshots", []))
+    k = len(bench.get("closes", []))
     failed = bool(errors) or (require_reviewed and bool(pending))
-    print(f"{'FAILED' if failed else 'OK'}: {n} trades, {m} snapshots audited; "
+    print(f"{'FAILED' if failed else 'OK'}: {n} trades, {m} snapshots, {k} S&P 500 closes audited; "
           f"{len(errors)} errors, {len(warnings)} warnings, {len(pending)} pending review")
     return 1 if failed else 0
 
@@ -262,12 +308,34 @@ def cmd_clear_snapshot(date: str, verified: dict, notes: str) -> dict:
     return snap["fact_check"]
 
 
-def cmd_flag(tid: str | None, date: str | None, reason: str) -> dict:
+def cmd_clear_benchmark(date: str, verified_close: float, verified_source: str, notes: str) -> dict:
+    cfg, ledger, history, portfolio = load_all()
+    must_verify(cfg, ledger, history, portfolio)
+    bench = pf.load_benchmark()
+    c = next((x for x in bench["closes"] if x["date"] == date), None)
+    if c is None:
+        raise pf.TradeError(f"no S&P 500 close recorded for {date}")
+    if verified_source.strip() == c["source"].strip():
+        raise pf.TradeError("verifying source must differ from the research agent's source")
+    ok, diff = price_ok(c["close"], verified_close, cfg)
+    if not ok:
+        raise pf.TradeError(f"benchmark {date}: verified {verified_close} differs {diff}% from {c['close']}; do not clear")
+    c["fact_check"] = {"status": "cleared", "checked_at": now_iso(), "verified_close": round(verified_close, 2),
+                       "verified_source": verified_source, "diff_pct": diff, "notes": notes}
+    pf.save_json(pf.BENCHMARK_PATH, bench)
+    return c["fact_check"]
+
+
+def cmd_flag(tid: str | None, date: str | None, reason: str, bench_date: str | None = None) -> dict:
     ledger, history = pf.load_ledger(), pf.load_history()
     fc = {"status": "flagged", "checked_at": now_iso(), "reason": reason}
     if tid:
         item = next((t for t in ledger["transactions"] if t["id"] == tid), None)
         path, data = pf.LEDGER_PATH, ledger
+    elif bench_date:
+        data = pf.load_benchmark()
+        item = next((c for c in data["closes"] if c["date"] == bench_date), None)
+        path = pf.BENCHMARK_PATH
     else:
         item = next((s for s in history["snapshots"] if s["date"] == date), None)
         path, data = pf.HISTORY_PATH, history
@@ -292,9 +360,15 @@ def main(argv=None) -> int:
     s.add_argument("date")
     s.add_argument("--verified-prices", required=True)
     s.add_argument("--notes", default="")
+    b = sub.add_parser("clear-benchmark")
+    b.add_argument("date")
+    b.add_argument("--verified-close", type=float, required=True)
+    b.add_argument("--verified-source", required=True)
+    b.add_argument("--notes", default="")
     f = sub.add_parser("flag")
     f.add_argument("id", nargs="?")
     f.add_argument("--snapshot")
+    f.add_argument("--benchmark")
     f.add_argument("--reason", required=True)
     args = ap.parse_args(argv)
     try:
@@ -304,10 +378,12 @@ def main(argv=None) -> int:
             r = cmd_clear_trade(args.id, args.verified_price, args.verified_source, args.notes)
         elif args.cmd == "clear-snapshot":
             r = cmd_clear_snapshot(args.date, pf.load_json(Path(args.verified_prices), {}), args.notes)
+        elif args.cmd == "clear-benchmark":
+            r = cmd_clear_benchmark(args.date, args.verified_close, args.verified_source, args.notes)
         else:
-            if bool(args.id) == bool(args.snapshot):
-                raise pf.TradeError("give exactly one of ID or --snapshot DATE")
-            r = cmd_flag(args.id, args.snapshot, args.reason)
+            if sum(map(bool, (args.id, args.snapshot, args.benchmark))) != 1:
+                raise pf.TradeError("give exactly one of ID, --snapshot DATE or --benchmark DATE")
+            r = cmd_flag(args.id, args.snapshot, args.reason, args.benchmark)
         print(json.dumps(r, indent=2))
     except pf.TradeError as e:
         print(f"REJECTED: {e}", file=sys.stderr)

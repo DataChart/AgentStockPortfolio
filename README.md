@@ -22,6 +22,7 @@ The daily routine follows [`agents/RUNBOOK.md`](agents/RUNBOOK.md).
 |---|---|
 | `data/ledger.json` | Append-only transaction log. Each entry has the quote, source URL and timestamp, fees, cash after, rationale, a hash chained to the previous entry, and its fact-check result. |
 | `data/history.json` | One mark-to-market snapshot per trading day (prices with sources), used for the chart. |
+| `data/benchmark.json` | The S&P 500 close for each trading day (with source and fact check), drawn on the chart for comparison. |
 | `data/portfolio.json` | Current holdings and returns, derived from the two files above. |
 | `data/strategy.md` | The analyst's current guidance. |
 | `data/journal/YYYY-MM-DD.md` | Each day's analyst review, research notes and fact-check report. |

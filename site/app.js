@@ -23,14 +23,17 @@
   let state = {};
 
   async function init() {
-    const [cfg, ledger, history, portfolio, strategy] = await Promise.all([
+    const [cfg, ledger, history, portfolio, strategy, benchmark] = await Promise.all([
       getJSON("config/settings.json", {}),
       getJSON("data/ledger.json", { transactions: [] }),
       getJSON("data/history.json", { snapshots: [] }),
       getJSON("data/portfolio.json", {}),
       getText("data/strategy.md"),
+      getJSON("data/benchmark.json", { closes: [] }),
     ]);
     state = { cfg, txs: ledger.transactions || [], snaps: history.snapshots || [], p: portfolio, range: "all" };
+    state.bench = benchSeries(state.snaps, benchmark.closes || [], cfg.starting_cash ?? 10000);
+    state.benchName = benchmark.index || "S&P 500";
     renderHeader();
     renderKpis();
     renderChart();
@@ -55,6 +58,20 @@
     window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(renderChart, 120); });
   }
 
+  /* The index rebased to the starting cash on the first day both series exist, so the two lines compare directly. */
+  function benchSeries(snaps, closes, start) {
+    const byDate = Object.fromEntries(closes.map((c) => [c.date, c]));
+    const first = snaps.find((s) => byDate[s.date]);
+    if (!first) return {};
+    const base = byDate[first.date].close;
+    const out = {};
+    for (const s of snaps) {
+      const c = byDate[s.date];
+      if (c) out[s.date] = { close: c.close, v: start * (c.close / base), ret: (c.close / base - 1) * 100, fc: c.fact_check, since: first.date };
+    }
+    return out;
+  }
+
   function activeFee(cfg) {
     const s = cfg.fees && cfg.fees.schedule;
     return s && s.length ? s[s.length - 1] : null;
@@ -63,7 +80,8 @@
   function renderHeader() {
     const { p, txs, snaps } = state;
     $("#asof").textContent = p.as_of ? `values as of ${fmtDate(p.as_of)} close` : "no data yet";
-    const all = txs.map((t) => t.fact_check || {}).concat(snaps.map((s) => s.fact_check || {}));
+    const all = txs.map((t) => t.fact_check || {}).concat(snaps.map((s) => s.fact_check || {}),
+      Object.values(state.bench).map((b) => b.fc || {}));
     const flagged = all.filter((f) => f.status === "flagged").length;
     const pending = all.filter((f) => f.status !== "cleared" && f.status !== "flagged").length;
     const pill = $("#audit-pill");
@@ -80,9 +98,11 @@
     const total = p.total_value ?? start;
     const ret = p.return_pct ?? 0;
     const unreal = (p.positions || []).reduce((a, x) => a + (x.unrealized_pl || 0), 0);
+    const b = state.bench[p.as_of];
     const tiles = [
       { label: "Total value", value: usd(total), delta: `<span class="${cls(total - start)}">${usd(total - start)} vs ${usd(start, 0)} start</span>`, hero: true },
-      { label: "Return (ROI)", value: `<span class="${cls(ret)}">${pct(ret)}</span>`, delta: "after all fees" },
+      { label: "Return (ROI)", value: `<span class="${cls(ret)}">${pct(ret)}</span>`,
+        delta: b ? `after fees · ${esc(state.benchName)} <span class="${cls(b.ret)}">${pct(b.ret)}</span>` : "after all fees" },
       { label: "Cash", value: usd(p.cash ?? start), delta: `${(((p.cash ?? start) / total) * 100).toFixed(0)}% of portfolio` },
       { label: "Realized P/L", value: `<span class="${cls(p.realized_pl || 0)}">${usd(p.realized_pl || 0)}</span>`, delta: `unrealized <span class="${cls(unreal)}">${usd(unreal)}</span>` },
       { label: "Fees paid", value: usd(p.fees_paid || 0), delta: `${p.trade_count || 0} trades` },
@@ -92,7 +112,7 @@
     ).join("");
   }
 
-  /* ---------- line chart (hand-rolled SVG, one series + baseline) ---------- */
+  /* ---------- line chart (hand-rolled SVG: portfolio, S&P 500 comparison, baseline) ---------- */
   function renderChart() {
     const el = $("#chart");
     const start = state.cfg.starting_cash ?? 10000;
@@ -111,7 +131,8 @@
     const m = { t: 12, r: W < 500 ? 56 : 72, b: 26, l: W < 500 ? 48 : 64 };
     const iw = W - m.l - m.r, ih = H - m.t - m.b;
     const t0 = Date.parse(pts[0].date), t1 = Date.parse(pts[pts.length - 1].date);
-    const vals = pts.map((p) => p.v).concat([start]);
+    const bpts = pts.filter((p) => state.bench[p.date]).map((p) => ({ date: p.date, v: state.bench[p.date].v }));
+    const vals = pts.map((p) => p.v).concat([start], bpts.map((p) => p.v));
     let lo = Math.min(...vals), hi = Math.max(...vals);
     const pad = (hi - lo) * 0.12 || hi * 0.02;
     lo -= pad; hi += pad;
@@ -120,7 +141,9 @@
     const x = (d) => m.l + ((Date.parse(d) - t0) / (t1 - t0 || 1)) * iw;
     const y = (v) => m.t + (1 - (v - lo) / (hi - lo)) * ih;
 
-    const line = pts.map((p, i) => `${i ? "L" : "M"}${x(p.date).toFixed(1)},${y(p.v).toFixed(1)}`).join("");
+    const path = (ps) => ps.map((p, i) => `${i ? "L" : "M"}${x(p.date).toFixed(1)},${y(p.v).toFixed(1)}`).join("");
+    const line = path(pts);
+    const bline = bpts.length > 1 ? `<path class="bench" d="${path(bpts)}"/>` : "";
     const area = `${line}L${x(pts[pts.length - 1].date).toFixed(1)},${(m.t + ih).toFixed(1)}L${m.l},${(m.t + ih).toFixed(1)}Z`;
     const grid = ticks.map((t) => `<line class="gridline" x1="${m.l}" x2="${m.l + iw}" y1="${y(t)}" y2="${y(t)}"/>
       <text class="axis-label" x="${m.l - 8}" y="${y(t) + 4}" text-anchor="end">${compact(t)}</text>`).join("");
@@ -137,13 +160,19 @@
     })).join("");
 
     const last = pts[pts.length - 1];
+    const blast = bpts.length > 1 ? bpts[bpts.length - 1] : null;
+    // Keep the two end labels from overlapping.
+    let ly = y(last.v) + 4, bly = blast ? y(blast.v) + 4 : 0;
+    if (blast && Math.abs(ly - bly) < 14) { const mid = (ly + bly) / 2, up = ly <= bly ? -7 : 7; ly = mid + up; bly = mid - up; }
     el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
       ${grid}${xl}
       <line class="base" x1="${m.l}" x2="${m.l + iw}" y1="${y(start)}" y2="${y(start)}"/>
-      <path class="area" d="${area}"/><path class="line" d="${line}"/>
+      <path class="area" d="${area}"/>${bline}<path class="line" d="${line}"/>
       ${marks}
+      ${blast ? `<circle class="bench-dot" cx="${x(blast.date)}" cy="${y(blast.v)}" r="3.5"/>
+      <text class="end-label bench-label" x="${x(blast.date) + 10}" y="${bly}">${compact(blast.v)}</text>` : ""}
       <circle class="dot" cx="${x(last.date)}" cy="${y(last.v)}" r="4.5"/>
-      <text class="end-label" x="${x(last.date) + 10}" y="${y(last.v) + 4}">${compact(last.v)}</text>
+      <text class="end-label" x="${x(last.date) + 10}" y="${ly}">${compact(last.v)}</text>
       <line class="cross" id="cross" x1="0" x2="0" y1="${m.t}" y2="${m.t + ih}" visibility="hidden"/>
       <circle class="dot" id="hover-dot" r="5" visibility="hidden"/>
       <rect id="hit" x="${m.l}" y="0" width="${iw}" height="${H}" fill="transparent"/>
@@ -160,8 +189,10 @@
       cross.setAttribute("x1", bx); cross.setAttribute("x2", bx); cross.setAttribute("visibility", "visible");
       hd.setAttribute("cx", bx); hd.setAttribute("cy", by); hd.setAttribute("visibility", "visible");
       const trades = (byDate[best.date] || []).map((t) => `<div class="t-row">${t.action === "BUY" ? "▲ Bought" : "▼ Sold"} ${esc(t.ticker)}</div>`).join("");
+      const bb = state.bench[best.date];
+      const brow = bb ? `<div class="t-row"><span class="key key-bench"></span> ${esc(state.benchName)} ${usd(bb.v, 0)} · <span class="${cls(bb.ret)}">${pct(bb.ret)}</span></div>` : "";
       tip.innerHTML = `<div class="t-date">${fmtDate(best.date)}</div><div class="t-val num">${usd(best.v)}</div>
-        <div class="t-row"><span class="${cls(best.s.return_pct)}">${pct(best.s.return_pct)}</span> · cash ${usd(best.s.cash, 0)}</div>${trades}`;
+        <div class="t-row"><span class="${cls(best.s.return_pct)}">${pct(best.s.return_pct)}</span> · cash ${usd(best.s.cash, 0)}</div>${brow}${trades}`;
       tip.hidden = false;
       const px = r.left + (bx / W) * r.width, py = r.top + (by / H) * r.height;
       const tw = tip.offsetWidth;
@@ -188,10 +219,14 @@
   const shortDate = (d) => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 
   function renderHistoryTable() {
-    const rows = state.snaps.slice().reverse().map((s) =>
-      `<tr><td>${fmtDate(s.date)}</td><td class="n">${usd(s.total_value)}</td><td class="n ${cls(s.return_pct)}">${pct(s.return_pct)}</td>
-       <td class="n">${usd(s.cash)}</td><td class="n">${usd(s.holdings_value)}</td><td>${badge(s.fact_check)}</td></tr>`).join("");
-    $("#history-table").innerHTML = `<thead><tr><th>Date</th><th class="n">Total</th><th class="n">Return</th><th class="n">Cash</th><th class="n">Holdings</th><th>Valuation check</th></tr></thead><tbody>${rows}</tbody>`;
+    const rows = state.snaps.slice().reverse().map((s) => {
+      const b = state.bench[s.date];
+      const bcell = b ? `<td class="n">${b.close.toLocaleString("en-US", { minimumFractionDigits: 2 })}</td><td class="n ${cls(b.ret)}">${pct(b.ret)}</td>` : '<td class="n muted">n/a</td><td class="n muted">n/a</td>';
+      return `<tr><td>${fmtDate(s.date)}</td><td class="n">${usd(s.total_value)}</td><td class="n ${cls(s.return_pct)}">${pct(s.return_pct)}</td>
+       <td class="n">${usd(s.cash)}</td><td class="n">${usd(s.holdings_value)}</td>${bcell}<td>${badge(s.fact_check)}</td></tr>`;
+    }).join("");
+    const bn = esc(state.benchName);
+    $("#history-table").innerHTML = `<thead><tr><th>Date</th><th class="n">Total</th><th class="n">Return</th><th class="n">Cash</th><th class="n">Holdings</th><th class="n">${bn}</th><th class="n">${bn} return</th><th>Valuation check</th></tr></thead><tbody>${rows}</tbody>`;
   }
 
   function renderHoldings() {

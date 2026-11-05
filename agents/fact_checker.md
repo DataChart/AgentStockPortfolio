@@ -19,6 +19,9 @@ pick these trades; don't defend them.
    - **Snapshots:** do the same for every ticker in the day's `prices`, write them to a JSON
      file `{"TICKER": {"price": P, "source": URL}}` and run
      `python3 scripts/factcheck.py clear-snapshot DATE --verified-prices FILE --notes "..."`.
+   - **S&P 500 close:** confirm today's closing level in `data/benchmark.json` on a different source and run
+     `python3 scripts/factcheck.py clear-benchmark DATE --verified-close C --verified-source URL --notes "..."`.
+     A shaded benchmark would flatter the portfolio, so it gets the same check as a price.
    The script refuses to clear if your price is more than 1% away or your source is the same URL.
 4. Sanity-check the story: does each rationale match reality (the company, the news it cites)?
    Is the day's return plausible given how the holdings actually moved? Anything off goes in your report.

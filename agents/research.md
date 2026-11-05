@@ -33,6 +33,9 @@ Read `data/strategy.md` (the analyst's guidance) and `data/portfolio.json` first
 4. Mark to market: write today's close for **every** holding (after trades) to a temp
    JSON file, `{"TICKER": {"price": 123.45, "source": "URL", "timestamp": "ISO8601"}}`, and run
    `python3 scripts/portfolio.py mark --prices FILE --date TODAY`. Do this on days with no trades too.
-5. Write `## Research` in `data/journal/TODAY.md`: candidates, decisions, and the prices you used.
+5. Record today's S&P 500 closing level (the index, not an ETF) for the dashboard's comparison line:
+   `python3 scripts/portfolio.py benchmark --close LEVEL --source URL --timestamp ISO8601 --date TODAY`.
+   Use a page that shows today's official close; the fact checker verifies it like any other price.
+6. Write `## Research` in `data/journal/TODAY.md`: candidates, decisions, and the prices you used.
 
 If the engine prints `REJECTED`, read why and fix the input; never work around it by editing the JSON files.

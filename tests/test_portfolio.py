@@ -20,12 +20,13 @@ class Base(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         d = Path(self.tmp.name)
-        self._saved = (pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH)
-        pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH = d / "l.json", d / "h.json", d / "p.json"
+        self._saved = (pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH, pf.BENCHMARK_PATH)
+        pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH, pf.BENCHMARK_PATH = (
+            d / "l.json", d / "h.json", d / "p.json", d / "b.json")
         self.cfg = pf.load_config()
 
     def tearDown(self):
-        pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH = self._saved
+        pf.LEDGER_PATH, pf.HISTORY_PATH, pf.PORTFOLIO_PATH, pf.BENCHMARK_PATH = self._saved
         self.tmp.cleanup()
 
     def buy(self, ticker="NVDA", price=100.0, date="2026-10-13", **kw):
@@ -187,6 +188,50 @@ class FactCheckTests(Base):
         self.assertEqual(fc.pending_items(pf.load_ledger(), pf.load_history()), ["T0001"])
 
 
+class BenchmarkTests(Base):
+    def bench_audit(self):
+        return fc.audit_benchmark(self.cfg, pf.load_benchmark(), pf.load_history())
+
+    def test_record_and_clear(self):
+        pf.record_benchmark(7805.0, SRC, TS, "2026-10-13", self.cfg)
+        pf.record_benchmark(7718.94, SRC, TS, "2026-10-14", self.cfg)
+        self.assertEqual(self.bench_audit()[0], [])
+        self.assertEqual(fc.pending_items(pf.load_ledger(), pf.load_history(), pf.load_benchmark()),
+                         ["benchmark 2026-10-13", "benchmark 2026-10-14"])
+        with self.assertRaises(pf.TradeError):
+            fc.cmd_clear_benchmark("2026-10-13", 7805.0, SRC, "")
+        with self.assertRaises(pf.TradeError):
+            fc.cmd_clear_benchmark("2026-10-13", 7950.0, SRC2, "")
+        self.assertEqual(fc.cmd_clear_benchmark("2026-10-13", 7804.5, SRC2, "")["status"], "cleared")
+        self.assertEqual(self.bench_audit()[0], [])
+
+    def test_append_only_and_trading_days(self):
+        pf.record_benchmark(7805.0, SRC, TS, "2026-10-14", self.cfg)
+        with self.assertRaises(pf.TradeError):
+            pf.record_benchmark(7800.0, SRC, TS, "2026-10-13", self.cfg)
+        with self.assertRaises(pf.TradeError):
+            pf.record_benchmark(7800.0, SRC, TS, "2026-10-17", self.cfg)
+        pf.record_benchmark(7718.94, SRC, TS, "2026-10-14", self.cfg)  # same-day redo replaces
+        self.assertEqual([c["close"] for c in pf.load_benchmark()["closes"]], [7718.94])
+        fc.cmd_clear_benchmark("2026-10-14", 7718.94, SRC2, "")
+        with self.assertRaises(pf.TradeError):
+            pf.record_benchmark(7000.0, SRC, TS, "2026-10-14", self.cfg)
+
+    def test_tampered_benchmark_caught(self):
+        pf.record_benchmark(7805.0, SRC, TS, "2026-10-13", self.cfg)
+        fc.cmd_clear_benchmark("2026-10-13", 7805.0, SRC2, "")
+        b = pf.load_benchmark()
+        b["closes"][0]["close"] = 9000.0
+        errs, _ = fc.audit_benchmark(self.cfg, b, pf.load_history())
+        self.assertTrue(any("verified" in e for e in errs))
+
+    def test_missing_close_warns(self):
+        pf.record_benchmark(7805.0, SRC, TS, "2026-10-13", self.cfg)
+        pf.mark({}, "2026-10-13", self.cfg)
+        pf.mark({}, "2026-10-14", self.cfg)
+        self.assertTrue(any("2026-10-14" in w for w in self.bench_audit()[1]))
+
+
 class RandomizedReplayTests(Base):
     def test_many_random_trades_always_audit_clean(self):
         import datetime as dt
@@ -223,6 +268,7 @@ class RepoDataTests(unittest.TestCase):
         cfg = pf.load_config()
         errors, _ = fc.audit(cfg, pf.load_ledger(), pf.load_history(), pf.load_json(pf.PORTFOLIO_PATH, None))
         self.assertEqual(errors, [])
+        self.assertEqual(fc.audit_benchmark(cfg, pf.load_benchmark(), pf.load_history())[0], [])
 
 
 if __name__ == "__main__":

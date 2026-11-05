@@ -9,6 +9,7 @@ Usage:
   portfolio.py buy  TICKER (--shares N | --amount USD) --price P --source URL --timestamp ISO --rationale TEXT [--date D]
   portfolio.py sell TICKER (--shares N | --all)        --price P --source URL --timestamp ISO --rationale TEXT [--date D]
   portfolio.py mark --prices prices.json [--date D]    # end-of-day mark-to-market snapshot
+  portfolio.py benchmark --close C --source URL --timestamp ISO [--date D]   # S&P 500 close for the chart
   portfolio.py rebuild                                 # regenerate data/portfolio.json
   portfolio.py reset-history                           # drop placeholder snapshots (before the first trade only)
   portfolio.py status
@@ -27,6 +28,8 @@ CONFIG_PATH = ROOT / "config" / "settings.json"
 LEDGER_PATH = ROOT / "data" / "ledger.json"
 HISTORY_PATH = ROOT / "data" / "history.json"
 PORTFOLIO_PATH = ROOT / "data" / "portfolio.json"
+BENCHMARK_PATH = ROOT / "data" / "benchmark.json"
+BENCHMARK_INDEX = "S&P 500"
 
 GENESIS_HASH = "0" * 64
 EPS = 0.005  # half a cent
@@ -62,6 +65,10 @@ def load_ledger() -> dict:
 
 def load_history() -> dict:
     return load_json(HISTORY_PATH, {"snapshots": []})
+
+
+def load_benchmark() -> dict:
+    return load_json(BENCHMARK_PATH, {"index": BENCHMARK_INDEX, "closes": []})
 
 
 def money(x: float) -> float:
@@ -293,6 +300,27 @@ def mark(prices: dict, date: str, cfg: dict) -> dict:
     return snap
 
 
+def record_benchmark(close: float, source: str, timestamp: str, date: str, cfg: dict) -> dict:
+    """Record the S&P 500 close for a trading day, shown on the dashboard for comparison.
+    Dates are append-only; re-recording the latest date replaces it and resets its fact check."""
+    check_trading_day(date, cfg)
+    if float(close) <= 0 or not str(source).startswith(("http://", "https://")) or not timestamp:
+        raise TradeError("benchmark close needs a positive close, an http(s) source and a timestamp")
+    bench = load_benchmark()
+    closes = bench["closes"]
+    if closes and date < closes[-1]["date"]:
+        raise TradeError(f"benchmark is append-only; {date} is before the last recorded {closes[-1]['date']}")
+    if closes and date == closes[-1]["date"]:
+        if closes[-1].get("fact_check", {}).get("status") == "cleared":
+            raise TradeError(f"benchmark close for {date} is already fact checked; flag it instead")
+        closes.pop()
+    entry = {"date": date, "close": round(float(close), 2), "source": source, "timestamp": timestamp,
+             "fact_check": {"status": "pending"}}
+    closes.append(entry)
+    save_json(BENCHMARK_PATH, bench)
+    return entry
+
+
 def reset_history(cfg: dict) -> None:
     """Drop placeholder snapshots. Only allowed before the first trade, so no
     valuation that a trade depends on can ever be removed this way."""
@@ -368,6 +396,11 @@ def main(argv=None) -> int:
     m = sub.add_parser("mark")
     m.add_argument("--prices", required=True, help="JSON file: {TICKER: {price, source, timestamp}}")
     m.add_argument("--date")
+    b = sub.add_parser("benchmark", help="record the day's S&P 500 close")
+    b.add_argument("--close", type=float, required=True)
+    b.add_argument("--source", required=True, help="URL the close came from")
+    b.add_argument("--timestamp", required=True, help="when the close was observed (ISO 8601)")
+    b.add_argument("--date")
     sub.add_parser("rebuild")
     sub.add_parser("reset-history", help="drop placeholder snapshots (only before the first trade)")
     sub.add_parser("status")
@@ -383,6 +416,9 @@ def main(argv=None) -> int:
         elif args.cmd == "mark":
             snap = mark(load_json(Path(args.prices), {}), parse_date(args.date), cfg)
             print(json.dumps(snap, indent=2))
+        elif args.cmd == "benchmark":
+            entry = record_benchmark(args.close, args.source, args.timestamp, parse_date(args.date), cfg)
+            print(json.dumps(entry, indent=2))
         elif args.cmd == "reset-history":
             reset_history(cfg)
             print("history cleared")
