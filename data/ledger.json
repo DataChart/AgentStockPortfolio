@@ -530,6 +530,41 @@
         ],
         "notes": "Stock Events MSFT (en) $555.80, +$34.81 (+6.68%), '21:00 Today'; +34.81 ties to the 520.99 Nov 3 close; after hours (-$0.26 at 21:31) shown separately. Diff 0.00% vs Equibles. Re-add conditions on confirmed closes: Nasdaq 25,736.51 (+364.50 from 25,372.01; TheStreet 4:02 PM wrap and AP via ad-hoc-news); AMZN 266.03 > 243.79 (Motley Fool 'As of 4:00 PM ET 11/04/26', +15.34); MSFT 555.80 >= 541.63. Size $880 incl. fee as written: 879/556.3558 = 1.5799 sh, gross 878.99, slippage 0.88; new avg 549.31, 18.5% of value, under 35%."
       }
+    },
+    {
+      "id": "T0016",
+      "date": "2026-11-05",
+      "action": "BUY",
+      "ticker": "XLV",
+      "shares": 6.3825,
+      "quote_price": 184.91,
+      "price_source": "https://stockevents.app/de/stock/XLV",
+      "price_timestamp": "2026-11-05T21:00:00Z",
+      "exec_price": 185.0949,
+      "gross": 1181.37,
+      "commission": 1.0,
+      "slippage_cost": 1.18,
+      "cash_delta": -1182.37,
+      "cash_after": 3518.23,
+      "rationale": "XLV is the Health Care Select Sector SPDR fund, a basket of the largest US drug, device and insurance companies. On a day the S&P 500 fell 4.36% in an AI and chip selloff, XLV fell only 2.50%, beating the index by 1.86 points; that relative strength on a down day is the written buy signal. It is sized to the room left under our 45% healthcare cap (we already hold Eli Lilly, also a large XLV holding), about 12% of the book. We would sell on a close 12% below cost or if healthcare stops holding up on weak days.",
+      "prev_hash": "b1dd4aa44f65405525f92550bfe5529c642f6bbb584ef3471cef20c1cc26d36b",
+      "hash": "8f302fed95557f8e69ebb53dde53938dc97d5806627c33c5f9bdd593b97c3e1d",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T23:55:31+00:00",
+        "verified_price": 184.91,
+        "verified_source": "https://ng.investing.com/etfs/spdr---health-care",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Investing.com NG XLV: 184.91, -4.75 (-2.50%), 'Closed', prev close 189.66, open 191.46, range 184.82-192.32, FAQ date Nov 05 2026. Prev close ties to SSGA's official Nov 4 market price 189.66. Stock Events de (recorded) shows 184.91 '21:00 Heute'. Caveat: Investing.com is the snapshot's recorded source, so this is not a third independent site; no third site had rolled over by ~7 PM ET (Equibles intraday 184.17, SSGA/TipRanks/Stocktwits still Nov 4)."
+      }
     }
   ]
 }

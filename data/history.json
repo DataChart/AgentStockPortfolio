@@ -1167,6 +1167,55 @@
         },
         "notes": "LLY 1,417.99 on Equibles: 'At close \u00b7 Nov 4' header, Close stat rolled over (open 1,440.00, range 1,401.59-1,445.96, Volume Nov 4 3.66M), rechecked ~8:55 PM ET. MSFT 555.80 on Stock Events en: +34.81 (+6.68%) '21:00 Today', ties to 520.99 Nov 3 close. Both 0.00% diff."
       }
+    },
+    {
+      "date": "2026-11-05",
+      "cash": 3518.23,
+      "holdings_value": 6033.86,
+      "total_value": 9552.09,
+      "return_pct": -4.48,
+      "prices": {
+        "MSFT": {
+          "price": 535.93,
+          "source": "https://stockevents.app/en/stock/MSFT",
+          "timestamp": "2026-11-05T21:00:00Z",
+          "shares": 3.2404
+        },
+        "LLY": {
+          "price": 1364.73,
+          "source": "https://stockevents.app/de/stock/LLY",
+          "timestamp": "2026-11-05T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 184.91,
+          "source": "https://ng.investing.com/etfs/spdr---health-care",
+          "timestamp": "2026-11-05T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-06T02:06:31+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 535.93,
+            "source": "https://equibles.com/stocks/msft/price",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1364.73,
+            "source": "https://stocktwits.com/symbol/LLY",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 184.91,
+            "source": "https://stockevents.app/de/stock/XLV",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY 1,364.73 on Stocktwits 'Closed $1,364.73', -53.26 (-3.76%) 'Today' (ties to Nov 4 close 1,417.99), updated 5:26 PM EST, after-hours shown separately; Equibles LLY Close stat still stale (Nov 4). MSFT 535.93 on Equibles Close stat (Open 554.94, Day 532.68-557.62, Volume \u00b7 Nov 5). XLV 184.91 on Stock Events de '21:00 Heute', -4.77 (-2.51%), after-hours shown separately. All diffs 0.00%."
+      }
     }
   ]
 }

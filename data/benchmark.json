@@ -252,6 +252,20 @@
         "diff_pct": 0.0,
         "notes": "AP 'How major US stock indexes fared' table (La Nacion syndication): S&P 500 +119.70 to 7688.62. Point change reconciles with prior recorded close."
       }
+    },
+    {
+      "date": "2026-11-05",
+      "close": 7353.73,
+      "source": "https://krmg.com/2026/11/05/how-major-us-stock-indexes-fared-thursday-11-5-2026/",
+      "timestamp": "2026-11-05T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-05T23:55:31+00:00",
+        "verified_close": 7353.73,
+        "verified_source": "https://journalarta.com/en/2026/11/06/wall-street-close-nasdaq-sinks-5-52-and-sp-500-falls-4-36-as-ai-stocks-slide/",
+        "diff_pct": 0.0,
+        "notes": "JournalArta Nov 5 wrap, data stamped 21:16 GMT: S&P 500 closed 7,353.73, -334.89 (-4.36%); 7,688.62 - 334.89 ties to the prior recorded close. Yahoo Finance summary bar 'U.S. markets closed' shows the same 7,353.73 -334.89."
+      }
     }
   ]
 }
