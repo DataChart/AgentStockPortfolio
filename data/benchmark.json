@@ -266,6 +266,20 @@
         "diff_pct": 0.0,
         "notes": "JournalArta Nov 5 wrap, data stamped 21:16 GMT: S&P 500 closed 7,353.73, -334.89 (-4.36%); 7,688.62 - 334.89 ties to the prior recorded close. Yahoo Finance summary bar 'U.S. markets closed' shows the same 7,353.73 -334.89."
       }
+    },
+    {
+      "date": "2026-11-06",
+      "close": 7376.86,
+      "source": "https://au.finance.yahoo.com/news/major-us-stock-indexes-fared-212037857.html",
+      "timestamp": "2026-11-06T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-06T22:32:05+00:00",
+        "verified_close": 7376.86,
+        "verified_source": "https://mymotherlode.com/news/national/11287401/how-major-us-stock-indexes-fared-friday-11-6-2026.html",
+        "diff_pct": 0.0,
+        "notes": "AP table on myMotherLode, 'Nov 6, 2026 2:19 pm' (PT): S&P 500 rose 23.13 to 7,376.86; 7,353.73 + 23.13 ties to the Nov 5 close. Yahoo Finance live ('at close 4:37:09 PM EST') and TheStreet (4:05 PM EST wrap) agree. Diff 0.00%."
+      }
     }
   ]
 }

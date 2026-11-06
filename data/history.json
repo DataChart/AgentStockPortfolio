@@ -1216,6 +1216,55 @@
         },
         "notes": "LLY 1,364.73 on Stocktwits 'Closed $1,364.73', -53.26 (-3.76%) 'Today' (ties to Nov 4 close 1,417.99), updated 5:26 PM EST, after-hours shown separately; Equibles LLY Close stat still stale (Nov 4). MSFT 535.93 on Equibles Close stat (Open 554.94, Day 532.68-557.62, Volume \u00b7 Nov 5). XLV 184.91 on Stock Events de '21:00 Heute', -4.77 (-2.51%), after-hours shown separately. All diffs 0.00%."
       }
+    },
+    {
+      "date": "2026-11-06",
+      "cash": 3518.23,
+      "holdings_value": 5991.41,
+      "total_value": 9509.64,
+      "return_pct": -4.9,
+      "prices": {
+        "MSFT": {
+          "price": 530.61,
+          "source": "https://uk.marketscreener.com/quote/stock/MICROSOFT-CORPORATION-4835/",
+          "timestamp": "2026-11-06T21:00:00Z",
+          "shares": 3.2404
+        },
+        "LLY": {
+          "price": 1354.0,
+          "source": "https://uk.marketscreener.com/quote/stock/ELI-LILLY-AND-COMPANY-13401/",
+          "timestamp": "2026-11-06T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 184.8,
+          "source": "https://ng.investing.com/etfs/spdr---health-care",
+          "timestamp": "2026-11-06T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-06T22:32:05+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 530.61,
+            "source": "https://stockevents.app/cn/stock/MSFT",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1354.0,
+            "source": "https://stockevents.app/cn/stock/LLY",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 184.8,
+            "source": "https://stockevents.app/en/stock/XLV",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY 1,354.00 on Stock Events cn '21:02 \u4eca\u5929', -10.73 (-0.79%), ties to Nov 5 close 1,364.73; after-hours (22:08) shown separately. MSFT 530.61 on Stock Events cn '21:00 \u4eca\u5929', -5.32 (-0.99%), ties to 535.93; after-hours separate. XLV 184.80 on Stock Events en '21:00 Today', -0.11 (-0.06%), ties to 184.91 (SSGA's Nov 5 market price); after-hours separate. Recorded MarketScreener UK (LLY 21:02:01 / MSFT 21:00:00 GMT 06/11/2026) and Investing.com NG ('Closed', prev 184.91) rechecked and match. Stocktwits LLY and Equibles LLY/MSFT Close stats still Nov 5 at 5:30 PM ET. All diffs 0.00%."
+      }
     }
   ]
 }
