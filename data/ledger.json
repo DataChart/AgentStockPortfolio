@@ -565,6 +565,42 @@
         ],
         "notes": "Investing.com NG XLV: 184.91, -4.75 (-2.50%), 'Closed', prev close 189.66, open 191.46, range 184.82-192.32, FAQ date Nov 05 2026. Prev close ties to SSGA's official Nov 4 market price 189.66. Stock Events de (recorded) shows 184.91 '21:00 Heute'. Caveat: Investing.com is the snapshot's recorded source, so this is not a third independent site; no third site had rolled over by ~7 PM ET (Equibles intraday 184.17, SSGA/TipRanks/Stocktwits still Nov 4)."
       }
+    },
+    {
+      "id": "T0017",
+      "date": "2026-11-11",
+      "action": "SELL",
+      "ticker": "MSFT",
+      "shares": 3.2404,
+      "quote_price": 521.13,
+      "price_source": "https://stockevents.app/en/stock/MSFT",
+      "price_timestamp": "2026-11-11T21:00:00Z",
+      "exec_price": 520.6089,
+      "gross": 1686.98,
+      "commission": 1.0,
+      "slippage_cost": 1.69,
+      "cash_delta": 1685.98,
+      "cash_after": 5204.21,
+      "rationale": "Microsoft (Windows, Office, Azure) was held for the AI rebound under a written rule: sell all if it trails the Nasdaq by 2 points or more on a day the Nasdaq closes higher. On Nov 11 the Nasdaq rose 1.60% on a chip and AI rally while MSFT fell 2.26%, after dated reports that Anthropic launched spreadsheet and whiteboard tools that compete with Office. A name held for the AI trade that falls while AI stocks rally is failing its thesis, so the rule is executed at the close; the cash waits for a written trigger.",
+      "prev_hash": "8f302fed95557f8e69ebb53dde53938dc97d5806627c33c5f9bdd593b97c3e1d",
+      "realized_pl": -93.99,
+      "hash": "526f99da0bdd791c9d89cbb14acd767e6acab651af1645aefec61bf1a2391ed9",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-11T22:39:51+00:00",
+        "verified_price": 521.13,
+        "verified_source": "https://stocktitan.net/overview/MSFT/",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "StockTitan MSFT after-hours page (last updated Nov 11, 2026 16:46): 'Previous close $521.13 (November 11, 2026)', after hours 519.96 shown separately. 533.16 -> 521.13 = -2.26%; prior close 533.16 confirmed by TradingKey and MarketScreener UK. Recorded Stock Events en (-12.03, '21:00 Today') ties. Rule check: Nasdaq 25,065.87 (La Nacion/AP Nov 10) -> 25,466.19 (+400.31, +1.60%, TheStreet 4:19 PM EST wrap); MSFT trailed by 3.86 points, so the thesis-break rule on origin/main strategy.md (written Nov 6, effective from the Nov 9 close) fired; no higher-priority rule fired (521.13 > 504.46 and 483.39). Diff 0.00%. Rejected: MarketScreener UK header (19:32 GMT intraday) and 11/11 row 520.45 (partial volume)."
+      }
     }
   ]
 }

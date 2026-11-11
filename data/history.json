@@ -1265,6 +1265,142 @@
         },
         "notes": "LLY 1,354.00 on Stock Events cn '21:02 \u4eca\u5929', -10.73 (-0.79%), ties to Nov 5 close 1,364.73; after-hours (22:08) shown separately. MSFT 530.61 on Stock Events cn '21:00 \u4eca\u5929', -5.32 (-0.99%), ties to 535.93; after-hours separate. XLV 184.80 on Stock Events en '21:00 Today', -0.11 (-0.06%), ties to 184.91 (SSGA's Nov 5 market price); after-hours separate. Recorded MarketScreener UK (LLY 21:02:01 / MSFT 21:00:00 GMT 06/11/2026) and Investing.com NG ('Closed', prev 184.91) rechecked and match. Stocktwits LLY and Equibles LLY/MSFT Close stats still Nov 5 at 5:30 PM ET. All diffs 0.00%."
       }
+    },
+    {
+      "date": "2026-11-09",
+      "cash": 3518.23,
+      "holdings_value": 6193.51,
+      "total_value": 9711.74,
+      "return_pct": -2.88,
+      "prices": {
+        "MSFT": {
+          "price": 545.18,
+          "source": "https://finance.yahoo.com/quote/MSFT/",
+          "timestamp": "2026-11-09T21:00:00Z",
+          "shares": 3.2404
+        },
+        "LLY": {
+          "price": 1411.95,
+          "source": "https://uk.marketscreener.com/quote/stock/ELI-LILLY-AND-COMPANY-13401/",
+          "timestamp": "2026-11-09T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 188.33,
+          "source": "https://finance.yahoo.com/quote/XLV/",
+          "timestamp": "2026-11-09T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-11T22:39:51+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 545.18,
+            "source": "https://uk.marketscreener.com/quote/stock/MICROSOFT-CORPORATION-4835/",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1411.95,
+            "source": "https://stockanalysis.com/stocks/lly/history/",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 188.33,
+            "source": "https://www.foxbusiness.com/quote?stockTicker=XLV",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: StockAnalysis history 'At close: Nov 9, 2026, 4:00 PM EST', row Nov 9 close 1,411.95 (+4.28%). MSFT: MarketScreener UK daily table row 09/11/26 545.18 (+2.75%, vol 25,337,411); Yahoo (recorded) 'At close 4:00:01 PM EST', prev 530.61. XLV: Fox Business shows 188.33 as the close preceding its Nov 10 4:00 PM print (188.91 +0.58); Stock Events en/de and Vested Finance Nov 10 188.88 +0.55 also imply 188.33; SSGA official Nov 10 close 188.88. Fox's own Nov 10 figure differs from SSGA, so it is used only for the prior close. All diffs 0.00%."
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "cash": 3518.23,
+      "holdings_value": 6204.53,
+      "total_value": 9722.76,
+      "return_pct": -2.77,
+      "prices": {
+        "MSFT": {
+          "price": 533.16,
+          "source": "https://uk.marketscreener.com/quote/stock/MICROSOFT-CORPORATION-4835/",
+          "timestamp": "2026-11-10T21:00:00Z",
+          "shares": 3.2404
+        },
+        "LLY": {
+          "price": 1432.29,
+          "source": "https://stockevents.app/de/stock/LLY",
+          "timestamp": "2026-11-10T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 188.88,
+          "source": "https://www.ssga.com/us/en/individual/etfs/state-street-health-care-select-sector-spdr-etf-xlv",
+          "timestamp": "2026-11-10T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-11T22:39:51+00:00",
+        "verified_prices": {
+          "MSFT": {
+            "price": 533.16,
+            "source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262300289-microsoft-shares-slip-anthropic-office-tools-525-support-november-11-2026-tradingkey",
+            "diff_pct": 0.0
+          },
+          "LLY": {
+            "price": 1432.29,
+            "source": "https://ng.investing.com/equities/eli-lilly-and-co",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 188.88,
+            "source": "https://ng.investing.com/etfs/spdr---health-care",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: Investing.com NG 'Closed' Nov 11 page, previous close 1,432.29 (Nov 11 change +5.00 ties); StockTitan's Nov 10 evening previous close per research. MSFT: TradingKey (Nov 11, 10:00 AM) 'fell 2.20% to $533.16 on Tuesday, November 10'; MarketScreener UK row (recorded) matches. XLV: Investing.com NG previous close 188.88 on its Nov 11 'Closed' page; SSGA (recorded) 'Closing price $188.88 as of Nov 10 2026'; Stock Events en/de 188.88 +0.55 (stale 'today' label, change ties to 188.33). All diffs 0.00%."
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "cash": 5204.21,
+      "holdings_value": 4488.74,
+      "total_value": 9692.95,
+      "return_pct": -3.07,
+      "prices": {
+        "LLY": {
+          "price": 1437.29,
+          "source": "https://ng.investing.com/equities/eli-lilly-and-co",
+          "timestamp": "2026-11-11T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 188.95,
+          "source": "https://ng.investing.com/etfs/spdr---health-care",
+          "timestamp": "2026-11-11T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-11T22:39:51+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1437.29,
+            "source": "https://stocktitan.net/overview/LLY/",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 188.95,
+            "source": "https://stocktwits.com/symbol/XLv",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: StockTitan after-hours page (last updated Nov 11, 2026 16:59) 'Previous close $1,437.29, November 11, 2026'; after hours 1,439.21 separate. Investing.com NG (recorded) 'Closed', prev close 1,432.29 ties. XLV: Stocktwits (updated 5:21 PM EST Nov 11) regular-session close $188.95 labeled 'Closed', +0.07 (+0.04%) tying to 188.88 (SSGA Nov 10 official); after hours 189.26 separate. Caveat: Stocktwits' header mixes the after-hours price with the day change, so the close is read from its 'Closed' field. Rejected for XLV: INDmoney (8:52 pm IST intraday, 187.45), MarketScreener IN/com Cboe real-time estimates, Stock Events en/de (still Nov 10). All diffs 0.00%."
+      }
     }
   ]
 }
