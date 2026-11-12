@@ -1401,6 +1401,44 @@
         },
         "notes": "LLY: StockTitan after-hours page (last updated Nov 11, 2026 16:59) 'Previous close $1,437.29, November 11, 2026'; after hours 1,439.21 separate. Investing.com NG (recorded) 'Closed', prev close 1,432.29 ties. XLV: Stocktwits (updated 5:21 PM EST Nov 11) regular-session close $188.95 labeled 'Closed', +0.07 (+0.04%) tying to 188.88 (SSGA Nov 10 official); after hours 189.26 separate. Caveat: Stocktwits' header mixes the after-hours price with the day change, so the close is read from its 'Closed' field. Rejected for XLV: INDmoney (8:52 pm IST intraday, 187.45), MarketScreener IN/com Cboe real-time estimates, Stock Events en/de (still Nov 10). All diffs 0.00%."
       }
+    },
+    {
+      "date": "2026-11-12",
+      "cash": 5204.21,
+      "holdings_value": 4458.73,
+      "total_value": 9662.94,
+      "return_pct": -3.37,
+      "prices": {
+        "LLY": {
+          "price": 1427.28,
+          "source": "https://ng.investing.com/equities/eli-lilly-and-co",
+          "timestamp": "2026-11-12T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 187.83,
+          "source": "https://stockevents.app/de/stock/XLV",
+          "timestamp": "2026-11-12T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-12T22:36:48+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1427.28,
+            "source": "https://stocktitan.net/overview/LLY/",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 187.83,
+            "source": "https://stocktwits.com/symbol/xlv",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: StockTitan after-hours page (last updated Nov 12, 2026 16:22) 'closed at $1,427.28 on November 12, 2026'; after hours 1,431.00 (+3.72 vs the close) separate. Recorded Investing.com NG 1,427.28 'Closed' agrees. XLV: Stocktwits lowercase /symbol/xlv 'Closed $187.83', change 1.12 (0.59%), updated 05:18 PM EST; after hours separate; -1.12 ties to the 188.95 Nov 11 close (StockAnalysis 'At close: Nov 11, 2026, 4:00 PM'; SSGA closing price as of Nov 11). Stocktwits shows no date, so it is accepted only because its change ties. Rejected: Yahoo XLV (As of 10:19 AM, intraday), Schwab (3:59 pm print). All diffs 0.00%."
+      }
     }
   ]
 }

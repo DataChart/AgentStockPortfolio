@@ -322,6 +322,20 @@
         "diff_pct": 0.0,
         "notes": "TheStreet market wrap (4:19 PM EST, Nov 11): S&P 500 7,619.38, +98.45 (+1.31%); ties to 7,520.93. Yahoo Finance live Nov 11 ('U.S. markets closed') 7,619.38 +98.45 agrees. 247 Wall St's 7,618.30 conflicts with its own ticker (7,628.40) and is disregarded. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-12",
+      "close": 7592.4,
+      "source": "https://krmg.com/2026/11/12/how-major-us-stock-indexes-fared-thursday-11-12-2026/",
+      "timestamp": "2026-11-12T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-12T22:36:48+00:00",
+        "verified_close": 7592.4,
+        "verified_source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262303336-us-stock-nvidia-ceo-jensen-huang-resigns-nasdaq-falls-tradingkey",
+        "diff_pct": 0.0,
+        "notes": "TradingKey (Nov 12, 9:18 PM): 'the S&P 500 Index declined 0.35% to 7,592.40 points' (Nasdaq -0.39% to 25,366.09). AP story on Yahoo Finance (Nov 12, 1:17 PM PST, 'U.S. markets closed') 7,592.40, -26.98 agrees; 7,619.38 - 26.98 = 7,592.40 ties. Recorded KRMG/AP table matches. Diff 0.00%."
+      }
     }
   ]
 }
