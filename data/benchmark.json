@@ -336,6 +336,20 @@
         "diff_pct": 0.0,
         "notes": "TradingKey (Nov 12, 9:18 PM): 'the S&P 500 Index declined 0.35% to 7,592.40 points' (Nasdaq -0.39% to 25,366.09). AP story on Yahoo Finance (Nov 12, 1:17 PM PST, 'U.S. markets closed') 7,592.40, -26.98 agrees; 7,619.38 - 26.98 = 7,592.40 ties. Recorded KRMG/AP table matches. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-13",
+      "close": 7561.67,
+      "source": "https://krmg.com/2026/11/13/how-major-us-stock-indexes-fared-friday-11-13-2026/",
+      "timestamp": "2026-11-13T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-13T22:35:12+00:00",
+        "verified_close": 7561.67,
+        "verified_source": "https://whdh.com/news/stocks-fall-but-wall-street-notches-a-winning-week-after-several-turbulent-days/",
+        "diff_pct": 0.0,
+        "notes": "AP story on WHDH (Nov 13, after the close): 'All told, the S&P 500 fell 30.73 points to 7,561.67'; 7,592.40 - 30.73 = 7,561.67 ties. MarketScreener (MT Newswires 4:35 pm EST) 'ended the week at 7,561.67', -0.40%, agrees (independent of AP). Diff 0.00%."
+      }
     }
   ]
 }

@@ -1,33 +1,43 @@
 {
-  "as_of": "2026-11-12",
+  "as_of": "2026-11-13",
   "starting_cash": 10000.0,
-  "cash": 5204.21,
-  "holdings_value": 4458.73,
-  "total_value": 9662.94,
-  "return_pct": -3.37,
+  "cash": 2777.62,
+  "holdings_value": 6925.46,
+  "total_value": 9703.08,
+  "return_pct": -2.97,
   "realized_pl": -687.52,
-  "fees_paid": 44.79,
-  "trade_count": 17,
+  "fees_paid": 48.21,
+  "trade_count": 18,
   "positions": [
+    {
+      "ticker": "AAPL",
+      "shares": 6.8015,
+      "cost_basis": 2426.59,
+      "avg_cost": 356.7728,
+      "last_price": 356.27,
+      "market_value": 2423.17,
+      "unrealized_pl": -3.42,
+      "unrealized_pl_pct": -0.14
+    },
     {
       "ticker": "LLY",
       "shares": 2.284,
       "cost_basis": 2925.9,
       "avg_cost": 1281.042,
-      "last_price": 1427.28,
-      "market_value": 3259.91,
-      "unrealized_pl": 334.01,
-      "unrealized_pl_pct": 11.42
+      "last_price": 1443.5,
+      "market_value": 3296.95,
+      "unrealized_pl": 371.05,
+      "unrealized_pl_pct": 12.68
     },
     {
       "ticker": "XLV",
       "shares": 6.3825,
       "cost_basis": 1182.37,
       "avg_cost": 185.2519,
-      "last_price": 187.83,
-      "market_value": 1198.82,
-      "unrealized_pl": 16.45,
-      "unrealized_pl_pct": 1.39
+      "last_price": 188.85,
+      "market_value": 1205.34,
+      "unrealized_pl": 22.97,
+      "unrealized_pl_pct": 1.94
     }
   ]
 }

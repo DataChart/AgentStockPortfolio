@@ -601,6 +601,41 @@
         ],
         "notes": "StockTitan MSFT after-hours page (last updated Nov 11, 2026 16:46): 'Previous close $521.13 (November 11, 2026)', after hours 519.96 shown separately. 533.16 -> 521.13 = -2.26%; prior close 533.16 confirmed by TradingKey and MarketScreener UK. Recorded Stock Events en (-12.03, '21:00 Today') ties. Rule check: Nasdaq 25,065.87 (La Nacion/AP Nov 10) -> 25,466.19 (+400.31, +1.60%, TheStreet 4:19 PM EST wrap); MSFT trailed by 3.86 points, so the thesis-break rule on origin/main strategy.md (written Nov 6, effective from the Nov 9 close) fired; no higher-priority rule fired (521.13 > 504.46 and 483.39). Diff 0.00%. Rejected: MarketScreener UK header (19:32 GMT intraday) and 11/11 row 520.45 (partial volume)."
       }
+    },
+    {
+      "id": "T0018",
+      "date": "2026-11-13",
+      "action": "BUY",
+      "ticker": "AAPL",
+      "shares": 6.8015,
+      "quote_price": 356.27,
+      "price_source": "https://stockevents.app/fr/stock/AAPL",
+      "price_timestamp": "2026-11-13T21:00:00Z",
+      "exec_price": 356.6263,
+      "gross": 2425.59,
+      "commission": 1.0,
+      "slippage_cost": 2.42,
+      "cash_delta": -2426.59,
+      "cash_after": 2777.62,
+      "rationale": "Apple makes the iPhone, Mac and a growing services business, and it is not one of the AI-capex names we are avoiding. Our post-PPI trigger, written in advance, needed AAPL to beat the S&P 500 on both Nov 12 and Nov 13 and to close above 355.63; it closed at a record 356.27 (+0.39%) while the S&P fell 0.40% after a softer-than-expected October PPI. We sell all on a close below 355.63, or at the 12% stop.",
+      "prev_hash": "526f99da0bdd791c9d89cbb14acd767e6acab651af1645aefec61bf1a2391ed9",
+      "hash": "76e3e7e26b24c9e0938e9551e83f0c6a8a5c650b8dd3608872c25456d9641557",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-13T22:35:11+00:00",
+        "verified_price": 356.27,
+        "verified_source": "https://investor.wedbush.com/wedbush/quote?Symbol=NQ%3AAAPL",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "Wedbush quote: 356.27, +1.39 (+0.39%), previous close 354.88 (ties), 4:00 PM ET Nov 13, 2026. MacDailyNews (Nov 13, 4:11 pm) 'rose $1.39, or 0.39%, to $356.27 to hit a new all-time closing high' agrees; MarketChameleon 356.27 'Data as of November 13, 2026'; Rava daily row 356.34 (0.02%). Trigger as written on main checked on confirmed closes: Nov 12 AAPL -0.21% (354.88 vs 355.63; -0.14% if Nov 11 were 355.36) vs S&P -0.35%; Nov 13 AAPL +0.39% vs S&P -0.40% (7,561.67); 356.27 > 354.88 and > 355.63. Size 2,426.59 <= 25% of pre-buy value 9,706.50 (2,426.62); weight 25.0% < 35%. Not the day before a listed binary report. Diff 0.00%."
+      }
     }
   ]
 }

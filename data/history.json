@@ -1439,6 +1439,55 @@
         },
         "notes": "LLY: StockTitan after-hours page (last updated Nov 12, 2026 16:22) 'closed at $1,427.28 on November 12, 2026'; after hours 1,431.00 (+3.72 vs the close) separate. Recorded Investing.com NG 1,427.28 'Closed' agrees. XLV: Stocktwits lowercase /symbol/xlv 'Closed $187.83', change 1.12 (0.59%), updated 05:18 PM EST; after hours separate; -1.12 ties to the 188.95 Nov 11 close (StockAnalysis 'At close: Nov 11, 2026, 4:00 PM'; SSGA closing price as of Nov 11). Stocktwits shows no date, so it is accepted only because its change ties. Rejected: Yahoo XLV (As of 10:19 AM, intraday), Schwab (3:59 pm print). All diffs 0.00%."
       }
+    },
+    {
+      "date": "2026-11-13",
+      "cash": 2777.62,
+      "holdings_value": 6925.46,
+      "total_value": 9703.08,
+      "return_pct": -2.97,
+      "prices": {
+        "LLY": {
+          "price": 1443.5,
+          "source": "https://ng.investing.com/equities/eli-lilly-and-co",
+          "timestamp": "2026-11-13T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 188.85,
+          "source": "https://stockevents.app/en/stock/XLV",
+          "timestamp": "2026-11-13T21:00:00Z",
+          "shares": 6.3825
+        },
+        "AAPL": {
+          "price": 356.27,
+          "source": "https://stockevents.app/fr/stock/AAPL",
+          "timestamp": "2026-11-13T21:00:00Z",
+          "shares": 6.8015
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-13T22:35:12+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1443.5,
+            "source": "https://stocktitan.net/overview/LLY/",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 188.85,
+            "source": "https://investor.wedbush.com/wedbush/quote?Symbol=321%3A986012",
+            "diff_pct": 0.0
+          },
+          "AAPL": {
+            "price": 356.27,
+            "source": "https://investor.wedbush.com/wedbush/quote?Symbol=NQ%3AAAPL",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "AAPL: Wedbush 356.27 +1.39, prev 354.88, 4:00 PM ET Nov 13 (MacDailyNews 4:11 pm closing note agrees). LLY: StockTitan 'closed at $1,443.50 on November 13, 2026' (last updated Nov 13 17:02), after hours 1,442.02 separate; recorded Investing.com NG agrees. XLV: Wedbush 'Official Closing Price' 188.85, +1.02 (+0.54%), prev 187.83 (ties), Nov 13 4:10 PM EST; Rava daily row 188.81 (0.02%). Rejected as stale: StockAnalysis XLV/AAPL (Nov 11/12), Fox Business (intraday/Nov 12), SSGA (Nov 12), Stocktwits xlv (Nov 12), MarketChameleon XLV (Oct 23), INDmoney XLV (intraday). All diffs 0.00%."
+      }
     }
   ]
 }
