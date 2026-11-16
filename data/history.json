@@ -1488,6 +1488,44 @@
         },
         "notes": "AAPL: Wedbush 356.27 +1.39, prev 354.88, 4:00 PM ET Nov 13 (MacDailyNews 4:11 pm closing note agrees). LLY: StockTitan 'closed at $1,443.50 on November 13, 2026' (last updated Nov 13 17:02), after hours 1,442.02 separate; recorded Investing.com NG agrees. XLV: Wedbush 'Official Closing Price' 188.85, +1.02 (+0.54%), prev 187.83 (ties), Nov 13 4:10 PM EST; Rava daily row 188.81 (0.02%). Rejected as stale: StockAnalysis XLV/AAPL (Nov 11/12), Fox Business (intraday/Nov 12), SSGA (Nov 12), Stocktwits xlv (Nov 12), MarketChameleon XLV (Oct 23), INDmoney XLV (intraday). All diffs 0.00%."
       }
+    },
+    {
+      "date": "2026-11-16",
+      "cash": 5173.65,
+      "holdings_value": 4469.08,
+      "total_value": 9642.73,
+      "return_pct": -3.57,
+      "prices": {
+        "LLY": {
+          "price": 1431.67,
+          "source": "https://stocktitan.net/overview/LLY/",
+          "timestamp": "2026-11-16T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 187.88,
+          "source": "https://investor.wedbush.com/wedbush/quote?Symbol=321%3A986012",
+          "timestamp": "2026-11-16T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-16T22:33:04+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1431.67,
+            "source": "https://stockevents.app/fr/stock/LLY",
+            "diff_pct": 0.0
+          },
+          "XLV": {
+            "price": 187.88,
+            "source": "https://stockevents.app/de/stock/XLV",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: Stock Events fr 1,431.67, -11.83 (-0.82%), '21:03 Aujourd'hui', change ties to the 1,443.50 Nov 13 close; after hours (22:10) separate. Wedbush LLY rejected (stale, Nov 13 7:00 PM). XLV: Stock Events de 187.88, -0.97 (-0.51%), '21:00 Heute', change ties to the 188.85 Nov 13 close; after hours (22:10) separate. Both diffs 0.00%; valuation 9,642.73 replays."
+      }
     }
   ]
 }

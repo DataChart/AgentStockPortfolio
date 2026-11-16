@@ -350,6 +350,20 @@
         "diff_pct": 0.0,
         "notes": "AP story on WHDH (Nov 13, after the close): 'All told, the S&P 500 fell 30.73 points to 7,561.67'; 7,592.40 - 30.73 = 7,561.67 ties. MarketScreener (MT Newswires 4:35 pm EST) 'ended the week at 7,561.67', -0.40%, agrees (independent of AP). Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-16",
+      "close": 7416.59,
+      "source": "https://www.stl.news/u-s-stock-market-today-november-16-2026/",
+      "timestamp": "2026-11-16T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-16T22:33:04+00:00",
+        "verified_close": 7416.59,
+        "verified_source": "https://whdh.com/news/stocks-tumble-on-wall-street-as-nvidia-leads-another-sell-off-in-technology-companies/",
+        "diff_pct": 0.0,
+        "notes": "AP on WHDH (Nov 16): 'the S&P 500 shed 145.08 points to close at 7,416.59'; 7,561.67 - 145.08 ties. MarketScreener (MT Newswires, published 4:53 pm EST; quote 7,416.59, -1.92%, 'Market Closed' 4:20 pm EST) agrees. Diff 0.00%."
+      }
     }
   ]
 }

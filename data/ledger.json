@@ -636,6 +636,42 @@
         ],
         "notes": "Wedbush quote: 356.27, +1.39 (+0.39%), previous close 354.88 (ties), 4:00 PM ET Nov 13, 2026. MacDailyNews (Nov 13, 4:11 pm) 'rose $1.39, or 0.39%, to $356.27 to hit a new all-time closing high' agrees; MarketChameleon 356.27 'Data as of November 13, 2026'; Rava daily row 356.34 (0.02%). Trigger as written on main checked on confirmed closes: Nov 12 AAPL -0.21% (354.88 vs 355.63; -0.14% if Nov 11 were 355.36) vs S&P -0.35%; Nov 13 AAPL +0.39% vs S&P -0.40% (7,561.67); 356.27 > 354.88 and > 355.63. Size 2,426.59 <= 25% of pre-buy value 9,706.50 (2,426.62); weight 25.0% < 35%. Not the day before a listed binary report. Diff 0.00%."
       }
+    },
+    {
+      "id": "T0019",
+      "date": "2026-11-16",
+      "action": "SELL",
+      "ticker": "AAPL",
+      "shares": 6.8015,
+      "quote_price": 352.78,
+      "price_source": "https://investor.wedbush.com/wedbush/quote?Symbol=NQ%3AAAPL",
+      "price_timestamp": "2026-11-16T21:00:00Z",
+      "exec_price": 352.4272,
+      "gross": 2397.03,
+      "commission": 1.0,
+      "slippage_cost": 2.4,
+      "cash_delta": 2396.03,
+      "cash_after": 5173.65,
+      "rationale": "Apple makes the iPhone, Mac and services; we bought it on Nov 13 at a record close after it beat the S&P two days running, with a sell line written in advance at a close below 355.63. On Nov 16 it closed at 352.78 (-0.98%) as AI and tech stocks fell ahead of Nvidia's report, so the line fired and the whole position is sold at that close, as the rule requires. It fell less than the S&P (-1.92%), so this is a price exit, not a view that Apple is broken; any rebuy needs a new written trigger.",
+      "prev_hash": "76e3e7e26b24c9e0938e9551e83f0c6a8a5c650b8dd3608872c25456d9641557",
+      "realized_pl": -30.56,
+      "hash": "0ca1c67b5a45b8d7f7f700e2babda5ffb62f2a9e497714b7cf1e1f59e622971a",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-16T22:33:04+00:00",
+        "verified_price": 352.78,
+        "verified_source": "https://stocktitan.net/overview/AAPL/",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "StockTitan: 'Apple (AAPL) closed at $352.78 on November 16, 2026' (updated Nov 16 16:33); after hours 352.50 separate. Stock Events fr AAPL 352.78, -3.49 (-0.98%), '21:00 Aujourd'hui', change ties to the 356.27 Nov 13 close; after hours (22:08) separate. Rule on main: AAPL sell all on a close below 355.63 (priority 3) fired (352.78, 0.80% below); no 12% stop (AAPL 313.96, LLY 1,127.32, XLV 163.02) or LLY trim (1,354.00) fired. Fees/realized P&L recomputed (-30.56). Rationale's 'as AI and tech stocks fell ahead of Nvidia's report' describes the market (AP, STL.News); no cited source attributes Apple's own move to it. Diff 0.00%."
+      }
     }
   ]
 }
