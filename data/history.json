@@ -1526,6 +1526,44 @@
         },
         "notes": "LLY: Stock Events fr 1,431.67, -11.83 (-0.82%), '21:03 Aujourd'hui', change ties to the 1,443.50 Nov 13 close; after hours (22:10) separate. Wedbush LLY rejected (stale, Nov 13 7:00 PM). XLV: Stock Events de 187.88, -0.97 (-0.51%), '21:00 Heute', change ties to the 188.85 Nov 13 close; after hours (22:10) separate. Both diffs 0.00%; valuation 9,642.73 replays."
       }
+    },
+    {
+      "date": "2026-11-17",
+      "cash": 5173.65,
+      "holdings_value": 4415.41,
+      "total_value": 9589.06,
+      "return_pct": -4.11,
+      "prices": {
+        "LLY": {
+          "price": 1415.55,
+          "source": "https://stocktitan.net/overview/LLY/",
+          "timestamp": "2026-11-17T21:00:00Z",
+          "shares": 2.284
+        },
+        "XLV": {
+          "price": 185.24,
+          "source": "https://investor.wedbush.com/wedbush/quote?Symbol=321%3A986012",
+          "timestamp": "2026-11-17T21:00:00Z",
+          "shares": 6.3825
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-17T22:32:34+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1414.85,
+            "source": "https://www.rava.com/perfil/LLY_US",
+            "diff_pct": 0.049
+          },
+          "XLV": {
+            "price": 185.18,
+            "source": "https://www.rava.com/perfil/XLV_US",
+            "diff_pct": 0.032
+          }
+        },
+        "notes": "LLY: Rava LLY_US daily row 17/11/2026 close 1,414.85 (16/11 row 1,431.67 ties the prior mark), 0.05% from 1,415.55; Stock Events de LLY 1,415.55, -16.12 (-1.13%), '21:01 Heute', change ties to 1,431.67 (after hours 22:10 separate). XLV: Rava XLV_US daily row 17/11/2026 close 185.18 (16/11 row 187.88 ties), 0.03% from 185.24; MarketChameleon XLV 185.24, 'Data as of November 17, 2026' (corroborator only). Stock Events de XLV (Nov 16), Fox Business (Nov 16 3:59 PM), StockAnalysis (stale) and Wedbush LLY/StockTitan XLV (not fetchable) rejected. Valuation 9,589.06 replays."
+      }
     }
   ]
 }

@@ -364,6 +364,20 @@
         "diff_pct": 0.0,
         "notes": "AP on WHDH (Nov 16): 'the S&P 500 shed 145.08 points to close at 7,416.59'; 7,561.67 - 145.08 ties. MarketScreener (MT Newswires, published 4:53 pm EST; quote 7,416.59, -1.92%, 'Market Closed' 4:20 pm EST) agrees. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-17",
+      "close": 7340.53,
+      "source": "https://www.marketscreener.com/news/wall-street-ends-lower-ahead-of-nvidia-results-focus-turns-to-anthropic-debut-ce785edcdc81fe2d",
+      "timestamp": "2026-11-17T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-17T22:32:34+00:00",
+        "verified_close": 7340.53,
+        "verified_source": "https://www.fool.com/coverage/stock-market-today/2026/11/17/stock-market-today-nov-17-nvidia-slides-ahead-of-earnings-but-soars-in-after-hours-trading/",
+        "diff_pct": 0.0,
+        "notes": "Motley Fool market wrap (Nov 17, 5:03 PM EST, after the close): index ticker 'S&P 500 7,340.53 -1.0% -76.06'; body 'fell 1.03% to 7,341'. 7,416.59 - 76.06 = 7,340.53 ties to the cleared Nov 16 close. Preliminary MarketScreener/Reuters 7,341.23 (4:02 pm, doesn't tie) not used. Diff 0.00%."
+      }
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-17",
   "starting_cash": 10000.0,
   "cash": 5173.65,
-  "holdings_value": 4469.08,
-  "total_value": 9642.73,
-  "return_pct": -3.57,
+  "holdings_value": 4415.41,
+  "total_value": 9589.06,
+  "return_pct": -4.11,
   "realized_pl": -718.08,
   "fees_paid": 51.61,
   "trade_count": 19,
@@ -14,20 +14,20 @@
       "shares": 2.284,
       "cost_basis": 2925.9,
       "avg_cost": 1281.042,
-      "last_price": 1431.67,
-      "market_value": 3269.93,
-      "unrealized_pl": 344.03,
-      "unrealized_pl_pct": 11.76
+      "last_price": 1415.55,
+      "market_value": 3233.12,
+      "unrealized_pl": 307.22,
+      "unrealized_pl_pct": 10.5
     },
     {
       "ticker": "XLV",
       "shares": 6.3825,
       "cost_basis": 1182.37,
       "avg_cost": 185.2519,
-      "last_price": 187.88,
-      "market_value": 1199.14,
-      "unrealized_pl": 16.77,
-      "unrealized_pl_pct": 1.42
+      "last_price": 185.24,
+      "market_value": 1182.29,
+      "unrealized_pl": -0.08,
+      "unrealized_pl_pct": -0.01
     }
   ]
 }
