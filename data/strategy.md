@@ -1,76 +1,77 @@
 # Analyst guidance
 
-*Updated 2026-11-17 by the analyst, after day 24 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19, Oct 20, Nov 9 and Nov 10 did not execute; those days have valuation snapshots only, and no trades are dated on them.*
+*Updated 2026-11-18 by the analyst, after day 25 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19, Oct 20, Nov 9 and Nov 10 did not execute; those days have valuation snapshots only, and no trades are dated on them.*
 
 **Mandate:** maximize ROI % on a $10,000 paper portfolio. Aggressive is fine; reckless is not.
 
 ## Current playbook
-- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. One exception: a sector-fund buy limited by a sector cap may be sized to the full room under that cap if the room is at least 10% of value. Keep cash under 10% once fully invested. **Cash is $5,173.65 (54.0%) after the Nov 17 close, with two holdings.** Far above target. It is worked down only with written triggers (AAPL-R on Nov 18), not with a forced buy.
+- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. One exception: a sector-fund buy limited by a sector cap may be sized to the full room under that cap if the room is at least 10% of value. Keep cash under 10% once fully invested. **Cash is $6,327.81 (66.7%) after the Nov 18 close, with one holding (LLY).** Far above target. It is worked down only with written triggers (AAPL-R2, earliest buy Nov 20), not with a forced buy.
 - Favor catalysts within weeks, such as earnings beats with raised guidance, regulatory approvals, product launches and sector momentum. Prefer names showing **relative strength across both down days and up days** (Nov 6 lesson), and treat **weakness on up days** as a warning. A buy trigger needs **two consecutive closes beating the S&P**.
 - Rotate only for a clearly better setup. A swap costs about $2 plus 0.2% of the amount. When the regime turns against a theme, trim the most exposed name instead of waiting for the 12% stop.
 - **A buy trigger must not fire at a price already below the exit line written for that buy** (Nov 12 lesson), **and its entry condition must sit at least 1% above that exit line** (Nov 13 and Nov 16 lessons). Each trigger's entry condition includes its own sell line.
 - Exits:
   - Cut any holding that closes 12% below cost or whose thesis breaks. **A close below a written sell line is executed at that close, not deferred.**
   - Let winners run while momentum holds. Once a holding is up 15% or more, raise its mental stop to breakeven.
-  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) LLY trim to half below its line, (3) anything else (including the XLV relative-weakness rule and, if AAPL is rebought, its 345.70 line). The next one is sold at the following close if its condition still holds.
+  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) LLY trim to half below its line, (3) anything else (including, if AAPL is rebought, its 345.70 line). The next one is sold at the following close if its condition still holds.
 - Event risk:
   - Don't open new positions on the day before a binary report (earnings, CPI, FOMC, the monthly jobs report) unless the setup is exceptional. While the Fed is openly debating the size of a December hike, the monthly PPI also counts as a binary report.
-  - **Nvidia reported Q3 after the Nov 17 close.** Fool (Nov 17, 5:03 PM EST): sales rose 103% "to $115.8 billion" and the "fiscal Q4 revenue forecast of approximately $130 billion"; shares "rose 1.3% in early after-hours trading". MarketScreener (4:30 pm EST): Nvidia beat estimates and its shares rose as much as 3% in extended trading. **After-hours only; not a trade signal.** The Nov 18 close is the first post-report close, and it is what counts.
-  - **Nov 18 is not the day before a binary report.** FOMC minutes Nov 18 (not on the binary list); Anthropic's IPO: sources disagree on the day. Reuters via MarketScreener (Nov 17, 4:30 pm EST) says it is "expected on Wednesday" (Nov 18); the Yahoo Finance live page (Nov 17) says it "is expected to begin trading Thursday" (Nov 19). AI-linked, not on the binary list. **Next binary report on the list: the November jobs report, Fri Dec 4, 8:30 AM** (BLS December 2026 release schedule, page modified Nov 9), then FOMC Dec 8-9 (Federal Reserve FOMC calendar), CPI Dec 10 and PPI Dec 15 (BLS). The BLS schedule lists no CPI, PPI or jobs release between Nov 18 and Dec 4. PCE (Nov 25, not re-checked) is not on the binary list.
+  - **Nvidia's report is done; the first post-report close was lower.** Fool (Nov 18, 4:51 PM EST): Nvidia "closed at $150.96, down 2.89%"; strong results "initially lifted the stock", with investors "now watching succession uncertainty and China-related regulatory scrutiny". Reuters (via Lufkin Daily News, Nov 18): shares fell "amid uncertainties caused by co-founder Jensen Huang's sudden departure last week."
+  - **Anthropic IPO:** Bloomberg, as reported on the Yahoo Finance live page (Nov 18, after the close), says it priced at $83 a share and is set to debut on Nasdaq on Thursday (Nov 19) as ANT. AI-linked; not on the binary list; no buy (AI test).
+  - **Next binary report on the list: the November jobs report, Fri Dec 4, 8:30 AM** (BLS December 2026 release schedule, checked Nov 17), then FOMC Dec 8-9 (Federal Reserve FOMC calendar), CPI Dec 10 and PPI Dec 15 (BLS). Nov 19 and Nov 20 are not days before a binary report. PCE (Nov 25, not re-checked) is not on the binary list.
   - **Act on confirmed closes after a report or an event, never on overnight futures, pre-market or after-hours prints.**
   - Each run's instructions name the next scheduled binary report.
   - Holding existing winners through their own earnings is fine.
-- **Sector caps at the time of a buy:** healthcare 45% (LLY plus XLV: 33.7% + 12.3% = 46.0% after the Nov 17 close, above the cap through drift; no healthcare adds, no forced trim). Energy 35% (none held). Utilities 35% (none held). Technology hardware (none held) has no separate cap; the 35% single-name limit applies.
-- **Rates regime: a December hike is close to fully priced.** MarketScreener (Nov 17): "Markets are pricing in a near-certain 95.4% likelihood of a 25-basis-point increase in December." October retail sales +0.2% vs 0.1% expected (Yahoo Finance live page, Nov 17). No dated 10-year close found today.
-- **AI-capex regime: test not passed; count at zero.** The test is two straight higher Nasdaq closes **and** a Nasdaq close above 25,736.51 (the Nov 4 close). Nov 17: 24,328.38 (-181.37, -0.74%), the fourth straight drop; 5.47% below the level (a 5.79% gain is needed). Until it passes, no new AI-linked buys (hyperscalers, semis, data-center names, neoclouds), whatever Nvidia's after-hours move.
-- **Semis remain off limits** until the AI test passes, Nvidia has reported (done), and a leader clears its trigger: NVDA above 228.52 (155.46 Nov 17) or TSM above 445.
-- **Software under an AI-disruption overhang.** MarketScreener (Nov 17): "Software shares were broadly lower". No software buys without a new written trigger.
-- **Energy: exited.** No re-entry trigger. A new energy position needs a new supply shock and a newly written trigger.
-- **Healthcare: XLV (defensive leg) and LLY (winner).** Both lagged the S&P on Nov 17 (LLY -1.13%, XLV -1.41%, S&P -1.03%); XLV's 0.38-point gap is short of its 1-point rule.
-- **Utilities: dropped (Nov 17).** XLU fell 1.61% against the S&P's 1.03% on the first leg of its trigger, so the trigger is dead. It is not rewritten: on its first test day it did not behave as a defensive. A new utilities trigger needs two fresh closes beating the S&P, written by a later analyst.
+- **Sector caps at the time of a buy:** healthcare 45% (LLY only: 33.3% after the Nov 18 close; XLV sold). Energy 35% (none held). Utilities 35% (none held). Technology hardware (none held) has no separate cap; the 35% single-name limit applies.
+- **Rates regime: a December hike is close to fully priced.** Reuters via Lufkin Daily News (Nov 18): "Financial markets are pricing in a near-certain probability of a 25-basis-point interest rate hike" (CME FedWatch), and the October minutes "showed the central bank remained focused on inflation risks." No dated 10-year close found (Yahoo's strip shows 5.07 with no timestamp; not used).
+- **AI-capex regime: test not passed; count at one.** The test is two straight higher Nasdaq closes **and** a Nasdaq close above 25,736.51 (the Nov 4 close). Nov 18: 24,429.89 (+101.50, +0.42%), day 1; 5.08% below the level (a 5.35% gain is needed). Until it passes, no new AI-linked buys (hyperscalers, semis, data-center names, neoclouds, ANT).
+- **Semis remain off limits** until the AI test passes and a leader clears its trigger: NVDA above 228.52 (150.96 Nov 18) or TSM above 445.
+- **Software under an AI-disruption overhang** (Reuters via MarketScreener, Nov 17: "Software shares were broadly lower"). No software buys without a new written trigger.
+- **Energy: exited.** No re-entry trigger. A new energy position needs a new supply shock and a newly written trigger. Oil fell Nov 18 (Reuters "Trading Day": "Oil falls, Brent -1%, WTI -3%"; no settlement price).
+- **Healthcare: LLY only.** XLV was sold on Nov 18 on its thesis-break rule (-2.20% vs the S&P's -0.23%). Yahoo Finance live page (Nov 18, 4:22 PM UTC): "Healthcare stocks dragged on the Dow Jones Industrial Average" after CMS proposed an anti-fraud rule, with UnitedHealth and Humana each down about 6% at that time. LLY fell 2.32% the same day; no source ties LLY's move to the rule. No healthcare re-entry without a new two-day trigger.
+- **Utilities: dropped (Nov 17).** No trigger.
 
 ## Watchlist
 | Ticker | Why it's here | Trigger to act |
 |---|---|---|
-| LLY (held) | 2.284 sh, avg 1,281.04; 1,415.55 Nov 17 (-1.13%), +10.5% vs cost, 33.7% weight. | Hold. **Trim to half on a close below 1,354.00 (priority 2; 4.5% away).** Sell all below 1,127.32 (stop, priority 1). Stop to breakeven (1,281.04) once a close is at or above 1,473.20 (+15%; 4.1% away). No adds (healthcare above cap). |
-| XLV (held) | 6.3825 sh, avg 185.25 incl. fees; 185.24 Nov 17 (-1.41%), -0.01% vs cost, 12.3% weight. | Sell all below 163.02 (12% stop, priority 1). Thesis break (priority 3): XLV trails the S&P by 1 point or more on a day the S&P closes lower. No adds. |
-| AAPL (sold Nov 16) | Sold all at 352.78. 351.91 Nov 17 (-0.25% vs the S&P's -1.03%): **leg 1 of AAPL-R passed.** Record close 356.27 (Nov 13), 1.24% above. | **Trigger AAPL-R fires on the Nov 18 close if its two remaining conditions hold** (see the instructions). Exit line: sell all on a close below 345.70. |
-| XLU | Dead trigger: 43.42 Nov 17 (-1.61%) vs the S&P's -1.03%. | No trigger. |
-| XLI | No close checked. | No trigger. |
-| NVDA / TSM | NVDA 155.46 Nov 17 (-0.44%). Reported after the close (beat; after-hours up, see above). | NVDA above 228.52 or TSM above 445, after the AI test passes. |
+| LLY (held) | 2.284 sh, avg 1,281.04; 1,382.75 Nov 18 (-2.32%), +7.9% vs cost, 33.3% weight. | Hold. **Trim to half on a close below 1,354.00 (priority 2; 2.1% away).** Sell all below 1,127.32 (stop, priority 1). Stop to breakeven (1,281.04) once a close is at or above 1,473.20 (6.5% away). No adds (35% single-name limit). |
+| AAPL (sold Nov 16) | Sold all at 352.78. 352.45 Nov 18 (+0.15% vs the S&P's -0.23%). AAPL-R failed on (c): 352.45 is 1.08% below 356.27. Beat the S&P on both Nov 17 and Nov 18. | **Trigger AAPL-R2** (see the instructions): fresh legs on Nov 19 and Nov 20; buy only on the Nov 20 close. Exit below 345.70. |
+| XLV (sold Nov 18) | Sold all at 181.17, realized -$28.21. | No trigger. |
+| XLU / XLI | No trigger. | None. |
+| NVDA / TSM | NVDA 150.96 Nov 18 (-2.89%), fifth straight lower close after a beat. | NVDA above 228.52 or TSM above 445, after the AI test passes. |
+| ANT (Anthropic) | Prices at $83, debuts Nov 19 (Bloomberg via Yahoo). | None: AI test; no trading history. |
 | AMZN / GOOGL / META | Under the AI test. | No triggers. GOOGL needs a close above 324.89; META above 700. |
-| MSFT (sold Nov 11) | Sold 521.13. 506.24 on Nov 17 (StockTitan, single source), 2.9% below the sale. | Don't rebuy before the AI test passes and MSFT closes above 545.18 while beating the Nasdaq that day. |
-| XLE (sold Nov 4) | Sold 63.52. | Don't rebuy without a new written trigger. |
-| CRM (sold Oct 30) | Sold 229.17. | Don't rebuy. |
-| VLO (sold Oct 23) | Sold 419.28. | Don't rebuy. |
+| MSFT (sold Nov 11) | Sold 521.13. No Nov 18 close checked. | Don't rebuy before the AI test passes and MSFT closes above 545.18 while beating the Nasdaq that day. |
+| XLE (sold Nov 4) / CRM (Oct 30) / VLO (Oct 23) | Sold. | Don't rebuy without a new written trigger. |
 
-## Instructions for the next run (Wednesday 2026-11-18)
-1. **Sells, in priority order, on the Nov 18 close (only one per day):**
-   1. Any 12% stop: LLY 1,127.32, XLV 163.02.
-   2. LLY trim to half on a close below 1,354.00.
-   3. Anything else: the XLV thesis break (XLV trails the S&P by 1 point or more while the S&P closes lower).
+## Instructions for the next run (Thursday 2026-11-19)
+1. **Sells, in priority order, on the Nov 19 close (only one per day):**
+   1. 12% stop: LLY 1,127.32.
+   2. LLY trim to half (1.142 sh) on a close below 1,354.00.
+   3. Nothing else is live (XLV sold; AAPL not held).
 
-   Nothing is carried from Nov 17: no sell rule fired.
-2. **Buy: Trigger AAPL-R only** (Apple rebuy). Leg (a) passed on Nov 17 (AAPL -0.25% vs the S&P's -1.03%; Wedbush and StockTitan). Buy 25% of portfolio value on the Nov 18 close if both hold, on confirmed 4:00 pm closes from two sites:
-   - (b) AAPL's % change from 351.91 beats the S&P's % change from 7,340.53 on Nov 18;
-   - (c) the Nov 18 close is **above 356.27** (the Nov 13 record close; 3.1% above the exit line).
-   - **Exit line written with it: sell all on a close below 345.70**, plus the 12% stop. Unchanged from the Nov 16 text; nothing is loosened.
-   - The Nov 18 close is the first after Nvidia's report. Judge it on the close, not on the after-hours or pre-market move. AAPL is not on the AI-linked list.
-   - **Trigger XLU is dead** (leg 1 failed) and is not replaced. No other buy on Nov 18.
-3. **Next binary report: the November jobs report, Fri Dec 4** (BLS schedule, checked Nov 17). Nov 18 is not the day before a binary report.
-4. **Record:** S&P and Nasdaq closes (AI test: count at zero; a higher close is day 1; the test also needs a close above 25,736.51); NVDA's first post-report close vs 228.52 and vs 155.46; LLY vs 1,354.00 and 1,473.20; XLV vs the S&P; AAPL vs the S&P and 356.27; any confirmed MSFT close vs 521.13; any dated Brent settlement and 10-year yield. If AAPL-R does not fire, the analyst writes any new trigger with fresh two-day legs; cash is 54%, so look for one.
+   Nothing is carried from Nov 18: the XLV sale was the only sell rule that fired, and it was executed.
+2. **No buy on Nov 19.** AAPL-R did not fire on Nov 18 (leg (b) passed, leg (c) failed: 352.45 is not above 356.27) and is spent; it is not re-run on a later close. **Trigger AAPL-R2** (new, fresh two-day legs; nothing reused from Nov 17-18):
+   - (a) Nov 19: AAPL's % change from 352.45 beats the S&P's % change from 7,323.63.
+   - (b) Nov 20: AAPL's % change from its Nov 19 close beats the S&P's that day.
+   - (c) The Nov 20 close is **above 356.27** (the Nov 13 record close; 3.1% above the exit line).
+   - Buy 25% of portfolio value on the Nov 20 close only if (a), (b) and (c) all hold on confirmed 4:00 pm closes from two sites. Exit line written with it: sell all on a close below 345.70, plus the 12% stop.
+   - Record leg (a) on Nov 19. If it fails, AAPL-R2 is dead.
+3. **Next binary report: the November jobs report, Fri Dec 4** (BLS schedule). Nov 19 is not the day before a binary report.
+4. **Record:** S&P and Nasdaq closes (AI test: count at one; a second higher close makes two, but the test also needs a close above 25,736.51); NVDA vs 228.52; LLY vs 1,354.00 and 1,473.20; AAPL vs the S&P and 356.27; ANT's first-day close if dated sources report it (information only); any dated Brent settlement and 10-year yield. With 67% cash, the analyst should look for one more trigger with fresh two-day legs, outside AI-linked names.
 5. Marks:
-   - What worked on Nov 17: Wedbush quote pages for AAPL (`?Symbol=NQ%3AAAPL`, "Delayed Quote Updated: 4:00 PM EST, Nov 17, 2026", previous close ties) and XLV (`?Symbol=321%3A986012`, "Official Closing Price Updated: 4:10 PM EST, Nov 17, 2026"); StockTitan overview pages ("closed at ... on November 17, 2026") for AAPL, LLY, NVDA, MSFT; Stock Events de LLY ("21:01 Heute", change ties) and de XLU ("21:00 Heute", change ties); Rava XLV_US (header 185.18, "17/11 18:00", daily row); MarketScreener's Reuters close story (final version, 4:30 pm EST) and the Motley Fool's market wrap (index ticker).
-   - Stale or unusable on Nov 17: Stock Events fr LLY, fr/de XLV, fr AAPL, en LLY, en XLU (all Nov 16 or older, or a change that doesn't tie); Stock Events en XLV (14:47 intraday); Yahoo XLU history (rows end Oct 30) and the Yahoo live page (intraday); Investing.com XLU (September); Fox Business XLU (Nov 16; close and pre-market labels mixed); TradingView XLU (conflicting 1-day figures); dividend.watch XLU (no price); Robinhood XLU (no time label; corroborator only); 24/7 Wall St (two conflicting sets of figures); STL.News (no Nov 17 page yet; the URL returned Nov 16). StockTitan XLU, Finviz, etfdb and Alain Guillot couldn't be fetched.
-   - MarketScreener posted a preliminary Reuters version ("7,341.23", -75.96) that doesn't tie; use only the final version (7,340.53, -76.06, which ties to 7,416.59).
-   - Reject "As of" without a "Closed" label, "03:59 PM" (as a primary), "Intraday", "Overnight", "Pre-Market", post-market last trades, and headers that sit outside their own day range. Use a Stock Events "Today/Heute" label only when its change ties to the confirmed prior close.
+   - What worked on Nov 18: StockTitan overview pages ("closed at ... on November 18, 2026") for AAPL, LLY, NVDA, XLV; Stock Events **en** AAPL ("21:00 Today", +0.54 ties to 351.91) and **en** LLY ("21:03 Today", -32.80 ties to 1,415.55); Wedbush XLV (`?Symbol=321%3A986012`, "Official Closing Price ... Updated: 4:10 PM EST, Nov 18, 2026"); the Yahoo Finance live page header ("At close: 4:20:01 PM EST") and the Motley Fool's wrap ticker for the indexes and AAPL.
+   - Stale or unusable on Nov 18: Rava (all pages still Nov 17 at the time of the run); Stock Events de LLY (Nov 17) and de AAPL ("17:12 Heute", intraday); Wedbush AAPL (served the Nov 17 quote) and Wedbush NVDA (11:38 AM intraday); MarketChameleon XLV (October); The Senior and CNBC couldn't be fetched. The Reuters close story via Lufkin Daily News is a preliminary version (S&P "7,322.53", down 18 points; doesn't tie); use it for news only.
+   - Reject "As of" without a "Closed" label, "Intraday", "Overnight", "Pre-Market", post-market last trades, and headers that sit outside their own day range. Use a Stock Events "Today/Heute" label only when its change ties to the confirmed prior close.
    - Use two non-identical sites for every mark (the language pages of Stock Events are one site).
-6. News claims: cite sources dated Nov 18 and don't attribute a move to news unless a source says so; don't quote anyone unless the quote is in a cited source, and label paraphrases as paraphrases.
+6. News claims: cite sources dated Nov 19 and don't attribute a move to news unless a source says so; don't quote anyone unless the quote is in a cited source, and label paraphrases as paraphrases.
 7. Write marks for every holding even with no trade.
 
-Stops (12% below average cost): LLY 1,127.32, XLV 163.02.
+Stops (12% below average cost): LLY 1,127.32.
 
 ## Lessons so far
+- (2026-11-18) A written relative-weakness rule sold the defensive leg on the day it stopped being defensive. XLV fell 2.20% against the S&P's 0.23%, on a day the Yahoo Finance live page says healthcare dragged the Dow after a proposed CMS rule (no source ties XLV's own move to it). The rule sold it at 181.17 for -$28.21 realized; it had been flat vs cost one day earlier.
+- (2026-11-18) A beat-and-raise did not produce a higher first close. Nvidia rose after hours on Nov 17 and closed -2.89% on Nov 18 (Fool), another after-hours move that faded by the close (as with META Oct 22 and MSFT Oct 29). Semis being off limits cost nothing again.
+- (2026-11-18) A record-close condition kept a relative-strength rebuy out. AAPL beat the S&P on both legs of AAPL-R but closed 1.08% below 356.27, so no buy was made. The condition was not loosened; the new AAPL-R2 needs two fresh legs.
 - (2026-11-17) A defensive tag is not a defensive record. XLU rose 0.2% on Nov 16's -1.92% day (single source) and then fell 1.61% on Nov 17's -1.03% day, failing the first leg of its trigger. Requiring two confirmed days kept 20% of the book out of it before Nvidia's report. One down day of leadership is not relative strength, again (as with XLI on Nov 12).
 - (2026-11-17) Cash was the best-behaved asset on the day before the report. With 54% in cash the book lost 0.56% against the S&P's 1.03%, even though both holdings lagged (LLY -1.13%, XLV -1.41%). AAPL, sold one day earlier at 352.78, closed at 351.91 and beat the S&P by 0.78 points, so the sale cost nothing so far; the rebuy test is still running.
 - (2026-11-16) A price line written just under the entry turns a relative-strength buy into a bet on the next day's tape. AAPL kept beating the S&P (-0.98% vs -1.92% on Nov 16), the very signal it was bought on, and was still sold one trading day later at 352.78 for -$30.56 (-1.26% of the position, $6.82 of it fees). The line was written before the buy and was executed as written. The fix is forward-looking: entry conditions now sit at least 1% above the exit line, and the new triggers sit 1% and 3.1% above theirs.

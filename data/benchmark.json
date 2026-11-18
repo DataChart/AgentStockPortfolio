@@ -378,6 +378,20 @@
         "diff_pct": 0.0,
         "notes": "Motley Fool market wrap (Nov 17, 5:03 PM EST, after the close): index ticker 'S&P 500 7,340.53 -1.0% -76.06'; body 'fell 1.03% to 7,341'. 7,416.59 - 76.06 = 7,340.53 ties to the cleared Nov 16 close. Preliminary MarketScreener/Reuters 7,341.23 (4:02 pm, doesn't tie) not used. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-18",
+      "close": 7323.63,
+      "source": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-earnings-anthropic-ipo-143530588.html",
+      "timestamp": "2026-11-18T21:00:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-18T22:29:37+00:00",
+        "verified_close": 7323.63,
+        "verified_source": "https://www.fool.com/coverage/stock-market-today/2026/11/18/stock-market-today-nov-18-nvidia-slips-on-strong-results-as-succession-and-china-business-risks-weigh/",
+        "diff_pct": 0.0,
+        "notes": "Motley Fool wrap (Nov 18, 4:51 PM EST, after the close): ticker 'S&P 500 7,323.63 -0.2% -16.90'; body 'closed at 7,324, down 0.23%'. 7,340.53 - 16.90 = 7,323.63 ties to the cleared Nov 17 close. Reuters preliminary 7,322.53 (via Lufkin, doesn't tie) not used. Diff 0.00%."
+      }
     }
   ]
 }

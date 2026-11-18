@@ -672,6 +672,42 @@
         ],
         "notes": "StockTitan: 'Apple (AAPL) closed at $352.78 on November 16, 2026' (updated Nov 16 16:33); after hours 352.50 separate. Stock Events fr AAPL 352.78, -3.49 (-0.98%), '21:00 Aujourd'hui', change ties to the 356.27 Nov 13 close; after hours (22:08) separate. Rule on main: AAPL sell all on a close below 355.63 (priority 3) fired (352.78, 0.80% below); no 12% stop (AAPL 313.96, LLY 1,127.32, XLV 163.02) or LLY trim (1,354.00) fired. Fees/realized P&L recomputed (-30.56). Rationale's 'as AI and tech stocks fell ahead of Nvidia's report' describes the market (AP, STL.News); no cited source attributes Apple's own move to it. Diff 0.00%."
       }
+    },
+    {
+      "id": "T0020",
+      "date": "2026-11-18",
+      "action": "SELL",
+      "ticker": "XLV",
+      "shares": 6.3825,
+      "quote_price": 181.17,
+      "price_source": "https://investor.wedbush.com/wedbush/quote?Symbol=321%3A986012",
+      "price_timestamp": "2026-11-18T21:00:00Z",
+      "exec_price": 180.9888,
+      "gross": 1155.16,
+      "commission": 1.0,
+      "slippage_cost": 1.16,
+      "cash_delta": 1154.16,
+      "cash_after": 6327.81,
+      "rationale": "XLV, the Health Care Select Sector SPDR fund, was held as the book's defensive healthcare leg. Its written thesis-break rule fired on the Nov 18 close: the S&P 500 fell 0.23% and XLV fell 2.20%, trailing by about 2 points (the rule is 1 point), on a day managed-care insurers slumped after a proposed CMS anti-fraud rule. No stop or LLY trim fired first, so this is the day's one sell, executed at the close as written.",
+      "prev_hash": "0ca1c67b5a45b8d7f7f700e2babda5ffb62f2a9e497714b7cf1e1f59e622971a",
+      "realized_pl": -28.21,
+      "hash": "c794e6be658fe8def103127cd6b8f37e6b1f5a89cb5a256b9f13eb950ebc8695",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-18T22:29:37+00:00",
+        "verified_price": 181.15,
+        "verified_source": "https://stocktitan.net/overview/XLV/",
+        "price_diff_pct": 0.011,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "StockTitan XLV: 'closed at $181.15 on November 18, 2026' (last updated Nov 18 16:40 EST); after hours 181.35 separate. 0.01% from 181.17. Rule on main: XLV thesis break (priority 3) fired: S&P -16.90/7,340.53 = -0.23% (Yahoo 'At close', Fool ticker ties), XLV -2.20% (-2.21% on 181.15), gap 1.97 pts. No higher rule fired: LLY 1,382.75 > 1,127.32 stop and > 1,354.00 trim; XLV > 163.02 stop. Fees/realized P&L replay (-28.21). Rationale's insurer slump after CMS rule matches Yahoo 4:22 PM UTC entry; no source ties XLV's own move to it."
+      }
     }
   ]
 }

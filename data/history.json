@@ -1564,6 +1564,33 @@
         },
         "notes": "LLY: Rava LLY_US daily row 17/11/2026 close 1,414.85 (16/11 row 1,431.67 ties the prior mark), 0.05% from 1,415.55; Stock Events de LLY 1,415.55, -16.12 (-1.13%), '21:01 Heute', change ties to 1,431.67 (after hours 22:10 separate). XLV: Rava XLV_US daily row 17/11/2026 close 185.18 (16/11 row 187.88 ties), 0.03% from 185.24; MarketChameleon XLV 185.24, 'Data as of November 17, 2026' (corroborator only). Stock Events de XLV (Nov 16), Fox Business (Nov 16 3:59 PM), StockAnalysis (stale) and Wedbush LLY/StockTitan XLV (not fetchable) rejected. Valuation 9,589.06 replays."
       }
+    },
+    {
+      "date": "2026-11-18",
+      "cash": 6327.81,
+      "holdings_value": 3158.2,
+      "total_value": 9486.01,
+      "return_pct": -5.14,
+      "prices": {
+        "LLY": {
+          "price": 1382.75,
+          "source": "https://stocktitan.net/overview/LLY/",
+          "timestamp": "2026-11-18T21:00:00Z",
+          "shares": 2.284
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-18T22:29:37+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1382.75,
+            "source": "https://stockevents.app/en/stock/LLY",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: Stock Events en 1,382.75, -32.80 (-2.32%), '21:03 Today'; change ties to the cleared 1,415.55 Nov 17 close; after hours (-1.62, 21:45) separate. Diff 0.00%. Valuation 9,486.01 replays (cash 6,327.81 + 2.284 x 1,382.75)."
+      }
     }
   ]
 }

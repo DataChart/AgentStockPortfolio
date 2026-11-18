@@ -1,33 +1,23 @@
 {
-  "as_of": "2026-11-17",
+  "as_of": "2026-11-18",
   "starting_cash": 10000.0,
-  "cash": 5173.65,
-  "holdings_value": 4415.41,
-  "total_value": 9589.06,
-  "return_pct": -4.11,
-  "realized_pl": -718.08,
-  "fees_paid": 51.61,
-  "trade_count": 19,
+  "cash": 6327.81,
+  "holdings_value": 3158.2,
+  "total_value": 9486.01,
+  "return_pct": -5.14,
+  "realized_pl": -746.29,
+  "fees_paid": 53.77,
+  "trade_count": 20,
   "positions": [
     {
       "ticker": "LLY",
       "shares": 2.284,
       "cost_basis": 2925.9,
       "avg_cost": 1281.042,
-      "last_price": 1415.55,
-      "market_value": 3233.12,
-      "unrealized_pl": 307.22,
-      "unrealized_pl_pct": 10.5
-    },
-    {
-      "ticker": "XLV",
-      "shares": 6.3825,
-      "cost_basis": 1182.37,
-      "avg_cost": 185.2519,
-      "last_price": 185.24,
-      "market_value": 1182.29,
-      "unrealized_pl": -0.08,
-      "unrealized_pl_pct": -0.01
+      "last_price": 1382.75,
+      "market_value": 3158.2,
+      "unrealized_pl": 232.3,
+      "unrealized_pl_pct": 7.94
     }
   ]
 }
