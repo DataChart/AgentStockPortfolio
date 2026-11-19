@@ -708,6 +708,42 @@
         ],
         "notes": "StockTitan XLV: 'closed at $181.15 on November 18, 2026' (last updated Nov 18 16:40 EST); after hours 181.35 separate. 0.01% from 181.17. Rule on main: XLV thesis break (priority 3) fired: S&P -16.90/7,340.53 = -0.23% (Yahoo 'At close', Fool ticker ties), XLV -2.20% (-2.21% on 181.15), gap 1.97 pts. No higher rule fired: LLY 1,382.75 > 1,127.32 stop and > 1,354.00 trim; XLV > 163.02 stop. Fees/realized P&L replay (-28.21). Rationale's insurer slump after CMS rule matches Yahoo 4:22 PM UTC entry; no source ties XLV's own move to it."
       }
+    },
+    {
+      "id": "T0021",
+      "date": "2026-11-19",
+      "action": "SELL",
+      "ticker": "LLY",
+      "shares": 1.142,
+      "quote_price": 1351.12,
+      "price_source": "https://stocktitan.net/overview/LLY/",
+      "price_timestamp": "2026-11-19T21:00:00Z",
+      "exec_price": 1349.7689,
+      "gross": 1541.44,
+      "commission": 1.0,
+      "slippage_cost": 1.54,
+      "cash_delta": 1540.44,
+      "cash_after": 7868.25,
+      "rationale": "Eli Lilly, the obesity-drug leader and our largest holding, closed at 1,351.12, below the 1,354.00 trim line written in advance, so half the position is sold at the close as the rule requires. It fell 2.29% on a day the S&P fell 2.02%, its second straight day lagging the market. The other half stays, with a 12% stop at 1,127.32; it would be sold on a thesis break or the stop.",
+      "prev_hash": "c794e6be658fe8def103127cd6b8f37e6b1f5a89cb5a256b9f13eb950ebc8695",
+      "realized_pl": 77.49,
+      "hash": "281d07ffa68fe75238b670fffb455b5b9d214ed918c5ca55477b50b0922021e7",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-19T22:33:20+00:00",
+        "verified_price": 1351.12,
+        "verified_source": "https://marketchameleon.com/Overview/LLY/Summary/",
+        "price_diff_pct": 0.0,
+        "checks": [
+          "hash chain",
+          "fee math",
+          "cash balance",
+          "daily limits",
+          "holdings",
+          "independent price"
+        ],
+        "notes": "MarketChameleon: 'Eli Lilly And Company (LLY) closed at $1351.12 on November 19, 2026, down 2.3% from the previous close' (vol 2,469,490). Stock Events en: 1,351.12, -31.63 (-2.29%), '21:02 Today'; -31.63 ties to the cleared 1,382.75 Nov 18 close; after hours (-2.87, 21:34) separate. Diff 0.00%. Rule on main: LLY trim to half below 1,354.00 (priority 2) fired: 1,351.12 is 2.88 (0.21%) below on two independent dated closes plus StockTitan. No higher rule: 1,351.12 > 1,127.32 stop. Shares 1.142 = 2.284/2. Rejected: FinancialContent (9:50 AM quote), Coinglass (intraday 'Open' 14:59 UTC), Yahoo/Google/Fox/StockAnalysis (stale)."
+      }
     }
   ]
 }
