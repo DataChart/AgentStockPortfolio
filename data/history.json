@@ -1618,6 +1618,33 @@
         },
         "notes": "LLY: MarketChameleon 'closed at $1351.12 on November 19, 2026'; Stock Events en 1,351.12, -31.63, '21:02 Today', ties to 1,382.75. Diff 0.00%. Valuation 9,411.23 replays (cash 7,868.25 + 1.142 x 1,351.12)."
       }
+    },
+    {
+      "date": "2026-11-20",
+      "cash": 7868.25,
+      "holdings_value": 1538.4,
+      "total_value": 9406.65,
+      "return_pct": -5.93,
+      "prices": {
+        "LLY": {
+          "price": 1347.11,
+          "source": "https://stocktitan.net/overview/LLY/",
+          "timestamp": "2026-11-20T21:00:00Z",
+          "shares": 1.142
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-20T22:32:53+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1347.11,
+            "source": "https://stockevents.app/en/stock/LLY",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: Stock Events en 1,347.11, -4.01 (-0.3%), '21:02 Today'; -4.01 ties to the cleared Nov 19 close 1,351.12; after hours (+1.89, 21:43) separate. Diff 0.00%. Coinglass, MarketScreener, FinancialContent, Fox Business, Yahoo chart pages were stale or intraday (not used). Valuation 9,406.65 replays (cash 7,868.25 + 1.142 x 1,347.11)."
+      }
     }
   ]
 }

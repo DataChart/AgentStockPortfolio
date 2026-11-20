@@ -406,6 +406,20 @@
         "diff_pct": 0.0,
         "notes": "TradingKey (Nov 19, 9:12 PM): 'the S&P 500 Index fell 2.02% to 7,175.83 points'. Reuters (Culp/Mathur, via Yahoo, Nov 19 1:34 PM PST, after the close): 'the S&P 500 lost 147.80 points, or 2.02%, to 7,175.83'. 7,323.63 - 147.80 = 7,175.83 ties to the cleared Nov 18 close. 24/7 Wall St (7,177.55 text / 7,167.80 ticker) inconsistent, not used. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-20",
+      "close": 6910.39,
+      "source": "https://finance.yahoo.com/quote/%5EGSPC/",
+      "timestamp": "2026-11-20T21:07:14Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-20T22:32:53+00:00",
+        "verified_close": 6910.39,
+        "verified_source": "https://marketscreener.com/news/s-p-500-posts-largest-weekly-drop-of-2026-enters-correction-territory-ce785ed3dc8af327",
+        "diff_pct": 0.0,
+        "notes": "MT Newswires via MarketScreener (Nov 20, 4:46 PM EST): 'The S&P 500 ended the week at 6,910.39', -3.70%, into 'correction territory' (non-AP, non-Yahoo). AP via Spectrum News (4:40 PM ET): 'the S&P 500 fell 265.44 points to 6,910.39'; 7,175.83 - 265.44 = 6,910.39 ties to the cleared Nov 19 close. Reuters 4:01 PM 6,918.45 was preliminary (not used). Diff 0.00%."
+      }
     }
   ]
 }
