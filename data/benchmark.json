@@ -420,6 +420,20 @@
         "diff_pct": 0.0,
         "notes": "MT Newswires via MarketScreener (Nov 20, 4:46 PM EST): 'The S&P 500 ended the week at 6,910.39', -3.70%, into 'correction territory' (non-AP, non-Yahoo). AP via Spectrum News (4:40 PM ET): 'the S&P 500 fell 265.44 points to 6,910.39'; 7,175.83 - 265.44 = 6,910.39 ties to the cleared Nov 19 close. Reuters 4:01 PM 6,918.45 was preliminary (not used). Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-23",
+      "close": 7237.17,
+      "source": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/",
+      "timestamp": "2026-11-23T21:56:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-23T22:31:55+00:00",
+        "verified_close": 7237.17,
+        "verified_source": "https://financefeeds.com/stock-market-today-nasdaq-jumps-6-5-percent-as-huang-returns/",
+        "diff_pct": 0.0,
+        "notes": "FinanceFeeds (updated 23 Nov 2026 'after the 4:00 p.m. ET close'): 'the S&P 500 closed at 7,237.17, up 4.73 percent', 'up 326.78 points'. 6,910.39 + 326.78 = 7,237.17 ties to the cleared Nov 20 close (+4.73%). Also ad-hoc-news (11/23 22:53 CET label): 'closed Monday at 7,237.17 points, gaining 326.78 points or 4.73% from Friday's close'; Newser/AP (3:36 PM CST) same figures. Recorded timestamp 21:56Z = Motley Fool publication time (4:56 PM ET), after the close. Diff 0.00%."
+      }
     }
   ]
 }

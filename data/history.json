@@ -1645,6 +1645,33 @@
         },
         "notes": "LLY: Stock Events en 1,347.11, -4.01 (-0.3%), '21:02 Today'; -4.01 ties to the cleared Nov 19 close 1,351.12; after hours (+1.89, 21:43) separate. Diff 0.00%. Coinglass, MarketScreener, FinancialContent, Fox Business, Yahoo chart pages were stale or intraday (not used). Valuation 9,406.65 replays (cash 7,868.25 + 1.142 x 1,347.11)."
       }
+    },
+    {
+      "date": "2026-11-23",
+      "cash": 7868.25,
+      "holdings_value": 1558.37,
+      "total_value": 9426.62,
+      "return_pct": -5.73,
+      "prices": {
+        "LLY": {
+          "price": 1364.6,
+          "source": "https://stocktitan.net/overview/LLY/",
+          "timestamp": "2026-11-23T21:00:00Z",
+          "shares": 1.142
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-23T22:31:55+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1364.6,
+            "source": "https://markets.financialcontent.com/stocks/quote?Symbol=NY%3ALLY",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: FinancialContent 1,364.60, +17.49 (+1.30%), 'Official Closing Price Updated: 4:10 PM EST, Nov 23, 2026', prev close 1,347.11 ties to the cleared Nov 20 close; inside day range 1,344.00-1,381.64. Second check Stock Events en 1,364.60, +17.49, '21:02 Today' (ties; after hours +0.88 at 22:09 separate). Diff 0.00% vs StockTitan (recorded). Valuation 9,426.62 replays (cash 7,868.25 + 1.142 x 1,364.60)."
+      }
     }
   ]
 }

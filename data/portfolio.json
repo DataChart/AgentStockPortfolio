@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-23",
   "starting_cash": 10000.0,
   "cash": 7868.25,
-  "holdings_value": 1538.4,
-  "total_value": 9406.65,
-  "return_pct": -5.93,
+  "holdings_value": 1558.37,
+  "total_value": 9426.62,
+  "return_pct": -5.73,
   "realized_pl": -668.8,
   "fees_paid": 56.31,
   "trade_count": 21,
@@ -14,10 +14,10 @@
       "shares": 1.142,
       "cost_basis": 1462.95,
       "avg_cost": 1281.042,
-      "last_price": 1347.11,
-      "market_value": 1538.4,
-      "unrealized_pl": 75.45,
-      "unrealized_pl_pct": 5.16
+      "last_price": 1364.6,
+      "market_value": 1558.37,
+      "unrealized_pl": 95.42,
+      "unrealized_pl_pct": 6.52
     }
   ]
 }
