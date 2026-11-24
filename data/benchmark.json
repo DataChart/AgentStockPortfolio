@@ -434,6 +434,20 @@
         "diff_pct": 0.0,
         "notes": "FinanceFeeds (updated 23 Nov 2026 'after the 4:00 p.m. ET close'): 'the S&P 500 closed at 7,237.17, up 4.73 percent', 'up 326.78 points'. 6,910.39 + 326.78 = 7,237.17 ties to the cleared Nov 20 close (+4.73%). Also ad-hoc-news (11/23 22:53 CET label): 'closed Monday at 7,237.17 points, gaining 326.78 points or 4.73% from Friday's close'; Newser/AP (3:36 PM CST) same figures. Recorded timestamp 21:56Z = Motley Fool publication time (4:56 PM ET), after the close. Diff 0.00%."
       }
+    },
+    {
+      "date": "2026-11-24",
+      "close": 7201.09,
+      "source": "https://bnnbloomberg.ca/investing/market-outlook/2026/11/24/tech-stocks-wane-a-day-after-a-huang-rally-as-anthropic-tumbles-below-its-initial-offering-price",
+      "timestamp": "2026-11-24T21:31:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-24T22:36:21+00:00",
+        "verified_close": 7201.09,
+        "verified_source": "https://www.newser.com/story/400580/drops-for-nvidia-anthropic-drag-markets-back-down.html",
+        "diff_pct": 0.0,
+        "notes": "Newser (AP), posted Nov 24, 2026 3:38 PM CST (4:38 PM ET, after the close): S&P 500 'fell 36.08 points, or 0.5%, to 7,201.09'. 7,237.17 - 36.08 = 7,201.09 ties to the cleared Nov 23 close. Also ad-hoc-news (published 11/24 22:42): 'closed Tuesday at 7,201.09, down 36.08 points'. Diff 0.00%. Reuters 4:01 PM preliminary 7,202.45 and 4:00 PM snapshots (7,201.69, -35.48) not used."
+      }
     }
   ]
 }
