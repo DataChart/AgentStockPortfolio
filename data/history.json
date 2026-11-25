@@ -1699,6 +1699,33 @@
         },
         "notes": "LLY: FXEmpire 1,407.59, +42.99 (+3.15%), 'Closed', 'Nov 24, 16:00 UTC -5', previous close 1,364.60 ties to the cleared Nov 23 close; day range 1,365.93-1,414.76. Diff 0.00% vs FinancialContent (recorded, 'Official Closing Price Updated: 4:10 PM EST, Nov 24, 2026'). Disagreement noted: StockTitan 'closed at $1,410.69 on November 24, 2026' (+0.22%); JKN 'closed at $1,409.69' but timestamped before the close (not used). All within 1% and far from every LLY line. Valuation 9,475.72 replays (cash 7,868.25 + 1.142 x 1,407.59)."
       }
+    },
+    {
+      "date": "2026-11-25",
+      "cash": 7868.25,
+      "holdings_value": 1589.92,
+      "total_value": 9458.17,
+      "return_pct": -5.42,
+      "prices": {
+        "LLY": {
+          "price": 1392.22,
+          "source": "https://markets.financialcontent.com/stocks/quote?Symbol=NY%3ALLY",
+          "timestamp": "2026-11-25T21:10:00Z",
+          "shares": 1.142
+        }
+      },
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-25T22:32:18+00:00",
+        "verified_prices": {
+          "LLY": {
+            "price": 1392.22,
+            "source": "https://stocktitan.net/overview/LLY/",
+            "diff_pct": 0.0
+          }
+        },
+        "notes": "LLY: StockTitan (stocktitan.net, a different site from the recorded FinancialContent) 'Eli Lilly and Company (LLY) closed at $1,392.22 on November 25, 2026.' (last updated Nov 25 16:37 EST; its 1,393.65 +1.43 is after-hours vs the close). Diff 0.00%. Recorded FinancialContent shows -15.37 (-1.09%) from previous close 1,407.59, which ties to the cleared Nov 24 close. Robinhood 'trades at $1,392.00 during the trading session on 2026-11-25' (no time label, not used). Note: www.stocktitan.net served a cached page with 'closed at $1,407.59 on November 24, 2026', not the 1,410.69 cited on Nov 24. Far from every LLY line (1,281.04; 1,127.32). Valuation 9,458.17 replays (cash 7,868.25 + 1.142 x 1,392.22)."
+      }
     }
   ]
 }

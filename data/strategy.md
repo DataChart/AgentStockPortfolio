@@ -1,34 +1,35 @@
 # Analyst guidance
 
-*Updated 2026-11-24 by the analyst, after day 29 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19, Oct 20, Nov 9 and Nov 10 did not execute; those days have valuation snapshots only, and no trades are dated on them.*
+*Updated 2026-11-25 by the analyst, after day 30 of trading (the opening allocation was made on 2026-10-12). Runs for Oct 19, Oct 20, Nov 9 and Nov 10 did not execute; those days have valuation snapshots only, and no trades are dated on them.*
 
 **Mandate:** maximize ROI % on a $10,000 paper portfolio. Aggressive is fine; reckless is not.
 
 ## Current playbook
-- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. One exception: a sector-fund buy limited by a sector cap may be sized to the full room under that cap if the room is at least 10% of value. Keep cash under 10% once fully invested. **Cash is $7,868.25 (83.0%) after the Nov 24 close, with one holding (half of LLY, 17.0%).** Far above target. XLI-1 failed on Nov 24; cash is worked down only with a written trigger (LLY-A2, buy on the Nov 27 close), not with a forced buy.
+- Concentrate: hold 3 to 6 high-conviction names. Size new buys at 15 to 35% of portfolio value; **no single name above 35%** at the time of a buy. One exception: a sector-fund buy limited by a sector cap may be sized to the full room under that cap if the room is at least 10% of value. Keep cash under 10% once fully invested. **Cash is $7,868.25 (83.2%) after the Nov 25 close, with one holding (half of LLY, 16.8%).** Far above target. LLY-A2 failed its first leg on Nov 25; cash is worked down only with a written trigger (DIA-1, buy on the Nov 30 close), not with a forced buy.
 - Favor catalysts within weeks, such as earnings beats with raised guidance, regulatory approvals, product launches and sector momentum. Prefer names showing **relative strength across both down days and up days** (Nov 6 lesson), and treat **weakness on up days** as a warning. A buy trigger needs **two consecutive closes beating the S&P**, both on or after the day the trigger is written.
 - Rotate only for a clearly better setup. A swap costs about $2 plus 0.2% of the amount. When the regime turns against a theme, trim the most exposed name instead of waiting for the 12% stop.
 - **A buy trigger must not fire at a price already below the exit line written for that buy** (Nov 12 lesson), **and its entry condition must sit at least 1% above that exit line** (Nov 13 and Nov 16 lessons). Each trigger's entry condition includes its own sell line.
 - Exits:
   - Cut any holding that closes 12% below cost or whose thesis breaks. **A close below a written sell line is executed at that close, not deferred.**
   - Let winners run while momentum holds. Once a holding is up 15% or more, raise its mental stop to breakeven.
-  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) LLY sell-all line (1,281.04 now; if LLY-A2 buys, the line written in LLY-A2 replaces it), (3) anything else. The next one is sold at the following close if its condition still holds.
+  - Only one sell per day. When several sell rules fire on the same close, the order is: (1) any 12% stop, (2) LLY sell-all line (1,281.04), (3) DIA-1's exit line if DIA is bought, (4) anything else. The next one is sold at the following close if its condition still holds.
 - Event risk:
   - Don't open new positions on the day before a binary report (earnings, CPI, FOMC, the monthly jobs report) unless the setup is exceptional. While the Fed is openly debating the size of a December hike, the monthly PPI also counts as a binary report.
-  - **Next binary report on the list: the November jobs report, Fri Dec 4, 8:30 AM** (BLS December 2026 release schedule, checked Nov 17), then FOMC Dec 8-9, CPI Dec 10 and PPI Dec 15. Nov 25 and Nov 27 are not days before a binary report. PCE (Nov 25, not re-checked) is not on the binary list.
-  - **Thanksgiving week:** US markets are **closed Thu Nov 26** (no run) and **close early at 1:00 p.m. ET on Fri Nov 27** (18:00 UTC; marks that day use the 1:00 p.m. close) (NYSE Group 2024-2026 holiday calendar, ICE press release Nov 10, 2023; checked Nov 19). A two-day trigger with legs on Nov 25 and Nov 27 counts them as consecutive trading days.
+  - **Next binary report on the list: the November jobs report, Fri Dec 4, 8:30 AM** (BLS December 2026 release schedule, checked Nov 17), then FOMC Dec 8-9, CPI Dec 10 and PPI Dec 15. Nov 27 and Nov 30 are not days before a binary report; **Thu Dec 3 is**, so no new position opens on Dec 3. PCE (released Nov 25) is not on the binary list.
+  - **Thanksgiving week:** US markets are **closed Thu Nov 26** (no run) and **close early at 1:00 p.m. ET on Fri Nov 27** (18:00 UTC; marks that day use the 1:00 p.m. close) (NYSE Group 2024-2026 holiday calendar, ICE press release Nov 10, 2023; checked Nov 19). A two-day trigger with legs on Nov 27 and Nov 30 counts them as consecutive trading days.
   - **Act on confirmed closes after a report or an event, never on overnight futures, pre-market or after-hours prints.**
   - Each run's instructions name the next scheduled binary report.
   - Holding existing winners through their own earnings is fine.
-- **Sector caps at the time of a buy:** healthcare 45% (LLY only: 17.0% after the Nov 24 close). Energy 35% (none held). Utilities 35% (none held). Industrials (XLI), consumer staples / retail and technology hardware have no separate cap; the 35% single-name limit applies.
-- **Market regime: AI rally gave back part of Monday; rotation out of tech.** Nov 24: S&P 7,201.09 (-36.08, -0.50%), Nasdaq 23,733.54 (-356.02, -1.5%), Dow 50,018.70 (+423.39, +0.9%) (BNN Bloomberg with AP, updated 4:31 PM ET; same figures on the Motley Fool ticker bar, 4:29 PM ET). Motley Fool: "Nvidia (NVDA -5.86%) fell 5.86% on Tuesday, November 24, closing at $155.38". Investrade's Nov 24 market review: "Health Care (+2.20%), Consumer Staples (+1.80%) and Communications (+0.90%) were outperformers among S&P sector ETFs" and "Industrials (-0.97%) and Technology (-3.70%) paced the underperformers" (its Industrials figure does not match XLI's -0.53% on StockTitan and FXEmpire; not used for XLI-1). The S&P is 7.76% below the Oct 12 benchmark close (7,807.24) and 7.90% below the Oct 6 record close (7,818.93); the book is -5.24%.
-- **Rates:** AP via BNN Bloomberg (Nov 24): the 10-year yield rose to "4.93 per cent from 4.92 per cent late Monday." Reuters via MarketScreener (Nov 24, 3:01 PM): "Traders mostly are pricing in a 25-basis-point rate hike from the Federal Reserve next month."
-- **AI-capex regime: test not passed; count reset to zero** (the Nasdaq fell 1.5% on Nov 24). The test is two straight higher Nasdaq closes **and** a Nasdaq close above 25,736.51 (the Nov 4 close; 8.44% above 23,733.54). Until it passes, no new AI-linked buys (hyperscalers, semis, data-center names, neoclouds, ANT). Not loosened.
-- **Semis remain off limits** until the AI test passes and a leader clears its trigger: NVDA above 228.52 (155.38 Nov 24, Motley Fool) or TSM above 445.
+- **Sector caps at the time of a buy:** healthcare 45% (LLY only: 16.8% after the Nov 25 close). Energy 35% (none held). Utilities 35% (none held). Industrials (XLI), broad-market funds (DIA), consumer staples / retail and technology hardware have no separate cap; the 35% single-name limit applies.
+- **Market regime: rotation out of tech into old-economy names continued; hot PCE; tariff plans.** Nov 25: S&P 7,182.78 (-18.31, -0.25%), Nasdaq 23,585.80 (-147.73, -0.62%), Dow 50,182.95 (+164.25, +0.33%) (Vistap Global closing table, 21:39 UTC; same levels in The Company Chronicle, 4:48 PM ET, and the Motley Fool ticker bar, 4:57 PM ET). Motley Fool headline: "Dow Erases 1,100-Point Loss as Wall Street Stages Dramatic Late-Day Comeback"; it says "Energy stocks led sector gains" and "October's core personal consumption expenditures (PCE) price index rose 0.3% for the third consecutive month." The Company Chronicle: "The October PCE report showed inflation at 3.8% and core at 3.3%," and it reports proposed duties on 14 trading partners (paraphrase). The S&P is 8.00% below the Oct 12 benchmark close (7,807.24) and 8.14% below the Oct 6 record close (7,818.93); the book is -5.42%.
+- **Rates:** Motley Fool (Nov 25): "the 10-year Treasury yield declined slightly to 4.91%". Vistap Global: 10-year 4.8480%, -0.0560. The levels disagree; only the direction (lower) is shared.
+- **AI-capex regime: test not passed; count zero** (the Nasdaq fell 0.62% on Nov 25 after -1.5% on Nov 24). The test is two straight higher Nasdaq closes **and** a Nasdaq close above 25,736.51 (the Nov 4 close; 9.12% above 23,585.80). Until it passes, no new AI-linked buys (hyperscalers, semis, data-center names, neoclouds, ANT). Not loosened.
+- **Semis remain off limits** until the AI test passes and a leader clears its trigger: NVDA above 228.52 (149.30 Nov 25, Motley Fool ticker bar, single source) or TSM above 445.
 - **Software under an AI-disruption overhang.** No software buys without a new written trigger.
 - **Technology hardware (AAPL): no trigger.** Any new one needs two fresh legs and a close above 352.78 (the Nov 16 sale).
-- **Energy: exited.** No re-entry trigger.
-- **Healthcare: half of LLY.** LLY's record against the S&P: held up Nov 20 (-0.30% vs -3.70%), lagged the Nov 23 rally (+1.30% vs +4.73%), led Nov 24 (+3.15% vs -0.50%). That is down-day strength with one up-day failure, so an add needs two more beating closes, written as **LLY-A2** (legs Nov 25 and Nov 27). Investrade lists Health Care +2.20% among S&P sector ETFs on Nov 24.
+- **Healthcare: half of LLY.** LLY's record against the S&P: held up Nov 20 (-0.30% vs -3.70%), lagged the Nov 23 rally (+1.30% vs +4.73%), led Nov 24 (+3.15% vs -0.50%), **lagged on the Nov 25 down day (-1.09% vs -0.25%)**. The down-day strength broke, so **LLY-A2 is dead** and there is no LLY add trigger. Hold the half on its written lines; no Nov 25 source found names LLY.
+- **Broad market / old-economy rotation: DIA-1 (new).** The Dow beat the S&P on Nov 24 (+0.9% vs -0.50%) and Nov 25 (+0.33% vs -0.25%) while tech fell; those days do not count. DIA (the SPDR Dow Jones Industrial Average ETF; StockTitan: "closed at $501.27 on November 25, 2026", single source, to be confirmed) is the way to own the rotation without a single-name bet. DIA holds some tech names, but it is not an AI-linked fund under the AI test (it is a 30-stock price-weighted blue-chip fund). Thesis breaks if the rotation reverses: the exit is a price line.
+- **Energy: exited.** No re-entry trigger. The Nov 4 exit said to revisit only on a new supply shock with the fund regaining strength; on Nov 25 crude rose (Vistap: Jan crude $84.11, +2.51%) and XLE closed at 60.90 (StockTitan) vs 60.45 on Nov 24 (FinancialContent official close), about +0.74%, beating the S&P on Nov 24 (+0.97% vs -0.50%) and Nov 25 (vs -0.25%). *[Corrected by fact check: the earlier "-0.16%" was StockTitan's after-hours change.]* Those days do not count under the two-day rule; any re-entry needs a new written trigger.
 - **Consumer staples / retail: no trigger** (WMT-1 dead Nov 23).
 - **Industrials: XLI-1 is dead** (leg (a) failed on Nov 24: -0.53% vs -0.50%). It is not re-run. Any new XLI trigger needs a written thesis beyond "broadening rebound" and two fresh legs.
 - **Utilities: dropped (Nov 17).** No trigger.
@@ -36,46 +37,49 @@
 ## Watchlist
 | Ticker | Why it's here | Trigger to act |
 |---|---|---|
-| LLY (held) | 1.142 sh, avg 1,281.04; 1,407.59 Nov 24 (+3.15% vs the S&P's -0.50%), +9.9% vs cost, 17.0% weight. | **Sell all on a close below 1,281.04 (priority 2; 9.0% away).** Stop 1,127.32 (priority 1). **LLY-A2** add: legs Nov 25 and Nov 27, buy on the Nov 27 close. |
+| LLY (held) | 1.142 sh, avg 1,281.04; 1,392.22 Nov 25 (-1.09% vs the S&P's -0.25%), +8.7% vs cost, 16.8% weight. LLY-A2 dead. | **Sell all on a close below 1,281.04 (priority 2; a 7.99% fall from 1,392.22).** Stop 1,127.32 (priority 1). No add trigger. |
+| DIA | 501.27 Nov 25 (StockTitan, single source). Dow beat the S&P Nov 24 and Nov 25 (not counted). | **DIA-1:** legs Nov 27 and Nov 30, buy 20% on the Nov 30 close. |
 | XLI | 161.61 Nov 24 (-0.53%). XLI-1 dead. | None. |
 | WMT | WMT-1 dead Nov 23. | None. |
 | AAPL (sold Nov 16 at 352.78) | No trigger. | None. Any new trigger needs two fresh legs and a close above 352.78. |
-| XLV (sold Nov 18 at 181.17) | Health Care +2.20% Nov 24 (Investrade). | No trigger; LLY-A2 is the healthcare add. Only one buy per day. |
+| XLV (sold Nov 18 at 181.17) | Health Care +2.20% Nov 24 (Investrade). | No trigger. Only one buy per day. |
 | XLU / XLP | Defensives. | None. |
 | NVDA / TSM | NVDA 155.38 Nov 24 (-5.86%). | NVDA above 228.52 or TSM above 445, after the AI test passes. |
 | ANT (Anthropic) | AP via BNN Bloomberg: it "sank 6.5 per cent to drop below US$83" (its IPO price). | None: AI test. |
 | AMZN / GOOGL / META / MSFT | Under the AI test. | GOOGL needs a close above 324.89; META above 700; MSFT above 545.18 while beating the Nasdaq, all after the AI test passes. |
 | XLE / CRM / VLO | Sold. | Don't rebuy without a new written trigger. |
 
-## Instructions for the next run (Wednesday 2026-11-25)
-1. **Sells, in priority order, on the Nov 25 close (only one per day):**
+## Instructions for the next run (Friday 2026-11-27, early close 1:00 p.m. ET)
+1. **Sells, in priority order, on the Nov 27 1:00 p.m. close (only one per day):**
    1. 12% stop: LLY 1,127.32.
    2. LLY sell all (1.142 sh) on a close below 1,281.04.
    3. Nothing else is live.
 
-   Nothing is carried from Nov 24: no sell rule fired.
-2. **Buy: none on Nov 25.** XLI-1 is dead and is not re-run. No other buy trigger has a qualifying second leg on Nov 25.
-3. **LLY-A2 (new; written Nov 24, nothing from Nov 24 counts):**
-   - (a) Nov 25: LLY's % change from 1,407.59 (its Nov 24 close) beats the S&P's % change from 7,201.09. Record it.
-   - (b) Nov 27 (1:00 p.m. ET early close): LLY's % change from its Nov 25 close beats the S&P's % change from its Nov 25 close.
-   - (c) The Nov 27 close is above 1,407.59.
-   - Buy 15% of portfolio value on the Nov 27 close only if (a), (b) and (c) all hold on confirmed closes from two sites, LLY's weight after the buy stays at or under 35% and healthcare at or under 45%, and no other buy is made that day.
-   - Exit after the add: **sell all LLY on a close more than 4% below the add price**. This replaces the 1,281.04 line and is always higher than it (the add price is above 1,407.59, so the line is above 1,351.29). The entry sits 4% above the line. Plus the 12% stop on the new average cost.
-   - If (a) fails on Nov 25, LLY-A2 is dead.
-4. **Next binary report: the November jobs report, Fri Dec 4** (BLS schedule). Nov 25 and Nov 27 are not days before a binary report. **Thanksgiving: closed Thu Nov 26 (no run); early close 1:00 p.m. ET (18:00 UTC) Fri Nov 27, and Nov 27 marks use the 1:00 p.m. close.**
-5. **Record:** S&P and Nasdaq closes (AI test: count zero; needs two straight higher closes **and** a close above 25,736.51); NVDA vs 228.52; LLY vs 1,281.04 and the S&P (LLY-A2 leg (a)); any dated Brent settlement and 10-year yield.
+   Nothing is carried from Nov 25: no sell rule fired.
+2. **Buy: none on Nov 27.** LLY-A2 is dead (leg (a) failed Nov 25) and is not re-run. DIA-1's second leg is Nov 30, so no trigger can buy on Nov 27.
+3. **DIA-1 (new; written Nov 25, nothing from Nov 24 or Nov 25 counts):**
+   - First confirm DIA's Nov 25 close on two non-identical sites (StockTitan says 501.27; single source so far). That confirmed close is the base.
+   - (a) Nov 27 (1:00 p.m. close): DIA's % change from its confirmed Nov 25 close beats the S&P's % change from 7,182.78. It must also pass on the change each site reports from its own prior close; a pass that holds only on one base is a fail. Record it.
+   - (b) Mon Nov 30: DIA's % change from its confirmed Nov 27 close beats the S&P's % change from its confirmed Nov 27 close (same two-base check).
+   - (c) The Nov 30 close is above the confirmed Nov 25 close.
+   - Buy 20% of portfolio value on the Nov 30 close only if (a), (b) and (c) all hold on confirmed closes from two sites, DIA stays at or under 35% after the buy, and no other buy is made that day. Nov 30 is not the day before a binary report (Dec 3 is).
+   - Exit after the buy: **sell all DIA on a close more than 4% below the buy price** (priority 3), plus the 12% stop on cost. The entry sits 4% above the line, so it cannot fire below its own exit.
+   - If (a) fails on Nov 27, DIA-1 is dead.
+4. **Next binary report: the November jobs report, Fri Dec 4, 8:30 AM** (BLS schedule). No new position on Thu Dec 3. **Nov 27 closes early at 1:00 p.m. ET (18:00 UTC); Nov 26 was a holiday with no run.** All Nov 27 marks and the S&P benchmark use the 1:00 p.m. close: reject any figure stamped before 1:00 p.m. ET or labelled for Nov 25.
+5. **Record:** S&P and Nasdaq closes (AI test: count zero; needs two straight higher closes **and** a close above 25,736.51); NVDA vs 228.52; LLY vs 1,281.04 and the S&P; DIA leg (a); any dated Brent settlement and 10-year yield.
 6. Marks:
-   - What worked on Nov 24: FinancialContent LLY ("Official Closing Price Updated: 4:10 PM EST, Nov 24, 2026") and FXEmpire LLY and XLI ("Closed", "Nov 24, 16:00 UTC -5", with a change that ties to the prior close); StockTitan XLI ("closed at $161.61 on November 24, 2026"); Quiver Quant historical prices and SwingTradeBot for prior closes (XLI Nov 23: 162.47); BNN Bloomberg (AP) and the Motley Fool closing story's ticker bar for the indexes.
-   - **StockTitan LLY disagreed on Nov 24:** "closed at $1,410.69" against 1,407.59 on FinancialContent and FXEmpire (0.22% apart). Prefer the two that agree and say so.
-   - Not usable on Nov 24: Stock Events en LLY (still Nov 23); FinancialContent XLI (stale, Nov 20) and SPX (stale, Nov 16); Fox Business LLY, XLI and SP500 (stale or inconsistent); StockAnalysis XLI (stale); Yahoo XLI (stale, intraday); Stocktwits XLI (pre-market); Reuters via MarketScreener 4:01 PM ("preliminary": S&P 7,202.45) and 3:01 PM (intraday); Eurasia Business News (intraday snapshot); Investrade (S&P change -35.48 does not tie to AP's -36.08); La Nacion, KRMG, Kalkine, MLQ.ai (fetch failed); WTOP (robots-blocked). curl to stocktitan.net was refused by the proxy; WebFetch worked.
-   - Reject "As of" without a "Closed" label, "Intraday", "Live", "Overnight", "Pre-Market", "preliminary", post-market last trades, and headers that sit outside their own day range. Use a Stock Events "Today" label only when its change ties to the confirmed prior close. StockTitan's "previous close" field shows the same day's close; use the dated sentence only.
+   - What worked on Nov 25: FinancialContent LLY ("Official Closing Price Updated: 4:10 PM EST, Nov 25, 2026", previous close 1,407.59); StockTitan LLY, XLE and DIA (dated "closed at" sentence; the page's change field is after-hours vs the close, not the day change); Vistap Global closing table, The Company Chronicle closing story and the Motley Fool closing story's ticker bar for the indexes.
+   - Not usable on Nov 25: FXEmpire LLY (still Nov 24) and XLE ("Open", 09:47); Motley Fool body text for the S&P ("declined 0.21% to 7,186", which disagrees with its own ticker bar); 24/7 Wall St. (body 7,192.96 vs header 7,183.00; inconsistent); Investrade and Swingfolio (fetch failed).
+   - Reject "As of" without a "Closed" label, "Intraday", "Live", "Open", "Overnight", "Pre-Market", "preliminary", post-market last trades, and headers that sit outside their own day range. StockTitan's "previous close" or change field shows the same day's close; use the dated sentence only.
    - Use two non-identical sites for every mark (the language pages of Stock Events are one site).
-7. News claims: cite sources dated Nov 25 and don't attribute a move to news unless a source says so; don't quote anyone unless the quote is in a cited source, and label paraphrases as paraphrases.
+7. News claims: cite sources dated Nov 27 and don't attribute a move to news unless a source says so; don't quote anyone unless the quote is in a cited source, and label paraphrases as paraphrases.
 8. Write marks for every holding even with no trade.
 
 Stops (12% below average cost): LLY 1,127.32.
 
 ## Lessons so far
+- (2026-11-25) The add trigger failed on the first leg, on every base. LLY fell 1.09% (1,407.59 to 1,392.22) while the S&P fell 0.25%; from StockTitan's 1,410.69 Nov 24 figure the fall is 1.31%, so the base-price doubt did not matter. LLY lagged on a down day again (as on Nov 17-19), breaking the down-day-strength pattern of Nov 20 and Nov 24 that the add rested on. The two-day rule kept 15% of the book out of a name that fell a further 1.09%.
+- (2026-11-25) Cash still beat the tape on a mild down day. With 83% in cash, the book lost $17.55 (-0.19%) against the S&P's -0.25%, despite LLY lagging. Since inception the book (-5.42%) leads the S&P (-8.00%) by 2.58 points. The cash weight is still the main risk on a rebound, so a new two-day trigger (DIA-1) is written in the rotation that led on both of the last two days.
 - (2026-11-24) A relative-strength leg can fail by a few hundredths of a point, and it still fails. XLI fell 0.53% (162.47 to 161.61) against the S&P's 0.50%, so XLI-1 died on its first leg by 0.03 points; a close of 161.67 would have passed. The rule is not loosened for a near miss: a fund that falls with the market on a day the Dow rose 0.9% is not showing leadership, and Investrade lists Industrials (-0.97%) among the day's underperformers (a different figure from XLI's own -0.53%; either fails).
 - (2026-11-24) The held defensive name paid on the down day after lagging the up day. LLY rose 3.15% while the S&P fell 0.50%, lifting the book $49.09 (+0.52%); since inception the book (-5.24%) leads the S&P (-7.76%) by 2.52 points, up from 1.57. That is the same pattern as Nov 20 and Nov 23 (strong on down days, weak on up days), so the add trigger needs two more beating closes, not today's.
 - (2026-11-23) Cash was the worst asset on the best day of the run. The S&P rose 4.73% and the Nasdaq 6.51% after Nvidia reinstated its CEO; with 83.5% in cash and LLY up 1.30%, the book gained $19.97 (+0.21%). Since inception the book (-5.73%) is still ahead of the S&P (-7.30%), but the lead fell from 5.56 to 1.57 points in one day. Cash protects on crash days and costs on rebound days (Nov 11 lesson), and the rebound came on the second trading day at 83% cash.

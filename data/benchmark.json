@@ -448,6 +448,20 @@
         "diff_pct": 0.0,
         "notes": "Newser (AP), posted Nov 24, 2026 3:38 PM CST (4:38 PM ET, after the close): S&P 500 'fell 36.08 points, or 0.5%, to 7,201.09'. 7,237.17 - 36.08 = 7,201.09 ties to the cleared Nov 23 close. Also ad-hoc-news (published 11/24 22:42): 'closed Tuesday at 7,201.09, down 36.08 points'. Diff 0.00%. Reuters 4:01 PM preliminary 7,202.45 and 4:00 PM snapshots (7,201.69, -35.48) not used."
       }
+    },
+    {
+      "date": "2026-11-25",
+      "close": 7182.78,
+      "source": "https://vistapglobal.com/stocks-close-mixed-on-wednesday-november-25-2026-as-hot-pce-inflation-new-tariff-plans-and-an-ai-sell-off-test-wall-street-amd-eprx-googl-modd-nvda-ser-spcx-vix/",
+      "timestamp": "2026-11-25T21:39:36Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-25T22:32:18+00:00",
+        "verified_close": 7182.78,
+        "verified_source": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-11252026-138453529",
+        "diff_pct": 0.0,
+        "notes": "AP via ABC News, 'November 25, 2026, 4:17 PM': 'The S&P 500 fell 18.31 points, or 0.3%, to 7,182.78.' 7,201.09 - 18.31 = 7,182.78 ties to the cleared Nov 24 close. Diff 0.00% vs Vistap (recorded). Also The Company Chronicle (4:48 PM ET) and the Motley Fool ticker bar (4:57 PM EST) show 7,182.78, -18.31."
+      }
     }
   ]
 }
