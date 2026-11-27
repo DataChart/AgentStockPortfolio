@@ -462,6 +462,20 @@
         "diff_pct": 0.0,
         "notes": "AP via ABC News, 'November 25, 2026, 4:17 PM': 'The S&P 500 fell 18.31 points, or 0.3%, to 7,182.78.' 7,201.09 - 18.31 = 7,182.78 ties to the cleared Nov 24 close. Diff 0.00% vs Vistap (recorded). Also The Company Chronicle (4:48 PM ET) and the Motley Fool ticker bar (4:57 PM EST) show 7,182.78, -18.31."
       }
+    },
+    {
+      "date": "2026-11-27",
+      "close": 7297.49,
+      "source": "https://thecompanychronicle.com/story/stocks-close-sp500-up-1-6-percent-nasdaq-up-2-3-percent-vix-24-half-day-november-27-2026",
+      "timestamp": "2026-11-27T18:35:00Z",
+      "fact_check": {
+        "status": "cleared",
+        "checked_at": "2026-11-27T22:34:39+00:00",
+        "verified_close": 7297.49,
+        "verified_source": "https://mercati.ilsole24ore.com/azioni/borse-extra-europee/usa-s-p/indice/INX.USD",
+        "diff_pct": 0.0,
+        "notes": "Il Sole 24 Ore index page: S&P 500 'Ultimo' 7297.49, +1.6%, chiusura precedente 7182.78, market 'Chiusa', 19:20 CET Fri 27 Nov 2026 (18:20 UTC, after the 1:00 pm ET close). 7,182.78 + 114.71 = 7,297.49 ties to the cleared Nov 25 close. Diff 0.00% vs The Company Chronicle (recorded). Also Investing.com HK (FX168, Nov 28 04:52): S&P 'closed at 7297.49, +1.6%'; Trading Economics: +114.71 (+1.60%) (CFD level 7,296.88). TipRanks and JournalArta give +1.61% (JournalArta 7,298.18, 0.01% away); not used."
+      }
     }
   ]
 }
